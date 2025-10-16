@@ -1,0 +1,385 @@
+================================================================================
+Repository Structure: adoptium/TKG
+================================================================================
+Generated: 2025-10-16 09:04:31
+Total items: 129
+Total directories: 33
+Total files: 96
+================================================================================
+
+================================================================================
+DIRECTORIES (33)
+================================================================================
+
+Top-level directories (5):
+  📁 .github/
+  📁 examples/
+  📁 resources/
+  📁 scripts/
+  📁 src/
+
+All directories (hierarchical):
+  📁 .github/
+    📁 workflows/
+  📁 examples/
+    📁 base/
+    📁 feature/
+    📁 hierarchy/
+      📁 a1/
+        📁 b1/
+      📁 a2/
+        📁 b2/
+          📁 c2/
+        📁 d2/
+      📁 a3/
+        📁 b3/
+        📁 c3/
+          📁 d3/
+        📁 f3/
+    📁 jdkVersion/
+    📁 platformRequirements/
+    📁 rerun/
+      📁 rerunSub/
+    📁 sliceAndDice/
+      📁 level/
+  📁 resources/
+  📁 scripts/
+    📁 liveMonitor_countTests/
+    📁 testBot/
+    📁 testTKG/
+  📁 src/
+    📁 org/
+      📁 openj9/
+        📁 envInfo/
+      📁 testKitGen/
+
+================================================================================
+FILE TYPES SUMMARY
+================================================================================
+
+  .java: 28 files
+  .xml: 19 files
+  .py: 16 files
+  .mk: 10 files
+  .pl: 5 files
+  .yml: 4 files
+  .md: 4 files
+  .sh: 3 files
+  .[no extension]: 2 files
+  .json: 1 files
+  .gitignore: 1 files
+  .properties: 1 files
+  .csv: 1 files
+  .xsd: 1 files
+
+================================================================================
+ROOT-LEVEL FILES
+================================================================================
+
+  📄 .gitignore (0.88 KB)
+  📄 CODE_OF_CONDUCT.md (3.32 KB)
+  📄 CONTRIBUTING.md (1.12 KB)
+  📄 LICENSE (11.09 KB)
+  📄 README.md (0.63 KB)
+  📄 clean.mk (1.01 KB)
+  📄 compile.mk (2.13 KB)
+  📄 envSettings.mk (3.15 KB)
+  📄 featureSettings.mk (0.99 KB)
+  📄 makeGen.mk (2.19 KB)
+  📄 makefile (4.20 KB)
+  📄 moveDmp.mk (1.13 KB)
+  📄 openj9Settings.mk (7.61 KB)
+  📄 runtest.mk (0.85 KB)
+  📄 settings.mk (13.88 KB)
+  📄 testEnv.mk (1.23 KB)
+
+================================================================================
+COMPLETE FILE LISTING BY TYPE
+================================================================================
+
+
+.java files (28):
+--------------------------------------------------------------------------------
+  📄 src/org/openj9/envInfo/CmdExecutor.java (1.94 KB)
+  📄 src/org/openj9/envInfo/EnvDetector.java (3.88 KB)
+  📄 src/org/openj9/envInfo/Info.java (0.98 KB)
+  📄 src/org/openj9/envInfo/JavaInfo.java (10.52 KB)
+  📄 src/org/openj9/envInfo/MachineInfo.java (12.95 KB)
+  📄 src/org/openj9/envInfo/Utility.java (0.68 KB)
+  📄 src/org/testKitGen/Arguments.java (9.51 KB)
+  📄 src/org/testKitGen/BuildList.java (3.15 KB)
+  📄 src/org/testKitGen/BuildListGenVisitor.java (1.34 KB)
+  📄 src/org/testKitGen/CleanVisitor.java (1.12 KB)
+  📄 src/org/testKitGen/Constants.java (2.66 KB)
+  📄 src/org/testKitGen/DirectoryVisitor.java (0.93 KB)
+  📄 src/org/testKitGen/DirectoryWalker.java (2.13 KB)
+  📄 src/org/testKitGen/MainRunner.java (3.61 KB)
+  📄 src/org/testKitGen/MkGen.java (11.58 KB)
+  📄 src/org/testKitGen/ModesDictionary.java (5.89 KB)
+  📄 src/org/testKitGen/ParallelGenVisitor.java (1.29 KB)
+  📄 src/org/testKitGen/PlaylistInfo.java (1.62 KB)
+  📄 src/org/testKitGen/PlaylistInfoParser.java (4.56 KB)
+  📄 src/org/testKitGen/TestCategory.java (3.57 KB)
+  📄 src/org/testKitGen/TestDivider.java (15.94 KB)
+  📄 src/org/testKitGen/TestGenVisitor.java (1.64 KB)
+  📄 src/org/testKitGen/TestInfo.java (4.78 KB)
+  📄 src/org/testKitGen/TestInfoParser.java (17.31 KB)
+  📄 src/org/testKitGen/TestList.java (3.26 KB)
+  📄 src/org/testKitGen/TestTarget.java (2.31 KB)
+  📄 src/org/testKitGen/UtilsGen.java (2.60 KB)
+  📄 src/org/testKitGen/Variation.java (2.35 KB)
+
+
+.xml files (19):
+--------------------------------------------------------------------------------
+  📄 examples/base/playlist.xml (0.94 KB)
+  📄 examples/feature/playlist.xml (1.67 KB)
+  📄 examples/hierarchy/a1/b1/playlist.xml (0.83 KB)
+  📄 examples/hierarchy/a2/b2/c2/playlist.xml (0.84 KB)
+  📄 examples/hierarchy/a2/b2/playlist.xml (0.83 KB)
+  📄 examples/hierarchy/a2/d2/playlist.xml (0.83 KB)
+  📄 examples/hierarchy/a2/playlist.xml (0.83 KB)
+  📄 examples/hierarchy/a3/b3/playlist.xml (0.83 KB)
+  📄 examples/hierarchy/a3/c3/d3/playlist.xml (0.84 KB)
+  📄 examples/hierarchy/a3/f3/playlist.xml (0.83 KB)
+  📄 examples/jdkVersion/playlist.xml (2.40 KB)
+  📄 examples/platformRequirements/playlist.xml (5.83 KB)
+  📄 examples/rerun/playlist.xml (1.16 KB)
+  📄 examples/rerun/rerunSub/playlist.xml (1.36 KB)
+  📄 examples/sliceAndDice/level/playlist.xml (1.47 KB)
+  📄 resources/modes.xml (162.59 KB)
+  📄 scripts/build_test.xml (4.07 KB)
+  📄 scripts/build_tools.xml (2.00 KB)
+  📄 scripts/getDependencies.xml (3.78 KB)
+
+
+.py files (16):
+--------------------------------------------------------------------------------
+  📄 scripts/liveMonitor_countTests/count-java-tests.py (3.09 KB)
+  📄 scripts/liveMonitor_countTests/jtreg-monitor.py (4.03 KB)
+  📄 scripts/remove_duplicate_tests.py (2.27 KB)
+  📄 scripts/testBot/autoModifier.py (2.38 KB)
+  📄 scripts/testBot/disable.py (2.65 KB)
+  📄 scripts/testBot/playlistModifier.py (5.55 KB)
+  📄 scripts/testBot/runAqaArgParse.py (5.86 KB)
+  📄 scripts/testTKG/testRunner.py (1.72 KB)
+  📄 scripts/testTKG/test_base.py (1.50 KB)
+  📄 scripts/testTKG/test_feature.py (2.94 KB)
+  📄 scripts/testTKG/test_hierarchy.py (2.04 KB)
+  📄 scripts/testTKG/test_jdkVersion.py (2.39 KB)
+  📄 scripts/testTKG/test_level.py (2.50 KB)
+  📄 scripts/testTKG/test_platformRequirements.py (5.34 KB)
+  📄 scripts/testTKG/test_rerun.py (2.66 KB)
+  📄 scripts/testTKG/utils.py (3.56 KB)
+
+
+.mk files (10):
+--------------------------------------------------------------------------------
+  📄 clean.mk (1.01 KB)
+  📄 compile.mk (2.13 KB)
+  📄 envSettings.mk (3.15 KB)
+  📄 featureSettings.mk (0.99 KB)
+  📄 makeGen.mk (2.19 KB)
+  📄 moveDmp.mk (1.13 KB)
+  📄 openj9Settings.mk (7.61 KB)
+  📄 runtest.mk (0.85 KB)
+  📄 settings.mk (13.88 KB)
+  📄 testEnv.mk (1.23 KB)
+
+
+.pl files (5):
+--------------------------------------------------------------------------------
+  📄 scripts/configure.pl (1.79 KB)
+  📄 scripts/getDependencies.pl (16.14 KB)
+  📄 scripts/getUniqueId.pl (0.78 KB)
+  📄 scripts/moveDmp.pl (7.56 KB)
+  📄 scripts/resultsSum.pl (16.24 KB)
+
+
+.yml files (4):
+--------------------------------------------------------------------------------
+  📄 .github/dependabot.yml (0.13 KB)
+  📄 .github/workflows/codeql-analysis.yml (2.76 KB)
+  📄 .github/workflows/runAqa.yml (9.12 KB)
+  📄 .github/workflows/testTKG.yml (3.90 KB)
+
+
+.md files (4):
+--------------------------------------------------------------------------------
+  📄 CODE_OF_CONDUCT.md (3.32 KB)
+  📄 CONTRIBUTING.md (1.12 KB)
+  📄 README.md (0.63 KB)
+  📄 scripts/liveMonitor_countTests/README.md (6.04 KB)
+
+
+.sh files (3):
+--------------------------------------------------------------------------------
+  📄 scripts/getFileWithRetry.sh (1.54 KB)
+  📄 scripts/getSHAs.sh (3.36 KB)
+  📄 scripts/getTestenvProperties.sh (3.35 KB)
+
+
+.[no extension] files (2):
+--------------------------------------------------------------------------------
+  📄 LICENSE (11.09 KB)
+  📄 makefile (4.20 KB)
+
+
+.json files (1):
+--------------------------------------------------------------------------------
+  📄 .github/workflows/runAqaConfig.json (0.04 KB)
+
+
+.gitignore files (1):
+--------------------------------------------------------------------------------
+  📄 .gitignore (0.88 KB)
+
+
+.properties files (1):
+--------------------------------------------------------------------------------
+  📄 resources/buildPlatformMap.properties (2.38 KB)
+
+
+.csv files (1):
+--------------------------------------------------------------------------------
+  📄 resources/ottawa.csv (37.28 KB)
+
+
+.xsd files (1):
+--------------------------------------------------------------------------------
+  📄 resources/playlist.xsd (5.77 KB)
+
+================================================================================
+HIERARCHICAL TREE VIEW
+================================================================================
+
+adoptium/TKG/
+  📁 .github/
+  📄 dependabot.yml (0.13 KB)
+    📁 workflows/
+    📄 codeql-analysis.yml (2.76 KB)
+    📄 runAqa.yml (9.12 KB)
+    📄 runAqaConfig.json (0.04 KB)
+    📄 testTKG.yml (3.90 KB)
+📄 .gitignore (0.88 KB)
+📄 CODE_OF_CONDUCT.md (3.32 KB)
+📄 CONTRIBUTING.md (1.12 KB)
+📄 LICENSE (11.09 KB)
+📄 README.md (0.63 KB)
+📄 clean.mk (1.01 KB)
+📄 compile.mk (2.13 KB)
+📄 envSettings.mk (3.15 KB)
+  📁 examples/
+    📁 base/
+    📄 playlist.xml (0.94 KB)
+    📁 feature/
+    📄 playlist.xml (1.67 KB)
+    📁 hierarchy/
+      📁 a1/
+        📁 b1/
+        📄 playlist.xml (0.83 KB)
+      📁 a2/
+        📁 b2/
+          📁 c2/
+          📄 playlist.xml (0.84 KB)
+        📄 playlist.xml (0.83 KB)
+        📁 d2/
+        📄 playlist.xml (0.83 KB)
+      📄 playlist.xml (0.83 KB)
+      📁 a3/
+        📁 b3/
+        📄 playlist.xml (0.83 KB)
+        📁 c3/
+          📁 d3/
+          📄 playlist.xml (0.84 KB)
+        📁 f3/
+        📄 playlist.xml (0.83 KB)
+    📁 jdkVersion/
+    📄 playlist.xml (2.40 KB)
+    📁 platformRequirements/
+    📄 playlist.xml (5.83 KB)
+    📁 rerun/
+    📄 playlist.xml (1.16 KB)
+      📁 rerunSub/
+      📄 playlist.xml (1.36 KB)
+    📁 sliceAndDice/
+      📁 level/
+      📄 playlist.xml (1.47 KB)
+📄 featureSettings.mk (0.99 KB)
+📄 makeGen.mk (2.19 KB)
+📄 makefile (4.20 KB)
+📄 moveDmp.mk (1.13 KB)
+📄 openj9Settings.mk (7.61 KB)
+  📁 resources/
+  📄 buildPlatformMap.properties (2.38 KB)
+  📄 modes.xml (162.59 KB)
+  📄 ottawa.csv (37.28 KB)
+  📄 playlist.xsd (5.77 KB)
+📄 runtest.mk (0.85 KB)
+  📁 scripts/
+  📄 build_test.xml (4.07 KB)
+  📄 build_tools.xml (2.00 KB)
+  📄 configure.pl (1.79 KB)
+  📄 getDependencies.pl (16.14 KB)
+  📄 getDependencies.xml (3.78 KB)
+  📄 getFileWithRetry.sh (1.54 KB)
+  📄 getSHAs.sh (3.36 KB)
+  📄 getTestenvProperties.sh (3.35 KB)
+  📄 getUniqueId.pl (0.78 KB)
+    📁 liveMonitor_countTests/
+    📄 README.md (6.04 KB)
+    📄 count-java-tests.py (3.09 KB)
+    📄 jtreg-monitor.py (4.03 KB)
+  📄 moveDmp.pl (7.56 KB)
+  📄 remove_duplicate_tests.py (2.27 KB)
+  📄 resultsSum.pl (16.24 KB)
+    📁 testBot/
+    📄 autoModifier.py (2.38 KB)
+    📄 disable.py (2.65 KB)
+    📄 playlistModifier.py (5.55 KB)
+    📄 runAqaArgParse.py (5.86 KB)
+    📁 testTKG/
+    📄 testRunner.py (1.72 KB)
+    📄 test_base.py (1.50 KB)
+    📄 test_feature.py (2.94 KB)
+    📄 test_hierarchy.py (2.04 KB)
+    📄 test_jdkVersion.py (2.39 KB)
+    📄 test_level.py (2.50 KB)
+    📄 test_platformRequirements.py (5.34 KB)
+    📄 test_rerun.py (2.66 KB)
+    📄 utils.py (3.56 KB)
+📄 settings.mk (13.88 KB)
+  📁 src/
+    📁 org/
+      📁 openj9/
+        📁 envInfo/
+        📄 CmdExecutor.java (1.94 KB)
+        📄 EnvDetector.java (3.88 KB)
+        📄 Info.java (0.98 KB)
+        📄 JavaInfo.java (10.52 KB)
+        📄 MachineInfo.java (12.95 KB)
+        📄 Utility.java (0.68 KB)
+      📁 testKitGen/
+      📄 Arguments.java (9.51 KB)
+      📄 BuildList.java (3.15 KB)
+      📄 BuildListGenVisitor.java (1.34 KB)
+      📄 CleanVisitor.java (1.12 KB)
+      📄 Constants.java (2.66 KB)
+      📄 DirectoryVisitor.java (0.93 KB)
+      📄 DirectoryWalker.java (2.13 KB)
+      📄 MainRunner.java (3.61 KB)
+      📄 MkGen.java (11.58 KB)
+      📄 ModesDictionary.java (5.89 KB)
+      📄 ParallelGenVisitor.java (1.29 KB)
+      📄 PlaylistInfo.java (1.62 KB)
+      📄 PlaylistInfoParser.java (4.56 KB)
+      📄 TestCategory.java (3.57 KB)
+      📄 TestDivider.java (15.94 KB)
+      📄 TestGenVisitor.java (1.64 KB)
+      📄 TestInfo.java (4.78 KB)
+      📄 TestInfoParser.java (17.31 KB)
+      📄 TestList.java (3.26 KB)
+      📄 TestTarget.java (2.31 KB)
+      📄 UtilsGen.java (2.60 KB)
+      📄 Variation.java (2.35 KB)
+📄 testEnv.mk (1.23 KB)

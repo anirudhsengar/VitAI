@@ -214,8 +214,7 @@ Important:
         
         # Initial status
         yield (
-            f"🤔 **Starting ReAct Process**\n\n**Query:** {user_query}\n\n**Available Repositories:**\n" + 
-            "\n".join([f"- {repo}" for repo in self.repositories]) + "\n\n---\n",
+            f"**Thinking...**\n\n",
             ""
         )
         
@@ -226,8 +225,7 @@ Important:
             response = self._call_llm(messages)
             
             # Add iteration header
-            iteration_output = f"\n### 🔄 Iteration {iteration}\n\n"
-            iteration_output += f"**Agent Response:**\n```\n{response}\n```\n\n"
+            iteration_output = f"\n**Step {iteration}**\n\n{response}\n\n"
             
             steps_output.append(iteration_output)
             
@@ -241,7 +239,7 @@ Important:
                     idx = response.lower().find("final answer:")
                     final_answer = response[idx + len("final answer:"):].strip()
                 
-                final_output = f"## ✅ Final Answer\n\n{final_answer}"
+                final_output = f"**Answer:**\n\n{final_answer}"
                 
                 yield (
                     "".join(steps_output),
@@ -256,16 +254,15 @@ Important:
                 tool_name = action.get('tool')
                 parameters = action.get('parameters', {})
                 
-                action_output = f"**🔧 Action Detected:**\n"
-                action_output += f"- Tool: `{tool_name}`\n"
-                action_output += f"- Parameters: `{json.dumps(parameters, indent=2)}`\n\n"
+                action_output = f"**Action:** {tool_name}\n"
+                action_output += f"```json\n{json.dumps(parameters, indent=2)}\n```\n\n"
                 
                 steps_output.append(action_output)
                 
                 # Execute the tool
                 observation = self._execute_tool(tool_name, parameters)
                 
-                observation_output = f"**👁️ Observation:**\n```json\n{observation}\n```\n\n---\n"
+                observation_output = f"**Observation:**\n```json\n{observation}\n```\n\n"
                 steps_output.append(observation_output)
                 
                 # Add assistant message and observation to conversation
@@ -278,7 +275,7 @@ Important:
                 )
             else:
                 # No valid action found, prompt the agent to take action or give final answer
-                no_action_output = f"⚠️ **No valid action found. Prompting agent...**\n\n---\n"
+                no_action_output = f"*Continuing to think...*\n\n"
                 steps_output.append(no_action_output)
                 
                 messages.append(AssistantMessage(content=response))
@@ -290,7 +287,7 @@ Important:
                 )
         
         # Max iterations reached
-        final_output = f"## ⚠️ Maximum Iterations Reached\n\nI've reached the maximum number of reasoning steps ({self.max_iterations}).\n\n"
+        final_output = f"**Answer:**\n\nI've reached the maximum reasoning steps. "
         if steps_output:
             final_output += "Please review the steps above for the investigation process."
         else:
@@ -330,45 +327,21 @@ def process_query(query: str):
 
 
 # Create Gradio interface
-with gr.Blocks(title="VitAI ReAct Agent", theme=gr.themes.Soft()) as demo:
-    gr.Markdown("""
-    # 🤖 VitAI ReAct Agent
+with gr.Blocks(title="VitAI", theme=gr.themes.Soft()) as demo:
+    gr.Markdown("# VitAI")
     
-    This agent uses the **ReAct (Reasoning + Acting)** pattern to answer questions about Adoptium repositories.
-    Watch as it thinks through the problem, searches GitHub, and formulates an answer!
-    
-    ### How it works:
-    1. **Thought** - The agent reasons about what information it needs
-    2. **Action** - It uses tools (search_code, search_issues) to gather information
-    3. **Observation** - It analyzes the results
-    4. **Repeat** - It continues until it has enough information to answer
-    """)
-    
-    with gr.Row():
-        with gr.Column():
-            query_input = gr.Textbox(
-                label="Your Question",
-                placeholder="e.g., What testing frameworks are used in the Adoptium projects?",
-                lines=3
-            )
-            submit_btn = gr.Button("🚀 Ask VitAI", variant="primary", size="lg")
-            
-            gr.Markdown("""
-            ### Example Questions:
-            - What testing frameworks are used in the Adoptium projects?
-            - How does the TKG test harness work?
-            - What are the latest issues in the aqa-tests repository?
-            - Show me examples of JUnit tests in the codebase
-            """)
-    
-    with gr.Row():
-        with gr.Column():
-            gr.Markdown("## 🔍 ReAct Process Steps")
-            steps_output = gr.Markdown(label="Process Steps", value="")
+    with gr.Column():
+        query_input = gr.Textbox(
+            label="",
+            placeholder="Ask anything about Adoptium repositories...",
+            lines=2,
+            show_label=False
+        )
+        submit_btn = gr.Button("Submit", variant="primary")
         
-        with gr.Column():
-            gr.Markdown("## 📋 Final Answer")
-            final_output = gr.Markdown(label="Final Answer", value="")
+        # Combined output in single column
+        steps_output = gr.Markdown(value="", label="")
+        final_output = gr.Markdown(value="", label="")
     
     # Set up event handler
     submit_btn.click(
@@ -385,6 +358,5 @@ with gr.Blocks(title="VitAI ReAct Agent", theme=gr.themes.Soft()) as demo:
 
 
 if __name__ == "__main__":
-    print("🚀 Starting VitAI ReAct Agent UI...")
-    print("📝 Note: Make sure you have GITHUB_TOKEN set in your .env file")
+    print("Starting VitAI...")
     demo.launch(share=False, server_name="127.0.0.1", server_port=7860)

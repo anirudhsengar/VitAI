@@ -1,0 +1,2077 @@
+================================================================================
+Repository Structure: adoptium/aqa-systemtest
+================================================================================
+Generated: 2025-10-16 09:04:32
+Total items: 936
+Total directories: 348
+Total files: 588
+================================================================================
+
+================================================================================
+DIRECTORIES (348)
+================================================================================
+
+Top-level directories (18):
+  📁 openjdk.build/
+  📁 openjdk.test.classloading/
+  📁 openjdk.test.concurrent/
+  📁 openjdk.test.debugging/
+  📁 openjdk.test.gc/
+  📁 openjdk.test.jck/
+  📁 openjdk.test.jlm/
+  📁 openjdk.test.lambdasAndStreams/
+  📁 openjdk.test.lang/
+  📁 openjdk.test.load/
+  📁 openjdk.test.locking/
+  📁 openjdk.test.math/
+  📁 openjdk.test.mauve/
+  📁 openjdk.test.modularity/
+  📁 openjdk.test.nio/
+  📁 openjdk.test.security/
+  📁 openjdk.test.serialization/
+  📁 openjdk.test.util/
+
+All directories (hierarchical):
+  📁 openjdk.build/
+    📁 docs/
+    📁 scripts/
+  📁 openjdk.test.classloading/
+    📁 src/
+      📁 test.classloading/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 classloading/
+                📁 deadlock/
+        📁 notonclasspath/
+          📁 url1/
+            📁 net/
+              📁 adoptopenjdk/
+                📁 test/
+                  📁 classloading/
+                    📁 deadlock/
+                      📁 package1/
+          📁 url2/
+            📁 net/
+              📁 adoptopenjdk/
+                📁 test/
+                  📁 classloading/
+                    📁 deadlock/
+                      📁 package2/
+  📁 openjdk.test.concurrent/
+    📁 .settings/
+    📁 src/
+      📁 test.concurrent/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 concurrent/
+                📁 atomic/
+                📁 jsr166y/
+                📁 locks/
+                📁 support/
+                  📁 jsr166y/
+  📁 openjdk.test.debugging/
+    📁 .settings/
+    📁 docs/
+    📁 src/
+      📁 test.debugging/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+              📁 hcrAgent/
+              📁 jdi/
+            📁 test/
+              📁 hcrAgent/
+                📁 agent/
+              📁 jdi/
+                📁 debugger/
+                📁 properties/
+                📁 targetvm/
+                📁 util/
+    📁 src_150/
+      📁 test.debugging/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 hcrAgent/
+                📁 agent/
+    📁 src_80_110/
+      📁 test.debugging/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 hcrAgent/
+                📁 agent/
+  📁 openjdk.test.gc/
+    📁 .settings/
+    📁 docs/
+    📁 src/
+      📁 test.gc/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 gc/
+                📁 annotations/
+                📁 directbytebuffer/
+                📁 heaphog/
+  📁 openjdk.test.jck/
+    📁 config/
+      📁 default/
+      📁 jck10/
+      📁 jck11/
+      📁 jck12/
+      📁 jck13/
+      📁 jck14/
+      📁 jck15/
+      📁 jck16/
+      📁 jck17/
+      📁 jck8c/
+      📁 jck9/
+    📁 docs/
+    📁 include/
+    📁 src/
+      📁 native/
+      📁 test.jck/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+  📁 openjdk.test.jlm/
+    📁 .settings/
+    📁 doc/
+    📁 src/
+      📁 test.jlm/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 jlm/
+                📁 local/
+                📁 locks/
+                📁 remote/
+                📁 resources/
+  📁 openjdk.test.lambdasAndStreams/
+    📁 doc/
+    📁 src/
+      📁 test.lambda/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 lambda/
+                📁 LamFiles/
+                  📁 fold1/
+                📁 support/
+              📁 streams/
+                📁 support/
+  📁 openjdk.test.lang/
+    📁 src/
+      📁 test.lang/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 lang/
+                📁 annotations/
+                📁 invoke/
+                📁 java7/
+                  📁 ProjectCoin/
+  📁 openjdk.test.load/
+    📁 .settings/
+    📁 config/
+      📁 inventories/
+        📁 classloading/
+        📁 concurrent/
+        📁 gc/
+        📁 lambdasAndStreams/
+        📁 lang/
+        📁 locking/
+        📁 math/
+        📁 mauve/
+        📁 mix/
+        📁 modularityClassloading/
+        📁 nio/
+        📁 serialization/
+        📁 util/
+    📁 src/
+      📁 test.load/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+  📁 openjdk.test.locking/
+    📁 .settings/
+    📁 docs/
+    📁 src/
+      📁 test.locking/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 locking/
+  📁 openjdk.test.math/
+    📁 src/
+      📁 test.math/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 autosimd/
+              📁 bigdecimal/
+              📁 math/
+  📁 openjdk.test.mauve/
+    📁 docs/
+  📁 openjdk.test.modularity/
+    📁 .settings/
+    📁 doc/
+    📁 src/
+      📁 com.stf/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+      📁 common/
+      📁 common-mods/
+        📁 com.discreet/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 exported/
+                📁 hidden/
+        📁 com.hello/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hello/
+        📁 com.helper/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 helper/
+                  📁 pkgOne/
+        📁 com.hi/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hi/
+        📁 com.hola/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hola/
+        📁 displayService/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 display/
+        📁 displayServiceImpl1/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 displayImpl1/
+        📁 displayServiceImpl2/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 displayImpl2/
+      📁 common-override/
+      📁 common-override-new/
+        📁 com.hello/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hello/
+                📁 newpkg/
+        📁 com.discreet/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 exported/
+                📁 hidden/
+        📁 com.hello/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hello/
+                📁 hellonew/
+        📁 java.logging/
+          📁 java/
+            📁 util/
+              📁 logging/
+        📁 java.xml/
+          📁 javax/
+            📁 xml/
+              📁 namespace/
+        📁 adoptopenjdk/
+          📁 test/
+            📁 modularity/
+              📁 hi/
+        📁 displayServiceImpl3/
+          📁 META-INF/
+            📁 services/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 displayImpl3/
+        📁 displayServiceImpl4/
+          📁 META-INF/
+            📁 services/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 displayImpl4/
+      📁 tests/
+        📁 com.test/
+        📁 com.test.serviceloaders/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 serviceloaders/
+        📁 com.test.serviceloaders2/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 serviceloaders2/
+          📁 net/
+            📁 adoptopenjdk/
+              📁 test/
+                📁 modularity/
+                  📁 junit/
+  📁 openjdk.test.nio/
+    📁 .settings/
+    📁 src/
+      📁 test.nio/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 nio/
+              📁 nio2/
+                📁 asyncio/
+                  📁 client/
+                  📁 file/
+                  📁 server/
+                📁 filesystem/
+                📁 mxbean/
+                📁 path/
+                📁 perl/
+                  📁 filesystems/
+                📁 util/
+  📁 openjdk.test.security/
+    📁 doc/
+      📁 images/
+    📁 src/
+      📁 test.security/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 auth/
+                📁 util/
+  📁 openjdk.test.serialization/
+    📁 src/
+      📁 test.serialization/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 serialization/
+  📁 openjdk.test.util/
+    📁 src/
+      📁 test.util/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 util/
+                📁 calendars/
+                📁 hashmap/
+                📁 hashtable/
+                📁 lilac/
+                📁 solver/
+                📁 treemap/
+
+================================================================================
+FILE TYPES SUMMARY
+================================================================================
+
+  .java: 405 files
+  .xml: 45 files
+  .jti: 26 files
+  .md: 19 files
+  .project: 18 files
+  .classpath: 17 files
+  .prop: 16 files
+  .prefs: 8 files
+  .txt: 7 files
+  .properties: 5 files
+  .gitignore: 2 files
+  .[no extension]: 2 files
+  .display: 2 files
+  .gitattributes: 1 files
+  .zos: 1 files
+  .build/makefile: 1 files
+  .bat: 1 files
+  .sh: 1 files
+  .dict: 1 files
+  .conf: 1 files
+  .mk: 1 files
+  .jck/src/native/makefile: 1 files
+  .password: 1 files
+  .jlm/net/adoptopenjdk/test/jlm/testkeys: 1 files
+  .nio/net/adoptopenjdk/test/nio2/perl/filesystems/memoryfilesystemproviderimpltemplate: 1 files
+  .pl: 1 files
+  .puml: 1 files
+  .png: 1 files
+  .security/net/adoptopenjdk/test/auth/testkeys: 1 files
+
+================================================================================
+ROOT-LEVEL FILES
+================================================================================
+
+  📄 .gitattributes (0.59 KB)
+  📄 .gitattributes.zos (1.57 KB)
+  📄 .gitignore (0.00 KB)
+  📄 LICENSE (11.09 KB)
+  📄 NOTICE (0.06 KB)
+  📄 README.md (2.92 KB)
+
+================================================================================
+COMPLETE FILE LISTING BY TYPE
+================================================================================
+
+
+.java files (405):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.classloading/src/test.classloading/net/adoptopenjdk/test/classloading/ClassHog.java (3.60 KB)
+  📄 openjdk.test.classloading/src/test.classloading/net/adoptopenjdk/test/classloading/ClassMapHog.java (8.87 KB)
+  📄 openjdk.test.classloading/src/test.classloading/net/adoptopenjdk/test/classloading/deadlock/DeadlockTest.java (6.00 KB)
+  📄 openjdk.test.classloading/src/test.classloading/net/adoptopenjdk/test/classloading/deadlock/MyClassLoader1.java (1.55 KB)
+  📄 openjdk.test.classloading/src/test.classloading/net/adoptopenjdk/test/classloading/deadlock/MyClassLoader2.java (1.65 KB)
+  📄 openjdk.test.classloading/src/test.classloading/notonclasspath/url1/net/adoptopenjdk/test/classloading/deadlock/package1/CL1_A.java (0.86 KB)
+  📄 openjdk.test.classloading/src/test.classloading/notonclasspath/url1/net/adoptopenjdk/test/classloading/deadlock/package1/CL1_D.java (0.78 KB)
+  📄 openjdk.test.classloading/src/test.classloading/notonclasspath/url2/net/adoptopenjdk/test/classloading/deadlock/package2/CL2_B.java (0.78 KB)
+  📄 openjdk.test.classloading/src/test.classloading/notonclasspath/url2/net/adoptopenjdk/test/classloading/deadlock/package2/CL2_C.java (0.86 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/ArrayBlockingQueueTest.java (16.03 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/ConcurrentHashMapTest.java (36.76 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/ConcurrentLinkedQueueTest.java (25.07 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/ConcurrentSkipListMapTest.java (34.39 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/ConcurrentSkipListSetTest.java (29.14 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/ConcurrentTest.java (3.60 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/CopyOnWriteArrayListTest.java (29.23 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/CopyOnWriteArraySetTest.java (22.20 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicBooleanTest.java (24.71 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicIntegerArrayTest.java (37.03 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicIntegerFieldUpdaterTest.java (33.53 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicIntegerTest.java (24.97 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicLongArrayTest.java (35.69 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicLongFieldUpdaterTest.java (33.22 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicLongTest.java (23.62 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicMarkableReferenceTest.java (29.51 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicReferenceArrayTest.java (28.34 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicReferenceFieldUpdaterTest.java (34.64 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicReferenceTest.java (22.91 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicStampedReferenceTest.java (28.40 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/atomic/AtomicTest.java (2.01 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/jsr166y/ForkJoinPoolTest.java (13.26 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/jsr166y/ForkJoinPoolTestAPI.java (11.03 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/jsr166y/ForkJoinPoolTestStress.java (7.38 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/jsr166y/ForkJoinTaskTest.java (12.75 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/jsr166y/LinkedTransferQueueTest.java (32.94 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/jsr166y/PhaserTest.java (29.37 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/jsr166y/ThreadLocalRandomTest.java (13.26 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/locks/ReentrantLockTest.java (18.01 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/locks/ReentrantReadWriteLockTest.java (36.27 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/support/AtomicTestObject.java (2.50 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/support/GenericTestObject.java (3.11 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/support/jsr166y/ArrayDoubler.java (1.82 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/support/jsr166y/ArrayMaximumTask.java (3.06 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/support/jsr166y/ArraySummationTask.java (3.38 KB)
+  📄 openjdk.test.concurrent/src/test.concurrent/net/adoptopenjdk/test/concurrent/support/jsr166y/WaiterTask.java (2.05 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/stf/hcrAgent/HCRLateAttachWorkload.java (5.29 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/stf/jdi/JdiTest.java (8.80 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/AgentLogger.java (2.15 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/Attacher.java (2.92 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/StringModifierAgent.java (8.49 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/TransformerMakerThread.java (4.08 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/debugger/Connectors.java (25.24 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/debugger/EventT.java (17.68 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/targetvm/HelloWorld.java (1.33 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/targetvm/Simple.java (1.59 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/util/GenerateObjects.java (2.38 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/util/ObjectGenerator.java (2.30 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/util/RasTool.java (2.50 KB)
+  📄 openjdk.test.debugging/src_150/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/MyClassVisitor.java (3.67 KB)
+  📄 openjdk.test.debugging/src_150/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/MyMethodVisitor.java (4.60 KB)
+  📄 openjdk.test.debugging/src_150/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/StringTransformer.java (4.05 KB)
+  📄 openjdk.test.debugging/src_80_110/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/MyClassVisitor.java (3.63 KB)
+  📄 openjdk.test.debugging/src_80_110/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/MyMethodVisitor.java (4.57 KB)
+  📄 openjdk.test.debugging/src_80_110/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/StringTransformer.java (4.00 KB)
+  📄 openjdk.test.gc/src/test.gc/net/adoptopenjdk/test/gc/annotations/ForceGC.java (3.75 KB)
+  📄 openjdk.test.gc/src/test.gc/net/adoptopenjdk/test/gc/annotations/OneMB.java (0.84 KB)
+  📄 openjdk.test.gc/src/test.gc/net/adoptopenjdk/test/gc/directbytebuffer/DirectMemoryTest.java (1.83 KB)
+  📄 openjdk.test.gc/src/test.gc/net/adoptopenjdk/test/gc/heaphog/ObjectTree.java (4.40 KB)
+  📄 openjdk.test.gc/src/test.gc/net/adoptopenjdk/test/gc/heaphog/ObjectTree2.java (5.78 KB)
+  📄 openjdk.test.jck/src/test.jck/net/adoptopenjdk/stf/Jck.java (50.30 KB)
+  📄 openjdk.test.jck/src/test.jck/net/adoptopenjdk/stf/SummaryGenerator.java (3.26 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmGCMXBeanNotifier.java (6.07 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmLocal.java (2.38 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmRemoteClassAuth.java (9.19 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmRemoteClassNoAuth.java (6.98 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmRemoteMemoryAuth.java (9.19 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmRemoteMemoryNoAuth.java (7.07 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmRemoteNotifierProxyAuth.java (6.65 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmRemoteThreadAuth.java (9.21 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/TestJlmRemoteThreadNoAuth.java (6.99 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/local/VMLogger.java (29.05 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/locks/ConditionLock.java (2.92 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/locks/DeadLock.java (4.78 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/locks/DeepLock.java (2.41 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/locks/MonitorDeadLock.java (4.09 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/ClassProfiler.java (13.31 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/GCMXBeanTest.java (4.35 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/GarbageCollectionNotificationTest.java (11.80 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/MemoryNotifier.java (6.73 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/MemoryProfiler.java (13.32 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/ServerConnector.java (11.39 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/TestArgs.java (12.99 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/ThreadMonitor.java (8.64 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/remote/ThreadProfiler.java (10.81 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/ClassData.java (11.57 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/EnvironmentData.java (12.72 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/ExpectedMBeanInfo.java (10.79 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/LockType.java (0.90 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/MemoryData.java (20.80 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/MemoryListener.java (10.75 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/Message.java (5.35 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/Report.java (11.38 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/ThreadData.java (53.06 KB)
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/resources/VMData.java (4.52 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/ClassLibraryLambdaTests.java (22.56 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaCapture.java (7.06 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaContexts.java (7.40 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaDefaultsAndStatics.java (9.36 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaInferredTyping.java (5.67 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaJavaInterfaces.java (10.64 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaLexicalScoping.java (3.00 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaMethodReferences.java (11.35 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaMultithreaded.java (13.17 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaNested.java (14.84 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaRecursive.java (3.56 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdaSerialization.java (15.83 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/TestLambdasUserDefinedInterface.java (18.08 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/support/Animal.java (0.96 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/support/CountryData.java (2.14 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/support/Motorbike.java (1.44 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/support/Person.java (3.33 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/streams/TestParallelStreamOperations.java (12.28 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/streams/TestStreamOperations.java (16.83 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/streams/support/GenerateRandomText.java (2.99 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/streams/support/Harbour.java (2.20 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/streams/support/KeelBoat.java (1.82 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/streams/support/Line.java (1.88 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A0.java (1.02 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A1.java (1.07 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A2.java (0.97 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A3.java (0.96 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A4.java (0.88 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A5.java (1.20 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A6.java (1.10 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A7.java (1.18 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/A_Meta.java (1.31 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/AnnotatedElements.java (1.94 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/AnnotationClassTests.java (8.86 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/AnnotationConstructorTests.java (4.98 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/AnnotationEnumTests.java (2.76 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/AnnotationFieldTests.java (7.18 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/AnnotationMethodTests.java (5.95 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/AnnotationPackageTests.java (2.82 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/AnnotationTests.java (1.83 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/annotations/package-info.java (0.89 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/invoke/AsTypeTest.java (171.04 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/invoke/BasicStaticTest.java (4.39 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/invoke/BasicTest.java (9.19 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/invoke/BasicTest2.java (24.91 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/invoke/StaticAsTypeTestExplicit.java (159.46 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/invoke/StaticAsTypeTestImplicit.java (159.47 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/java7/ProjectCoin/CoinTest.java (1.92 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/java7/ProjectCoin/MultiCatchPreciseRethrow.java (5.66 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/java7/ProjectCoin/RunAllTests.java (1.06 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/java7/ProjectCoin/SwitchOnString.java (2.24 KB)
+  📄 openjdk.test.lang/src/test.lang/net/adoptopenjdk/test/lang/java7/ProjectCoin/TryWithResources.java (7.77 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/ClassloadingLoadTest.java (4.56 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/ConcurrentLoadTest.java (2.86 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/DirectByteBufferLoadTest.java (3.46 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/LambdaLoadTest.java (2.93 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/LangLoadTest.java (2.74 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/LockingLoadTest.java (2.98 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/MathLoadTest.java (5.45 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/MauveMultiThrdLoad.java (3.86 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/MauveMultiThrdLoadTrc.java (4.06 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/MauveSingleInvocLoad.java (3.40 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/MauveSingleThrdLoad.java (3.37 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/MauveSingleThrdLoadTrc.java (3.52 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/MixedLoadTest.java (3.77 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/NioLoadTest.java (4.00 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/ParallelStreamsLoadTest.java (3.00 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/SerializationLoadTest.java (2.88 KB)
+  📄 openjdk.test.load/src/test.load/net/adoptopenjdk/stf/UtilLoadTest.java (2.81 KB)
+  📄 openjdk.test.locking/src/test.locking/net/adoptopenjdk/test/locking/Locker.java (2.80 KB)
+  📄 openjdk.test.locking/src/test.locking/net/adoptopenjdk/test/locking/ReaderThread.java (1.29 KB)
+  📄 openjdk.test.locking/src/test.locking/net/adoptopenjdk/test/locking/WriterThread.java (1.39 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/autosimd/AutoSIMDTestDouble.java (22.80 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/autosimd/AutoSIMDTestFloat.java (22.51 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/autosimd/AutoSIMDTestInteger.java (21.99 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/autosimd/AutoSIMDTestLong.java (22.16 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/JavaSpecVersionChecker.java (0.36 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite000.java (233.60 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite001.java (256.67 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite002.java (265.24 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite003.java (284.12 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite004.java (264.67 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite005.java (245.84 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite006.java (233.70 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite007.java (249.20 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite008.java (244.25 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite009.java (243.72 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite010.java (279.61 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite011.java (295.27 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite012.java (258.84 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite013.java (284.77 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite014.java (246.55 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite015.java (287.90 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite016.java (284.38 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite017.java (243.52 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite018.java (269.24 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite019.java (245.48 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite020.java (238.53 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite021.java (363.00 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite022.java (236.60 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite023.java (290.75 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite024.java (263.62 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite025.java (231.95 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite026.java (262.94 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite027.java (259.42 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite028.java (281.59 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite029.java (255.04 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite030.java (256.18 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite031.java (305.26 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite032.java (239.15 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite033.java (242.69 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite034.java (309.63 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite035.java (271.72 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite036.java (241.55 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite037.java (300.04 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite038.java (309.35 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite039.java (249.39 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite040.java (317.84 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite041.java (271.15 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite042.java (288.09 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite043.java (286.29 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite044.java (256.20 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite045.java (244.51 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite046.java (241.41 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite047.java (380.70 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite048.java (232.76 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite049.java (297.53 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite050.java (293.89 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite051.java (316.03 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite052.java (299.77 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite053.java (253.80 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite054.java (285.05 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite055.java (261.73 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite056.java (313.50 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite057.java (239.35 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite058.java (267.85 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite059.java (266.09 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite060.java (271.11 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite061.java (264.23 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite062.java (237.89 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/bigdecimal/TestSuite063.java (22.62 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/math/MathAPITest.java (482.06 KB)
+  📄 openjdk.test.math/src/test.math/net/adoptopenjdk/test/math/MathAPITestGenerator.java (123.88 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/AutoModTest.java (9.36 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CLLoadTest.java (4.47 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CLStressCRI.java (5.40 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CLStressLayers.java (3.54 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CLTest.java (4.49 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CLTestImage.java (5.44 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CpMpJlinkTest.java (5.67 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CpMpModJar.java (4.35 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CpMpModJar2.java (3.29 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CpMpModJar3.java (3.45 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CpMpTest.java (4.04 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CpMpTest2.java (3.30 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CpMpTest3.java (3.45 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/CreateMultiboxJlinkImage.java (6.44 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/ExplMod.java (14.74 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/InternalAPIs.java (5.52 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/JlinkPluginTest.java (15.73 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/JlinkTest.java (15.70 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/LayersTest.java (4.90 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/PatModImgTest.java (14.74 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/PatModTest.java (15.62 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/SLTest.java (6.59 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/TestUtil.java (1.80 KB)
+  📄 openjdk.test.modularity/src/com.stf/net/adoptopenjdk/test/modularity/UpgModPathTest.java (17.63 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.discreet/adoptopenjdk/test/modularity/exported/ExportedClass.java (0.93 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.discreet/adoptopenjdk/test/modularity/hidden/Secret.java (0.81 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.discreet/module-info.java (0.76 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.hello/adoptopenjdk/test/modularity/hello/Hello.java (0.81 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.hello/module-info.java (0.76 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.helper/adoptopenjdk/test/modularity/helper/pkgOne/HelperClass.java (0.99 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.helper/module-info.java (0.80 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.hi/adoptopenjdk/test/modularity/hi/Hi.java (0.89 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.hi/module-info.java (0.75 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.hola/adoptopenjdk/test/modularity/hola/Hi.java (1.00 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.hola/module-info.java (0.75 KB)
+  📄 openjdk.test.modularity/src/common-mods/displayService/adoptopenjdk/test/modularity/display/Display.java (0.79 KB)
+  📄 openjdk.test.modularity/src/common-mods/displayService/module-info.java (0.77 KB)
+  📄 openjdk.test.modularity/src/common-mods/displayServiceImpl1/adoptopenjdk/test/modularity/displayImpl1/DisplayServiceImpl1.java (0.91 KB)
+  📄 openjdk.test.modularity/src/common-mods/displayServiceImpl1/module-info.java (0.87 KB)
+  📄 openjdk.test.modularity/src/common-mods/displayServiceImpl2/adoptopenjdk/test/modularity/displayImpl2/DisplayServiceImpl2.java (0.91 KB)
+  📄 openjdk.test.modularity/src/common-mods/displayServiceImpl2/module-info.java (0.87 KB)
+  📄 openjdk.test.modularity/src/common-override-new/com.hello/adoptopenjdk/test/modularity/hello/NewClass1.java (0.83 KB)
+  📄 openjdk.test.modularity/src/common-override-new/com.hello/adoptopenjdk/test/modularity/newpkg/NewClass2.java (0.83 KB)
+  📄 openjdk.test.modularity/src/common-override-new/com.hello/module-info.java (0.80 KB)
+  📄 openjdk.test.modularity/src/common-override/com.discreet/adoptopenjdk/test/modularity/exported/ExportedClass.java (0.96 KB)
+  📄 openjdk.test.modularity/src/common-override/com.discreet/adoptopenjdk/test/modularity/hidden/Secret.java (0.81 KB)
+  📄 openjdk.test.modularity/src/common-override/com.discreet/module-info.java (0.76 KB)
+  📄 openjdk.test.modularity/src/common-override/com.hello/adoptopenjdk/test/modularity/hello/Hello.java (0.81 KB)
+  📄 openjdk.test.modularity/src/common-override/com.hello/adoptopenjdk/test/modularity/hellonew/HelloNew.java (0.82 KB)
+  📄 openjdk.test.modularity/src/common-override/com.hello/module-info.java (0.76 KB)
+  📄 openjdk.test.modularity/src/common-override/java.logging/java/util/logging/Logger.java (0.98 KB)
+  📄 openjdk.test.modularity/src/common-override/java.logging/module-info.java (0.74 KB)
+  📄 openjdk.test.modularity/src/common-override/java.xml/javax/xml/namespace/QName.java (0.88 KB)
+  📄 openjdk.test.modularity/src/common-override/java.xml/module-info.java (0.74 KB)
+  📄 openjdk.test.modularity/src/common/adoptopenjdk/test/modularity/hi/Hi.java (0.80 KB)
+  📄 openjdk.test.modularity/src/common/adoptopenjdk/test/modularity/hi/HiCp.java (0.80 KB)
+  📄 openjdk.test.modularity/src/common/displayServiceImpl3/adoptopenjdk/test/modularity/displayImpl3/DisplayServiceImpl3.java (0.91 KB)
+  📄 openjdk.test.modularity/src/common/displayServiceImpl4/adoptopenjdk/test/modularity/displayImpl4/DisplayServiceImpl4.java (0.91 KB)
+  📄 openjdk.test.modularity/src/tests/com.test.serviceloaders/adoptopenjdk/test/modularity/serviceloaders/TestServiceLoaders.java (4.00 KB)
+  📄 openjdk.test.modularity/src/tests/com.test.serviceloaders/module-info.java (0.86 KB)
+  📄 openjdk.test.modularity/src/tests/com.test.serviceloaders2/adoptopenjdk/test/modularity/serviceloaders2/TestServiceLoaders2.java (5.46 KB)
+  📄 openjdk.test.modularity/src/tests/com.test.serviceloaders2/module-info.java (0.78 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/module-info.java (0.90 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/ModTestClassLoader.java (1.69 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestAutomaticModules.java (3.53 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestClassLoading.java (9.34 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestClassLoadingUsingResourceFiles.java (7.56 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestCpMp.java (1.77 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestImpliedReadability.java (2.51 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestJDKInternalAPIs.java (3.51 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestLayers.java (3.10 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestMp.java (1.66 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestOverrideUsingAppModule.java (1.10 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestOverrideUsingAppModuleAndNewPackage.java (1.45 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestOverrideUsingMultipleFilePaths.java (4.88 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestOverrideUsingNonUpgradablePlatformModule.java (1.28 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestOverrideUsingPlatformModuleInRegularJar.java (1.16 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestOverrideUsingUnexportedPublicType.java (1.61 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestOverrideUsingUpgradablePlatformModule.java (1.21 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestOverridingWithResources.java (5.54 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/TestStressLayers.java (8.29 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio/NioApp.java (39.58 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio/NioBuffers.java (6.08 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio/NioBuffersTest.java (45.93 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio/WordCount.java (3.53 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/AllTests.java (1.52 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/RunFuture.java (1.62 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/client/AClient.java (2.31 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/client/AllTests.java (1.29 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/client/ChannelWriteAttachment.java (1.00 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/client/MultipleConnectAsyncTest.java (9.71 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/client/MultipleConnectFutureTest.java (4.94 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/client/MultipleReadWriteAsyncTest.java (11.92 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/client/MultipleReadWriteFutureTest.java (11.32 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/file/AllTests.java (1.13 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/file/AsynchronousFileChannelBasicMultipleRead.java (7.89 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/file/AsynchronousFileChannelTest.java (7.45 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/server/AServer.java (6.00 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/asyncio/server/EchoServer.java (15.60 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/filesystem/AMemoryFileSystemProvider.java (3.95 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/filesystem/AllTests.java (1.04 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/filesystem/FileSystemsTest.java (4.87 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/filesystem/MemoryFileSystem.java (2.13 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/filesystem/MemoryPath.java (3.24 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/mxbean/AllTests.java (1.10 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/mxbean/ByteBufferMXBeanTest.java (11.64 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/AllTests.java (1.37 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/DirectoryWatcherTest.java (18.22 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/FileAttributesTest.java (3.87 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/FileCopyTest.java (6.65 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/FileTypeDetectorTest.java (1.74 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/PathDeleteDirectoryTest.java (3.03 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/PathDirectoryStreamTest.java (10.31 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/ProbeContentTypeTest.java (4.61 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/ScannerTest.java (2.94 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/path/WalkFileTreeTest.java (6.13 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/AssertionFailedException.java (1.13 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/AsyncTestState.java (1.28 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/ConnectionState.java (10.98 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/ConnectionStateClient.java (1.08 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/DirectoryTools.java (5.92 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/FailedAssertions.java (1.86 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/HangNotifier.java (3.01 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/IncomingMessageParser.java (4.58 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/LocalEthernetInterface.java (7.39 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/Logger.java (3.60 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/Message.java (2.87 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/MessageHeader.java (2.31 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/RandomByteArrays.java (3.72 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/ReceivingMessage.java (1.48 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/ReiserSpotter.java (1.64 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/SendingMessage.java (3.15 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/ServerFactory.java (3.48 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/util/TestCaseWithTempDirectory.java (2.71 KB)
+  📄 openjdk.test.security/src/test.security/net/adoptopenjdk/test/auth/AuthCenter.java (5.36 KB)
+  📄 openjdk.test.security/src/test.security/net/adoptopenjdk/test/auth/Client.java (3.43 KB)
+  📄 openjdk.test.security/src/test.security/net/adoptopenjdk/test/auth/EnumSupportedProtocols.java (1.75 KB)
+  📄 openjdk.test.security/src/test.security/net/adoptopenjdk/test/auth/OAuthTest.java (2.86 KB)
+  📄 openjdk.test.security/src/test.security/net/adoptopenjdk/test/auth/Server.java (4.34 KB)
+  📄 openjdk.test.security/src/test.security/net/adoptopenjdk/test/auth/util/AESUtil.java (1.05 KB)
+  📄 openjdk.test.serialization/src/test.serialization/net/adoptopenjdk/test/serialization/Serialization.java (5.13 KB)
+  📄 openjdk.test.serialization/src/test.serialization/net/adoptopenjdk/test/serialization/SerializationBasicHFS.java (4.45 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/calendars/CalendarTest.java (2.63 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashmap/Hog.java (1.56 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashtable/CustomComparable.java (1.45 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashtable/CustomValue.java (1.35 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashtable/HashClashTest.java (3.35 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashtable/HashtableCreator.java (8.82 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashtable/HashtableFactory.java (1.09 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashtable/HashtablePool.java (1.77 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashtable/HashtableTest.java (9.99 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/lilac/TestArrays.java (1.48 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/solver/SolverTest.java (9.26 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/treemap/TreeMapAPITest.java (22.62 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/treemap/TreeMapFactory.java (3.66 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/treemap/TreeMapKey.java (1.22 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/treemap/TreeMapKeyComparator.java (1.28 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/treemap/TreeMapTest.java (3.57 KB)
+
+
+.xml files (45):
+--------------------------------------------------------------------------------
+  📄 openjdk.build/build.xml (7.07 KB)
+  📄 openjdk.test.classloading/build.xml (7.08 KB)
+  📄 openjdk.test.concurrent/build.xml (3.91 KB)
+  📄 openjdk.test.debugging/build.xml (9.38 KB)
+  📄 openjdk.test.gc/build.xml (3.85 KB)
+  📄 openjdk.test.jck/build.xml (5.99 KB)
+  📄 openjdk.test.jlm/build.xml (3.61 KB)
+  📄 openjdk.test.lambdasAndStreams/build.xml (4.20 KB)
+  📄 openjdk.test.lang/build.xml (3.88 KB)
+  📄 openjdk.test.load/build.xml (3.65 KB)
+  📄 openjdk.test.load/config/inventories/classloading/classloading.xml (0.29 KB)
+  📄 openjdk.test.load/config/inventories/concurrent/concurrent.xml (2.24 KB)
+  📄 openjdk.test.load/config/inventories/concurrent/concurrent_exclude.xml (0.37 KB)
+  📄 openjdk.test.load/config/inventories/gc/directByteBuffer.xml (0.17 KB)
+  📄 openjdk.test.load/config/inventories/gc/forceGC.xml (0.09 KB)
+  📄 openjdk.test.load/config/inventories/lambdasAndStreams/lambda.xml (1.12 KB)
+  📄 openjdk.test.load/config/inventories/lambdasAndStreams/parallelStreams.xml (0.40 KB)
+  📄 openjdk.test.load/config/inventories/lang/lang.xml (3.37 KB)
+  📄 openjdk.test.load/config/inventories/locking/locking.xml (0.23 KB)
+  📄 openjdk.test.load/config/inventories/math/autosimd.xml (3.72 KB)
+  📄 openjdk.test.load/config/inventories/math/bigdecimal.xml (4.21 KB)
+  📄 openjdk.test.load/config/inventories/math/math.xml (0.26 KB)
+  📄 openjdk.test.load/config/inventories/math/mathapitest.xml (0.08 KB)
+  📄 openjdk.test.load/config/inventories/mauve/mauve_all.xml (400.47 KB)
+  📄 openjdk.test.load/config/inventories/mauve/mauve_all_exclude.xml (155.64 KB)
+  📄 openjdk.test.load/config/inventories/mauve/mauve_multiThread.xml (400.54 KB)
+  📄 openjdk.test.load/config/inventories/mauve/mauve_multiThread_exclude.xml (82.65 KB)
+  📄 openjdk.test.load/config/inventories/mix/mini-mix.xml (0.67 KB)
+  📄 openjdk.test.load/config/inventories/mix/mini-mix_exclude.xml (1.56 KB)
+  📄 openjdk.test.load/config/inventories/mix/mix-more-zos.xml (0.52 KB)
+  📄 openjdk.test.load/config/inventories/mix/mix-more.xml (0.59 KB)
+  📄 openjdk.test.load/config/inventories/modularityClassloading/classloading.xml (0.10 KB)
+  📄 openjdk.test.load/config/inventories/nio/nio.xml (1.33 KB)
+  📄 openjdk.test.load/config/inventories/serialization/serialization.xml (0.22 KB)
+  📄 openjdk.test.load/config/inventories/util/util.xml (0.44 KB)
+  📄 openjdk.test.load/config/inventories/util/util_exclude.xml (0.16 KB)
+  📄 openjdk.test.locking/build.xml (3.99 KB)
+  📄 openjdk.test.math/build.xml (3.94 KB)
+  📄 openjdk.test.mauve/build.xml (26.61 KB)
+  📄 openjdk.test.modularity/build.xml (10.65 KB)
+  📄 openjdk.test.modularity/stfclasspath.xml (1.18 KB)
+  📄 openjdk.test.nio/build.xml (6.97 KB)
+  📄 openjdk.test.security/build.xml (4.01 KB)
+  📄 openjdk.test.serialization/build.xml (4.10 KB)
+  📄 openjdk.test.util/build.xml (3.92 KB)
+
+
+.jti files (26):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.jck/config/jck10/compiler.jti (4.98 KB)
+  📄 openjdk.test.jck/config/jck10/devtools.jti (4.39 KB)
+  📄 openjdk.test.jck/config/jck10/runtime.jti (10.01 KB)
+  📄 openjdk.test.jck/config/jck11/compiler.jti (4.91 KB)
+  📄 openjdk.test.jck/config/jck11/devtools.jti (4.32 KB)
+  📄 openjdk.test.jck/config/jck11/runtime.jti (9.84 KB)
+  📄 openjdk.test.jck/config/jck12/compiler.jti (5.11 KB)
+  📄 openjdk.test.jck/config/jck12/devtools.jti (4.32 KB)
+  📄 openjdk.test.jck/config/jck12/runtime.jti (9.95 KB)
+  📄 openjdk.test.jck/config/jck13/compiler.jti (5.11 KB)
+  📄 openjdk.test.jck/config/jck13/devtools.jti (4.32 KB)
+  📄 openjdk.test.jck/config/jck13/runtime.jti (9.95 KB)
+  📄 openjdk.test.jck/config/jck14/compiler.jti (5.11 KB)
+  📄 openjdk.test.jck/config/jck14/runtime.jti (9.95 KB)
+  📄 openjdk.test.jck/config/jck15/compiler.jti (5.11 KB)
+  📄 openjdk.test.jck/config/jck15/runtime.jti (9.95 KB)
+  📄 openjdk.test.jck/config/jck16/compiler.jti (5.11 KB)
+  📄 openjdk.test.jck/config/jck16/runtime.jti (9.95 KB)
+  📄 openjdk.test.jck/config/jck17/compiler.jti (5.11 KB)
+  📄 openjdk.test.jck/config/jck17/runtime.jti (9.95 KB)
+  📄 openjdk.test.jck/config/jck8c/compiler.jti (9.62 KB)
+  📄 openjdk.test.jck/config/jck8c/devtools.jti (9.23 KB)
+  📄 openjdk.test.jck/config/jck8c/runtime.jti (11.48 KB)
+  📄 openjdk.test.jck/config/jck9/compiler.jti (4.97 KB)
+  📄 openjdk.test.jck/config/jck9/devtools.jti (4.37 KB)
+  📄 openjdk.test.jck/config/jck9/runtime.jti (10.00 KB)
+
+
+.md files (19):
+--------------------------------------------------------------------------------
+  📄 README.md (2.92 KB)
+  📄 openjdk.build/docs/build.md (12.62 KB)
+  📄 openjdk.test.classloading/README.md (2.79 KB)
+  📄 openjdk.test.debugging/README.md (0.91 KB)
+  📄 openjdk.test.debugging/docs/HCR_README.md (6.34 KB)
+  📄 openjdk.test.debugging/docs/JDI_README.md (14.15 KB)
+  📄 openjdk.test.gc/docs/README.md (2.02 KB)
+  📄 openjdk.test.jck/docs/README.md (15.25 KB)
+  📄 openjdk.test.jlm/doc/jlm.md (9.60 KB)
+  📄 openjdk.test.lambdasAndStreams/doc/README.md (3.57 KB)
+  📄 openjdk.test.lang/README.md (2.60 KB)
+  📄 openjdk.test.locking/docs/README.md (0.79 KB)
+  📄 openjdk.test.math/README.md (1.80 KB)
+  📄 openjdk.test.mauve/docs/README.md (3.92 KB)
+  📄 openjdk.test.modularity/doc/test.modularity.md (9.33 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio/NioTestsDoc.md (8.63 KB)
+  📄 openjdk.test.security/doc/README.md (2.25 KB)
+  📄 openjdk.test.serialization/README.md (0.87 KB)
+  📄 openjdk.test.util/README.md (1.95 KB)
+
+
+.project files (18):
+--------------------------------------------------------------------------------
+  📄 openjdk.build/.project (0.20 KB)
+  📄 openjdk.test.classloading/.project (0.38 KB)
+  📄 openjdk.test.concurrent/.project (0.37 KB)
+  📄 openjdk.test.debugging/.project (0.37 KB)
+  📄 openjdk.test.gc/.project (0.37 KB)
+  📄 openjdk.test.jck/.project (0.37 KB)
+  📄 openjdk.test.jlm/.project (0.37 KB)
+  📄 openjdk.test.lambdasAndStreams/.project (0.38 KB)
+  📄 openjdk.test.lang/.project (0.37 KB)
+  📄 openjdk.test.load/.project (0.37 KB)
+  📄 openjdk.test.locking/.project (0.37 KB)
+  📄 openjdk.test.math/.project (0.37 KB)
+  📄 openjdk.test.mauve/.project (0.37 KB)
+  📄 openjdk.test.modularity/.project (0.37 KB)
+  📄 openjdk.test.nio/.project (0.37 KB)
+  📄 openjdk.test.security/.project (0.37 KB)
+  📄 openjdk.test.serialization/.project (0.38 KB)
+  📄 openjdk.test.util/.project (0.37 KB)
+
+
+.classpath files (17):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.classloading/.classpath (0.79 KB)
+  📄 openjdk.test.concurrent/.classpath (0.31 KB)
+  📄 openjdk.test.debugging/.classpath (0.65 KB)
+  📄 openjdk.test.gc/.classpath (0.37 KB)
+  📄 openjdk.test.jck/.classpath (0.52 KB)
+  📄 openjdk.test.jlm/.classpath (0.37 KB)
+  📄 openjdk.test.lambdasAndStreams/.classpath (0.46 KB)
+  📄 openjdk.test.lang/.classpath (0.37 KB)
+  📄 openjdk.test.load/.classpath (0.53 KB)
+  📄 openjdk.test.locking/.classpath (0.23 KB)
+  📄 openjdk.test.math/.classpath (0.30 KB)
+  📄 openjdk.test.mauve/.classpath (0.25 KB)
+  📄 openjdk.test.modularity/.classpath (0.22 KB)
+  📄 openjdk.test.nio/.classpath (0.37 KB)
+  📄 openjdk.test.security/.classpath (0.38 KB)
+  📄 openjdk.test.serialization/.classpath (0.31 KB)
+  📄 openjdk.test.util/.classpath (0.30 KB)
+
+
+.prop files (16):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/all_simple.prop (0.99 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/basic_attach.prop (0.49 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/basic_launch.prop (0.44 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/basic_listen.prop (0.54 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/both_simple.prop (0.83 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/many_objects.prop (0.36 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/many_threads.prop (0.69 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/outOfMem.prop (0.31 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/simple_att_lau.prop (0.59 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/simple_lau_att.prop (0.59 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/simple_lau_lis.prop (0.58 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/simple_launch.prop (0.77 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/simple_lis_lau.prop (0.58 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/single_attach.prop (0.32 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/single_launch.prop (0.30 KB)
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/jdi/properties/single_listen.prop (0.35 KB)
+
+
+.prefs files (8):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.concurrent/.settings/org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 openjdk.test.debugging/.settings/org.eclipse.jdt.core.prefs (6.25 KB)
+  📄 openjdk.test.gc/.settings/org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 openjdk.test.jlm/.settings/org.eclipse.jdt.core.prefs (0.64 KB)
+  📄 openjdk.test.load/.settings/org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 openjdk.test.locking/.settings/org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 openjdk.test.modularity/.settings/org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 openjdk.test.nio/.settings/org.eclipse.jdt.core.prefs (0.57 KB)
+
+
+.txt files (7):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.debugging/src/test.debugging/net/adoptopenjdk/test/hcrAgent/agent/example_manifest.txt (0.29 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/LamFiles/a.txt (0.02 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/LamFiles/b.txt (0.01 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/LamFiles/c.txt (0.00 KB)
+  📄 openjdk.test.lambdasAndStreams/src/test.lambda/net/adoptopenjdk/test/lambda/LamFiles/fold1/1.txt (0.01 KB)
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio/wordcount.txt (0.48 KB)
+  📄 openjdk.test.util/src/test.util/net/adoptopenjdk/test/util/hashtable/java_payload_strings.txt (283.17 KB)
+
+
+.properties files (5):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.jck/config/default/jcktest.properties (0.94 KB)
+  📄 openjdk.test.modularity/src/common-mods/com.discreet/adoptopenjdk/test/modularity/exported/resource.properties (0.00 KB)
+  📄 openjdk.test.modularity/src/common-override-new/com.hello/adoptopenjdk/test/modularity/newpkg/resource.properties (0.00 KB)
+  📄 openjdk.test.modularity/src/common-override/com.discreet/adoptopenjdk/test/modularity/exported/resource.properties (0.00 KB)
+  📄 openjdk.test.modularity/src/tests/com.test/net/adoptopenjdk/test/modularity/junit/resource.properties (0.00 KB)
+
+
+.gitignore files (2):
+--------------------------------------------------------------------------------
+  📄 .gitignore (0.00 KB)
+  📄 openjdk.test.classloading/.gitignore (0.02 KB)
+
+
+.[no extension] files (2):
+--------------------------------------------------------------------------------
+  📄 LICENSE (11.09 KB)
+  📄 NOTICE (0.06 KB)
+
+
+.display files (2):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.modularity/src/common/displayServiceImpl3/META-INF/services/adoptopenjdk.test.modularity.display.Display (0.06 KB)
+  📄 openjdk.test.modularity/src/common/displayServiceImpl4/META-INF/services/adoptopenjdk.test.modularity.display.Display (0.06 KB)
+
+
+.gitattributes files (1):
+--------------------------------------------------------------------------------
+  📄 .gitattributes (0.59 KB)
+
+
+.zos files (1):
+--------------------------------------------------------------------------------
+  📄 .gitattributes.zos (1.57 KB)
+
+
+.build/makefile files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.build/makefile (34.55 KB)
+
+
+.bat files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.build/scripts/aqa-systemtest-clone-make.bat (1.43 KB)
+
+
+.sh files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.build/scripts/aqa-systemtest-clone-make.sh (1.63 KB)
+
+
+.dict files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.classloading/src/test.classloading/net/adoptopenjdk/test/classloading/class.dict (28.37 KB)
+
+
+.conf files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.jck/config/default/krb5.conf (0.99 KB)
+
+
+.mk files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.jck/include/test_targets.mk (81.83 KB)
+
+
+.jck/src/native/makefile files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.jck/src/native/makefile (11.86 KB)
+
+
+.password files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/jmxremote.password (2.79 KB)
+
+
+.jlm/net/adoptopenjdk/test/jlm/testkeys files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.jlm/src/test.jlm/net/adoptopenjdk/test/jlm/testkeys (1.18 KB)
+
+
+.nio/net/adoptopenjdk/test/nio2/perl/filesystems/memoryfilesystemproviderimpltemplate files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/perl/filesystems/MemoryFileSystemProviderImplTemplate (0.21 KB)
+
+
+.pl files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.nio/src/test.nio/net/adoptopenjdk/test/nio2/perl/filesystems/generateProviders.pl (2.39 KB)
+
+
+.puml files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.security/doc/images/Oauth.puml (0.35 KB)
+
+
+.png files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.security/doc/images/diagram-18410782128617490429.png (66.91 KB)
+
+
+.security/net/adoptopenjdk/test/auth/testkeys files (1):
+--------------------------------------------------------------------------------
+  📄 openjdk.test.security/src/test.security/net/adoptopenjdk/test/auth/testkeys (4.12 KB)
+
+================================================================================
+HIERARCHICAL TREE VIEW
+================================================================================
+
+adoptium/aqa-systemtest/
+📄 .gitattributes (0.59 KB)
+📄 .gitattributes.zos (1.57 KB)
+📄 .gitignore (0.00 KB)
+📄 LICENSE (11.09 KB)
+📄 NOTICE (0.06 KB)
+📄 README.md (2.92 KB)
+  📁 openjdk.build/
+  📄 .project (0.20 KB)
+  📄 build.xml (7.07 KB)
+    📁 docs/
+    📄 build.md (12.62 KB)
+  📄 makefile (34.55 KB)
+    📁 scripts/
+    📄 aqa-systemtest-clone-make.bat (1.43 KB)
+    📄 aqa-systemtest-clone-make.sh (1.63 KB)
+  📁 openjdk.test.classloading/
+  📄 .classpath (0.79 KB)
+  📄 .gitignore (0.02 KB)
+  📄 .project (0.38 KB)
+  📄 README.md (2.79 KB)
+  📄 build.xml (7.08 KB)
+    📁 src/
+      📁 test.classloading/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 classloading/
+              📄 ClassHog.java (3.60 KB)
+              📄 ClassMapHog.java (8.87 KB)
+              📄 class.dict (28.37 KB)
+                📁 deadlock/
+                📄 DeadlockTest.java (6.00 KB)
+                📄 MyClassLoader1.java (1.55 KB)
+                📄 MyClassLoader2.java (1.65 KB)
+        📁 notonclasspath/
+          📁 url1/
+            📁 net/
+              📁 adoptopenjdk/
+                📁 test/
+                  📁 classloading/
+                    📁 deadlock/
+                      📁 package1/
+                      📄 CL1_A.java (0.86 KB)
+                      📄 CL1_D.java (0.78 KB)
+          📁 url2/
+            📁 net/
+              📁 adoptopenjdk/
+                📁 test/
+                  📁 classloading/
+                    📁 deadlock/
+                      📁 package2/
+                      📄 CL2_B.java (0.78 KB)
+                      📄 CL2_C.java (0.86 KB)
+  📁 openjdk.test.concurrent/
+  📄 .classpath (0.31 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 build.xml (3.91 KB)
+    📁 src/
+      📁 test.concurrent/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 concurrent/
+              📄 ArrayBlockingQueueTest.java (16.03 KB)
+              📄 ConcurrentHashMapTest.java (36.76 KB)
+              📄 ConcurrentLinkedQueueTest.java (25.07 KB)
+              📄 ConcurrentSkipListMapTest.java (34.39 KB)
+              📄 ConcurrentSkipListSetTest.java (29.14 KB)
+              📄 ConcurrentTest.java (3.60 KB)
+              📄 CopyOnWriteArrayListTest.java (29.23 KB)
+              📄 CopyOnWriteArraySetTest.java (22.20 KB)
+                📁 atomic/
+                📄 AtomicBooleanTest.java (24.71 KB)
+                📄 AtomicIntegerArrayTest.java (37.03 KB)
+                📄 AtomicIntegerFieldUpdaterTest.java (33.53 KB)
+                📄 AtomicIntegerTest.java (24.97 KB)
+                📄 AtomicLongArrayTest.java (35.69 KB)
+                📄 AtomicLongFieldUpdaterTest.java (33.22 KB)
+                📄 AtomicLongTest.java (23.62 KB)
+                📄 AtomicMarkableReferenceTest.java (29.51 KB)
+                📄 AtomicReferenceArrayTest.java (28.34 KB)
+                📄 AtomicReferenceFieldUpdaterTest.java (34.64 KB)
+                📄 AtomicReferenceTest.java (22.91 KB)
+                📄 AtomicStampedReferenceTest.java (28.40 KB)
+                📄 AtomicTest.java (2.01 KB)
+                📁 jsr166y/
+                📄 ForkJoinPoolTest.java (13.26 KB)
+                📄 ForkJoinPoolTestAPI.java (11.03 KB)
+                📄 ForkJoinPoolTestStress.java (7.38 KB)
+                📄 ForkJoinTaskTest.java (12.75 KB)
+                📄 LinkedTransferQueueTest.java (32.94 KB)
+                📄 PhaserTest.java (29.37 KB)
+                📄 ThreadLocalRandomTest.java (13.26 KB)
+                📁 locks/
+                📄 ReentrantLockTest.java (18.01 KB)
+                📄 ReentrantReadWriteLockTest.java (36.27 KB)
+                📁 support/
+                📄 AtomicTestObject.java (2.50 KB)
+                📄 GenericTestObject.java (3.11 KB)
+                  📁 jsr166y/
+                  📄 ArrayDoubler.java (1.82 KB)
+                  📄 ArrayMaximumTask.java (3.06 KB)
+                  📄 ArraySummationTask.java (3.38 KB)
+                  📄 WaiterTask.java (2.05 KB)
+  📁 openjdk.test.debugging/
+  📄 .classpath (0.65 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (6.25 KB)
+  📄 README.md (0.91 KB)
+  📄 build.xml (9.38 KB)
+    📁 docs/
+    📄 HCR_README.md (6.34 KB)
+    📄 JDI_README.md (14.15 KB)
+    📁 src/
+      📁 test.debugging/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+              📁 hcrAgent/
+              📄 HCRLateAttachWorkload.java (5.29 KB)
+              📁 jdi/
+              📄 JdiTest.java (8.80 KB)
+            📁 test/
+              📁 hcrAgent/
+                📁 agent/
+                📄 AgentLogger.java (2.15 KB)
+                📄 Attacher.java (2.92 KB)
+                📄 StringModifierAgent.java (8.49 KB)
+                📄 TransformerMakerThread.java (4.08 KB)
+                📄 example_manifest.txt (0.29 KB)
+              📁 jdi/
+                📁 debugger/
+                📄 Connectors.java (25.24 KB)
+                📄 EventT.java (17.68 KB)
+                📁 properties/
+                📄 all_simple.prop (0.99 KB)
+                📄 basic_attach.prop (0.49 KB)
+                📄 basic_launch.prop (0.44 KB)
+                📄 basic_listen.prop (0.54 KB)
+                📄 both_simple.prop (0.83 KB)
+                📄 many_objects.prop (0.36 KB)
+                📄 many_threads.prop (0.69 KB)
+                📄 outOfMem.prop (0.31 KB)
+                📄 simple_att_lau.prop (0.59 KB)
+                📄 simple_lau_att.prop (0.59 KB)
+                📄 simple_lau_lis.prop (0.58 KB)
+                📄 simple_launch.prop (0.77 KB)
+                📄 simple_lis_lau.prop (0.58 KB)
+                📄 single_attach.prop (0.32 KB)
+                📄 single_launch.prop (0.30 KB)
+                📄 single_listen.prop (0.35 KB)
+                📁 targetvm/
+                📄 HelloWorld.java (1.33 KB)
+                📄 Simple.java (1.59 KB)
+                📁 util/
+                📄 GenerateObjects.java (2.38 KB)
+                📄 ObjectGenerator.java (2.30 KB)
+                📄 RasTool.java (2.50 KB)
+    📁 src_150/
+      📁 test.debugging/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 hcrAgent/
+                📁 agent/
+                📄 MyClassVisitor.java (3.67 KB)
+                📄 MyMethodVisitor.java (4.60 KB)
+                📄 StringTransformer.java (4.05 KB)
+    📁 src_80_110/
+      📁 test.debugging/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 hcrAgent/
+                📁 agent/
+                📄 MyClassVisitor.java (3.63 KB)
+                📄 MyMethodVisitor.java (4.57 KB)
+                📄 StringTransformer.java (4.00 KB)
+  📁 openjdk.test.gc/
+  📄 .classpath (0.37 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 build.xml (3.85 KB)
+    📁 docs/
+    📄 README.md (2.02 KB)
+    📁 src/
+      📁 test.gc/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 gc/
+                📁 annotations/
+                📄 ForceGC.java (3.75 KB)
+                📄 OneMB.java (0.84 KB)
+                📁 directbytebuffer/
+                📄 DirectMemoryTest.java (1.83 KB)
+                📁 heaphog/
+                📄 ObjectTree.java (4.40 KB)
+                📄 ObjectTree2.java (5.78 KB)
+  📁 openjdk.test.jck/
+  📄 .classpath (0.52 KB)
+  📄 .project (0.37 KB)
+  📄 build.xml (5.99 KB)
+    📁 config/
+      📁 default/
+      📄 jcktest.properties (0.94 KB)
+      📄 krb5.conf (0.99 KB)
+      📁 jck10/
+      📄 compiler.jti (4.98 KB)
+      📄 devtools.jti (4.39 KB)
+      📄 runtime.jti (10.01 KB)
+      📁 jck11/
+      📄 compiler.jti (4.91 KB)
+      📄 devtools.jti (4.32 KB)
+      📄 runtime.jti (9.84 KB)
+      📁 jck12/
+      📄 compiler.jti (5.11 KB)
+      📄 devtools.jti (4.32 KB)
+      📄 runtime.jti (9.95 KB)
+      📁 jck13/
+      📄 compiler.jti (5.11 KB)
+      📄 devtools.jti (4.32 KB)
+      📄 runtime.jti (9.95 KB)
+      📁 jck14/
+      📄 compiler.jti (5.11 KB)
+      📄 runtime.jti (9.95 KB)
+      📁 jck15/
+      📄 compiler.jti (5.11 KB)
+      📄 runtime.jti (9.95 KB)
+      📁 jck16/
+      📄 compiler.jti (5.11 KB)
+      📄 runtime.jti (9.95 KB)
+      📁 jck17/
+      📄 compiler.jti (5.11 KB)
+      📄 runtime.jti (9.95 KB)
+      📁 jck8c/
+      📄 compiler.jti (9.62 KB)
+      📄 devtools.jti (9.23 KB)
+      📄 runtime.jti (11.48 KB)
+      📁 jck9/
+      📄 compiler.jti (4.97 KB)
+      📄 devtools.jti (4.37 KB)
+      📄 runtime.jti (10.00 KB)
+    📁 docs/
+    📄 README.md (15.25 KB)
+    📁 include/
+    📄 test_targets.mk (81.83 KB)
+    📁 src/
+      📁 native/
+      📄 makefile (11.86 KB)
+      📁 test.jck/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+            📄 Jck.java (50.30 KB)
+            📄 SummaryGenerator.java (3.26 KB)
+  📁 openjdk.test.jlm/
+  📄 .classpath (0.37 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.64 KB)
+  📄 build.xml (3.61 KB)
+    📁 doc/
+    📄 jlm.md (9.60 KB)
+    📁 src/
+      📁 test.jlm/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 jlm/
+              📄 TestJlmGCMXBeanNotifier.java (6.07 KB)
+              📄 TestJlmLocal.java (2.38 KB)
+              📄 TestJlmRemoteClassAuth.java (9.19 KB)
+              📄 TestJlmRemoteClassNoAuth.java (6.98 KB)
+              📄 TestJlmRemoteMemoryAuth.java (9.19 KB)
+              📄 TestJlmRemoteMemoryNoAuth.java (7.07 KB)
+              📄 TestJlmRemoteNotifierProxyAuth.java (6.65 KB)
+              📄 TestJlmRemoteThreadAuth.java (9.21 KB)
+              📄 TestJlmRemoteThreadNoAuth.java (6.99 KB)
+              📄 jmxremote.password (2.79 KB)
+                📁 local/
+                📄 VMLogger.java (29.05 KB)
+                📁 locks/
+                📄 ConditionLock.java (2.92 KB)
+                📄 DeadLock.java (4.78 KB)
+                📄 DeepLock.java (2.41 KB)
+                📄 MonitorDeadLock.java (4.09 KB)
+                📁 remote/
+                📄 ClassProfiler.java (13.31 KB)
+                📄 GCMXBeanTest.java (4.35 KB)
+                📄 GarbageCollectionNotificationTest.java (11.80 KB)
+                📄 MemoryNotifier.java (6.73 KB)
+                📄 MemoryProfiler.java (13.32 KB)
+                📄 ServerConnector.java (11.39 KB)
+                📄 TestArgs.java (12.99 KB)
+                📄 ThreadMonitor.java (8.64 KB)
+                📄 ThreadProfiler.java (10.81 KB)
+                📁 resources/
+                📄 ClassData.java (11.57 KB)
+                📄 EnvironmentData.java (12.72 KB)
+                📄 ExpectedMBeanInfo.java (10.79 KB)
+                📄 LockType.java (0.90 KB)
+                📄 MemoryData.java (20.80 KB)
+                📄 MemoryListener.java (10.75 KB)
+                📄 Message.java (5.35 KB)
+                📄 Report.java (11.38 KB)
+                📄 ThreadData.java (53.06 KB)
+                📄 VMData.java (4.52 KB)
+              📄 testkeys (1.18 KB)
+  📁 openjdk.test.lambdasAndStreams/
+  📄 .classpath (0.46 KB)
+  📄 .project (0.38 KB)
+  📄 build.xml (4.20 KB)
+    📁 doc/
+    📄 README.md (3.57 KB)
+    📁 src/
+      📁 test.lambda/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 lambda/
+              📄 ClassLibraryLambdaTests.java (22.56 KB)
+                📁 LamFiles/
+                📄 a.txt (0.02 KB)
+                📄 b.txt (0.01 KB)
+                📄 c.txt (0.00 KB)
+                  📁 fold1/
+                  📄 1.txt (0.01 KB)
+              📄 TestLambdaCapture.java (7.06 KB)
+              📄 TestLambdaContexts.java (7.40 KB)
+              📄 TestLambdaDefaultsAndStatics.java (9.36 KB)
+              📄 TestLambdaInferredTyping.java (5.67 KB)
+              📄 TestLambdaJavaInterfaces.java (10.64 KB)
+              📄 TestLambdaLexicalScoping.java (3.00 KB)
+              📄 TestLambdaMethodReferences.java (11.35 KB)
+              📄 TestLambdaMultithreaded.java (13.17 KB)
+              📄 TestLambdaNested.java (14.84 KB)
+              📄 TestLambdaRecursive.java (3.56 KB)
+              📄 TestLambdaSerialization.java (15.83 KB)
+              📄 TestLambdasUserDefinedInterface.java (18.08 KB)
+                📁 support/
+                📄 Animal.java (0.96 KB)
+                📄 CountryData.java (2.14 KB)
+                📄 Motorbike.java (1.44 KB)
+                📄 Person.java (3.33 KB)
+              📁 streams/
+              📄 TestParallelStreamOperations.java (12.28 KB)
+              📄 TestStreamOperations.java (16.83 KB)
+                📁 support/
+                📄 GenerateRandomText.java (2.99 KB)
+                📄 Harbour.java (2.20 KB)
+                📄 KeelBoat.java (1.82 KB)
+                📄 Line.java (1.88 KB)
+  📁 openjdk.test.lang/
+  📄 .classpath (0.37 KB)
+  📄 .project (0.37 KB)
+  📄 README.md (2.60 KB)
+  📄 build.xml (3.88 KB)
+    📁 src/
+      📁 test.lang/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 lang/
+                📁 annotations/
+                📄 A0.java (1.02 KB)
+                📄 A1.java (1.07 KB)
+                📄 A2.java (0.97 KB)
+                📄 A3.java (0.96 KB)
+                📄 A4.java (0.88 KB)
+                📄 A5.java (1.20 KB)
+                📄 A6.java (1.10 KB)
+                📄 A7.java (1.18 KB)
+                📄 A_Meta.java (1.31 KB)
+                📄 AnnotatedElements.java (1.94 KB)
+                📄 AnnotationClassTests.java (8.86 KB)
+                📄 AnnotationConstructorTests.java (4.98 KB)
+                📄 AnnotationEnumTests.java (2.76 KB)
+                📄 AnnotationFieldTests.java (7.18 KB)
+                📄 AnnotationMethodTests.java (5.95 KB)
+                📄 AnnotationPackageTests.java (2.82 KB)
+                📄 AnnotationTests.java (1.83 KB)
+                📄 package-info.java (0.89 KB)
+                📁 invoke/
+                📄 AsTypeTest.java (171.04 KB)
+                📄 BasicStaticTest.java (4.39 KB)
+                📄 BasicTest.java (9.19 KB)
+                📄 BasicTest2.java (24.91 KB)
+                📄 StaticAsTypeTestExplicit.java (159.46 KB)
+                📄 StaticAsTypeTestImplicit.java (159.47 KB)
+                📁 java7/
+                  📁 ProjectCoin/
+                  📄 CoinTest.java (1.92 KB)
+                  📄 MultiCatchPreciseRethrow.java (5.66 KB)
+                  📄 RunAllTests.java (1.06 KB)
+                  📄 SwitchOnString.java (2.24 KB)
+                  📄 TryWithResources.java (7.77 KB)
+  📁 openjdk.test.load/
+  📄 .classpath (0.53 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 build.xml (3.65 KB)
+    📁 config/
+      📁 inventories/
+        📁 classloading/
+        📄 classloading.xml (0.29 KB)
+        📁 concurrent/
+        📄 concurrent.xml (2.24 KB)
+        📄 concurrent_exclude.xml (0.37 KB)
+        📁 gc/
+        📄 directByteBuffer.xml (0.17 KB)
+        📄 forceGC.xml (0.09 KB)
+        📁 lambdasAndStreams/
+        📄 lambda.xml (1.12 KB)
+        📄 parallelStreams.xml (0.40 KB)
+        📁 lang/
+        📄 lang.xml (3.37 KB)
+        📁 locking/
+        📄 locking.xml (0.23 KB)
+        📁 math/
+        📄 autosimd.xml (3.72 KB)
+        📄 bigdecimal.xml (4.21 KB)
+        📄 math.xml (0.26 KB)
+        📄 mathapitest.xml (0.08 KB)
+        📁 mauve/
+        📄 mauve_all.xml (400.47 KB)
+        📄 mauve_all_exclude.xml (155.64 KB)
+        📄 mauve_multiThread.xml (400.54 KB)
+        📄 mauve_multiThread_exclude.xml (82.65 KB)
+        📁 mix/
+        📄 mini-mix.xml (0.67 KB)
+        📄 mini-mix_exclude.xml (1.56 KB)
+        📄 mix-more-zos.xml (0.52 KB)
+        📄 mix-more.xml (0.59 KB)
+        📁 modularityClassloading/
+        📄 classloading.xml (0.10 KB)
+        📁 nio/
+        📄 nio.xml (1.33 KB)
+        📁 serialization/
+        📄 serialization.xml (0.22 KB)
+        📁 util/
+        📄 util.xml (0.44 KB)
+        📄 util_exclude.xml (0.16 KB)
+    📁 src/
+      📁 test.load/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+            📄 ClassloadingLoadTest.java (4.56 KB)
+            📄 ConcurrentLoadTest.java (2.86 KB)
+            📄 DirectByteBufferLoadTest.java (3.46 KB)
+            📄 LambdaLoadTest.java (2.93 KB)
+            📄 LangLoadTest.java (2.74 KB)
+            📄 LockingLoadTest.java (2.98 KB)
+            📄 MathLoadTest.java (5.45 KB)
+            📄 MauveMultiThrdLoad.java (3.86 KB)
+            📄 MauveMultiThrdLoadTrc.java (4.06 KB)
+            📄 MauveSingleInvocLoad.java (3.40 KB)
+            📄 MauveSingleThrdLoad.java (3.37 KB)
+            📄 MauveSingleThrdLoadTrc.java (3.52 KB)
+            📄 MixedLoadTest.java (3.77 KB)
+            📄 NioLoadTest.java (4.00 KB)
+            📄 ParallelStreamsLoadTest.java (3.00 KB)
+            📄 SerializationLoadTest.java (2.88 KB)
+            📄 UtilLoadTest.java (2.81 KB)
+  📁 openjdk.test.locking/
+  📄 .classpath (0.23 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 build.xml (3.99 KB)
+    📁 docs/
+    📄 README.md (0.79 KB)
+    📁 src/
+      📁 test.locking/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 locking/
+              📄 Locker.java (2.80 KB)
+              📄 ReaderThread.java (1.29 KB)
+              📄 WriterThread.java (1.39 KB)
+  📁 openjdk.test.math/
+  📄 .classpath (0.30 KB)
+  📄 .project (0.37 KB)
+  📄 README.md (1.80 KB)
+  📄 build.xml (3.94 KB)
+    📁 src/
+      📁 test.math/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 autosimd/
+              📄 AutoSIMDTestDouble.java (22.80 KB)
+              📄 AutoSIMDTestFloat.java (22.51 KB)
+              📄 AutoSIMDTestInteger.java (21.99 KB)
+              📄 AutoSIMDTestLong.java (22.16 KB)
+              📁 bigdecimal/
+              📄 JavaSpecVersionChecker.java (0.36 KB)
+              📄 TestSuite000.java (233.60 KB)
+              📄 TestSuite001.java (256.67 KB)
+              📄 TestSuite002.java (265.24 KB)
+              📄 TestSuite003.java (284.12 KB)
+              📄 TestSuite004.java (264.67 KB)
+              📄 TestSuite005.java (245.84 KB)
+              📄 TestSuite006.java (233.70 KB)
+              📄 TestSuite007.java (249.20 KB)
+              📄 TestSuite008.java (244.25 KB)
+              📄 TestSuite009.java (243.72 KB)
+              📄 TestSuite010.java (279.61 KB)
+              📄 TestSuite011.java (295.27 KB)
+              📄 TestSuite012.java (258.84 KB)
+              📄 TestSuite013.java (284.77 KB)
+              📄 TestSuite014.java (246.55 KB)
+              📄 TestSuite015.java (287.90 KB)
+              📄 TestSuite016.java (284.38 KB)
+              📄 TestSuite017.java (243.52 KB)
+              📄 TestSuite018.java (269.24 KB)
+              📄 TestSuite019.java (245.48 KB)
+              📄 TestSuite020.java (238.53 KB)
+              📄 TestSuite021.java (363.00 KB)
+              📄 TestSuite022.java (236.60 KB)
+              📄 TestSuite023.java (290.75 KB)
+              📄 TestSuite024.java (263.62 KB)
+              📄 TestSuite025.java (231.95 KB)
+              📄 TestSuite026.java (262.94 KB)
+              📄 TestSuite027.java (259.42 KB)
+              📄 TestSuite028.java (281.59 KB)
+              📄 TestSuite029.java (255.04 KB)
+              📄 TestSuite030.java (256.18 KB)
+              📄 TestSuite031.java (305.26 KB)
+              📄 TestSuite032.java (239.15 KB)
+              📄 TestSuite033.java (242.69 KB)
+              📄 TestSuite034.java (309.63 KB)
+              📄 TestSuite035.java (271.72 KB)
+              📄 TestSuite036.java (241.55 KB)
+              📄 TestSuite037.java (300.04 KB)
+              📄 TestSuite038.java (309.35 KB)
+              📄 TestSuite039.java (249.39 KB)
+              📄 TestSuite040.java (317.84 KB)
+              📄 TestSuite041.java (271.15 KB)
+              📄 TestSuite042.java (288.09 KB)
+              📄 TestSuite043.java (286.29 KB)
+              📄 TestSuite044.java (256.20 KB)
+              📄 TestSuite045.java (244.51 KB)
+              📄 TestSuite046.java (241.41 KB)
+              📄 TestSuite047.java (380.70 KB)
+              📄 TestSuite048.java (232.76 KB)
+              📄 TestSuite049.java (297.53 KB)
+              📄 TestSuite050.java (293.89 KB)
+              📄 TestSuite051.java (316.03 KB)
+              📄 TestSuite052.java (299.77 KB)
+              📄 TestSuite053.java (253.80 KB)
+              📄 TestSuite054.java (285.05 KB)
+              📄 TestSuite055.java (261.73 KB)
+              📄 TestSuite056.java (313.50 KB)
+              📄 TestSuite057.java (239.35 KB)
+              📄 TestSuite058.java (267.85 KB)
+              📄 TestSuite059.java (266.09 KB)
+              📄 TestSuite060.java (271.11 KB)
+              📄 TestSuite061.java (264.23 KB)
+              📄 TestSuite062.java (237.89 KB)
+              📄 TestSuite063.java (22.62 KB)
+              📁 math/
+              📄 MathAPITest.java (482.06 KB)
+              📄 MathAPITestGenerator.java (123.88 KB)
+  📁 openjdk.test.mauve/
+  📄 .classpath (0.25 KB)
+  📄 .project (0.37 KB)
+  📄 build.xml (26.61 KB)
+    📁 docs/
+    📄 README.md (3.92 KB)
+  📁 openjdk.test.modularity/
+  📄 .classpath (0.22 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 build.xml (10.65 KB)
+    📁 doc/
+    📄 test.modularity.md (9.33 KB)
+    📁 src/
+      📁 com.stf/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+              📄 AutoModTest.java (9.36 KB)
+              📄 CLLoadTest.java (4.47 KB)
+              📄 CLStressCRI.java (5.40 KB)
+              📄 CLStressLayers.java (3.54 KB)
+              📄 CLTest.java (4.49 KB)
+              📄 CLTestImage.java (5.44 KB)
+              📄 CpMpJlinkTest.java (5.67 KB)
+              📄 CpMpModJar.java (4.35 KB)
+              📄 CpMpModJar2.java (3.29 KB)
+              📄 CpMpModJar3.java (3.45 KB)
+              📄 CpMpTest.java (4.04 KB)
+              📄 CpMpTest2.java (3.30 KB)
+              📄 CpMpTest3.java (3.45 KB)
+              📄 CreateMultiboxJlinkImage.java (6.44 KB)
+              📄 ExplMod.java (14.74 KB)
+              📄 InternalAPIs.java (5.52 KB)
+              📄 JlinkPluginTest.java (15.73 KB)
+              📄 JlinkTest.java (15.70 KB)
+              📄 LayersTest.java (4.90 KB)
+              📄 PatModImgTest.java (14.74 KB)
+              📄 PatModTest.java (15.62 KB)
+              📄 SLTest.java (6.59 KB)
+              📄 TestUtil.java (1.80 KB)
+              📄 UpgModPathTest.java (17.63 KB)
+      📁 common-mods/
+        📁 com.discreet/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 exported/
+                📄 ExportedClass.java (0.93 KB)
+                📄 resource.properties (0.00 KB)
+                📁 hidden/
+                📄 Secret.java (0.81 KB)
+        📄 module-info.java (0.76 KB)
+        📁 com.hello/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hello/
+                📄 Hello.java (0.81 KB)
+        📄 module-info.java (0.76 KB)
+        📁 com.helper/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 helper/
+                  📁 pkgOne/
+                  📄 HelperClass.java (0.99 KB)
+        📄 module-info.java (0.80 KB)
+        📁 com.hi/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hi/
+                📄 Hi.java (0.89 KB)
+        📄 module-info.java (0.75 KB)
+        📁 com.hola/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hola/
+                📄 Hi.java (1.00 KB)
+        📄 module-info.java (0.75 KB)
+        📁 displayService/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 display/
+                📄 Display.java (0.79 KB)
+        📄 module-info.java (0.77 KB)
+        📁 displayServiceImpl1/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 displayImpl1/
+                📄 DisplayServiceImpl1.java (0.91 KB)
+        📄 module-info.java (0.87 KB)
+        📁 displayServiceImpl2/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 displayImpl2/
+                📄 DisplayServiceImpl2.java (0.91 KB)
+        📄 module-info.java (0.87 KB)
+      📁 common-override-new/
+        📁 com.hello/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hello/
+                📄 NewClass1.java (0.83 KB)
+                📁 newpkg/
+                📄 NewClass2.java (0.83 KB)
+                📄 resource.properties (0.00 KB)
+        📄 module-info.java (0.80 KB)
+      📁 common-override/
+        📁 com.discreet/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 exported/
+                📄 ExportedClass.java (0.96 KB)
+                📄 resource.properties (0.00 KB)
+                📁 hidden/
+                📄 Secret.java (0.81 KB)
+        📄 module-info.java (0.76 KB)
+        📁 com.hello/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 hello/
+                📄 Hello.java (0.81 KB)
+                📁 hellonew/
+                📄 HelloNew.java (0.82 KB)
+        📄 module-info.java (0.76 KB)
+        📁 java.logging/
+          📁 java/
+            📁 util/
+              📁 logging/
+              📄 Logger.java (0.98 KB)
+        📄 module-info.java (0.74 KB)
+        📁 java.xml/
+          📁 javax/
+            📁 xml/
+              📁 namespace/
+              📄 QName.java (0.88 KB)
+        📄 module-info.java (0.74 KB)
+      📁 common/
+        📁 adoptopenjdk/
+          📁 test/
+            📁 modularity/
+              📁 hi/
+              📄 Hi.java (0.80 KB)
+              📄 HiCp.java (0.80 KB)
+        📁 displayServiceImpl3/
+          📁 META-INF/
+            📁 services/
+            📄 adoptopenjdk.test.modularity.display.Display (0.06 KB)
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 displayImpl3/
+                📄 DisplayServiceImpl3.java (0.91 KB)
+        📁 displayServiceImpl4/
+          📁 META-INF/
+            📁 services/
+            📄 adoptopenjdk.test.modularity.display.Display (0.06 KB)
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 displayImpl4/
+                📄 DisplayServiceImpl4.java (0.91 KB)
+      📁 tests/
+        📁 com.test.serviceloaders/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 serviceloaders/
+                📄 TestServiceLoaders.java (4.00 KB)
+        📄 module-info.java (0.86 KB)
+        📁 com.test.serviceloaders2/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 modularity/
+                📁 serviceloaders2/
+                📄 TestServiceLoaders2.java (5.46 KB)
+        📄 module-info.java (0.78 KB)
+        📁 com.test/
+        📄 module-info.java (0.90 KB)
+          📁 net/
+            📁 adoptopenjdk/
+              📁 test/
+                📁 modularity/
+                  📁 junit/
+                  📄 ModTestClassLoader.java (1.69 KB)
+                  📄 TestAutomaticModules.java (3.53 KB)
+                  📄 TestClassLoading.java (9.34 KB)
+                  📄 TestClassLoadingUsingResourceFiles.java (7.56 KB)
+                  📄 TestCpMp.java (1.77 KB)
+                  📄 TestImpliedReadability.java (2.51 KB)
+                  📄 TestJDKInternalAPIs.java (3.51 KB)
+                  📄 TestLayers.java (3.10 KB)
+                  📄 TestMp.java (1.66 KB)
+                  📄 TestOverrideUsingAppModule.java (1.10 KB)
+                  📄 TestOverrideUsingAppModuleAndNewPackage.java (1.45 KB)
+                  📄 TestOverrideUsingMultipleFilePaths.java (4.88 KB)
+                  📄 TestOverrideUsingNonUpgradablePlatformModule.java (1.28 KB)
+                  📄 TestOverrideUsingPlatformModuleInRegularJar.java (1.16 KB)
+                  📄 TestOverrideUsingUnexportedPublicType.java (1.61 KB)
+                  📄 TestOverrideUsingUpgradablePlatformModule.java (1.21 KB)
+                  📄 TestOverridingWithResources.java (5.54 KB)
+                  📄 TestStressLayers.java (8.29 KB)
+                  📄 resource.properties (0.00 KB)
+  📄 stfclasspath.xml (1.18 KB)
+  📁 openjdk.test.nio/
+  📄 .classpath (0.37 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 build.xml (6.97 KB)
+    📁 src/
+      📁 test.nio/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 nio/
+              📄 NioApp.java (39.58 KB)
+              📄 NioBuffers.java (6.08 KB)
+              📄 NioBuffersTest.java (45.93 KB)
+              📄 NioTestsDoc.md (8.63 KB)
+              📄 WordCount.java (3.53 KB)
+              📄 wordcount.txt (0.48 KB)
+              📁 nio2/
+              📄 AllTests.java (1.52 KB)
+                📁 asyncio/
+                📄 RunFuture.java (1.62 KB)
+                  📁 client/
+                  📄 AClient.java (2.31 KB)
+                  📄 AllTests.java (1.29 KB)
+                  📄 ChannelWriteAttachment.java (1.00 KB)
+                  📄 MultipleConnectAsyncTest.java (9.71 KB)
+                  📄 MultipleConnectFutureTest.java (4.94 KB)
+                  📄 MultipleReadWriteAsyncTest.java (11.92 KB)
+                  📄 MultipleReadWriteFutureTest.java (11.32 KB)
+                  📁 file/
+                  📄 AllTests.java (1.13 KB)
+                  📄 AsynchronousFileChannelBasicMultipleRead.java (7.89 KB)
+                  📄 AsynchronousFileChannelTest.java (7.45 KB)
+                  📁 server/
+                  📄 AServer.java (6.00 KB)
+                  📄 EchoServer.java (15.60 KB)
+                📁 filesystem/
+                📄 AMemoryFileSystemProvider.java (3.95 KB)
+                📄 AllTests.java (1.04 KB)
+                📄 FileSystemsTest.java (4.87 KB)
+                📄 MemoryFileSystem.java (2.13 KB)
+                📄 MemoryPath.java (3.24 KB)
+                📁 mxbean/
+                📄 AllTests.java (1.10 KB)
+                📄 ByteBufferMXBeanTest.java (11.64 KB)
+                📁 path/
+                📄 AllTests.java (1.37 KB)
+                📄 DirectoryWatcherTest.java (18.22 KB)
+                📄 FileAttributesTest.java (3.87 KB)
+                📄 FileCopyTest.java (6.65 KB)
+                📄 FileTypeDetectorTest.java (1.74 KB)
+                📄 PathDeleteDirectoryTest.java (3.03 KB)
+                📄 PathDirectoryStreamTest.java (10.31 KB)
+                📄 ProbeContentTypeTest.java (4.61 KB)
+                📄 ScannerTest.java (2.94 KB)
+                📄 WalkFileTreeTest.java (6.13 KB)
+                📁 perl/
+                  📁 filesystems/
+                  📄 MemoryFileSystemProviderImplTemplate (0.21 KB)
+                  📄 generateProviders.pl (2.39 KB)
+                📁 util/
+                📄 AssertionFailedException.java (1.13 KB)
+                📄 AsyncTestState.java (1.28 KB)
+                📄 ConnectionState.java (10.98 KB)
+                📄 ConnectionStateClient.java (1.08 KB)
+                📄 DirectoryTools.java (5.92 KB)
+                📄 FailedAssertions.java (1.86 KB)
+                📄 HangNotifier.java (3.01 KB)
+                📄 IncomingMessageParser.java (4.58 KB)
+                📄 LocalEthernetInterface.java (7.39 KB)
+                📄 Logger.java (3.60 KB)
+                📄 Message.java (2.87 KB)
+                📄 MessageHeader.java (2.31 KB)
+                📄 RandomByteArrays.java (3.72 KB)
+                📄 ReceivingMessage.java (1.48 KB)
+                📄 ReiserSpotter.java (1.64 KB)
+                📄 SendingMessage.java (3.15 KB)
+                📄 ServerFactory.java (3.48 KB)
+                📄 TestCaseWithTempDirectory.java (2.71 KB)
+  📁 openjdk.test.security/
+  📄 .classpath (0.38 KB)
+  📄 .project (0.37 KB)
+  📄 build.xml (4.01 KB)
+    📁 doc/
+    📄 README.md (2.25 KB)
+      📁 images/
+      📄 Oauth.puml (0.35 KB)
+      📄 diagram-18410782128617490429.png (66.91 KB)
+    📁 src/
+      📁 test.security/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 auth/
+              📄 AuthCenter.java (5.36 KB)
+              📄 Client.java (3.43 KB)
+              📄 EnumSupportedProtocols.java (1.75 KB)
+              📄 OAuthTest.java (2.86 KB)
+              📄 Server.java (4.34 KB)
+              📄 testkeys (4.12 KB)
+                📁 util/
+                📄 AESUtil.java (1.05 KB)
+  📁 openjdk.test.serialization/
+  📄 .classpath (0.31 KB)
+  📄 .project (0.38 KB)
+  📄 README.md (0.87 KB)
+  📄 build.xml (4.10 KB)
+    📁 src/
+      📁 test.serialization/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 serialization/
+              📄 Serialization.java (5.13 KB)
+              📄 SerializationBasicHFS.java (4.45 KB)
+  📁 openjdk.test.util/
+  📄 .classpath (0.30 KB)
+  📄 .project (0.37 KB)
+  📄 README.md (1.95 KB)
+  📄 build.xml (3.92 KB)
+    📁 src/
+      📁 test.util/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 test/
+              📁 util/
+                📁 calendars/
+                📄 CalendarTest.java (2.63 KB)
+                📁 hashmap/
+                📄 Hog.java (1.56 KB)
+                📁 hashtable/
+                📄 CustomComparable.java (1.45 KB)
+                📄 CustomValue.java (1.35 KB)
+                📄 HashClashTest.java (3.35 KB)
+                📄 HashtableCreator.java (8.82 KB)
+                📄 HashtableFactory.java (1.09 KB)
+                📄 HashtablePool.java (1.77 KB)
+                📄 HashtableTest.java (9.99 KB)
+                📄 java_payload_strings.txt (283.17 KB)
+                📁 lilac/
+                📄 TestArrays.java (1.48 KB)
+                📁 solver/
+                📄 SolverTest.java (9.26 KB)
+                📁 treemap/
+                📄 TreeMapAPITest.java (22.62 KB)
+                📄 TreeMapFactory.java (3.66 KB)
+                📄 TreeMapKey.java (1.22 KB)
+                📄 TreeMapKeyComparator.java (1.28 KB)
+                📄 TreeMapTest.java (3.57 KB)

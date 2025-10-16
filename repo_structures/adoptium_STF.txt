@@ -1,0 +1,646 @@
+================================================================================
+Repository Structure: adoptium/STF
+================================================================================
+Generated: 2025-10-16 09:04:35
+Total items: 254
+Total directories: 78
+Total files: 176
+================================================================================
+
+================================================================================
+DIRECTORIES (78)
+================================================================================
+
+Top-level directories (4):
+  📁 stf.build/
+  📁 stf.core/
+  📁 stf.load/
+  📁 stf.samples/
+
+All directories (hierarchical):
+  📁 stf.build/
+    📁 docs/
+    📁 include/
+    📁 scripts/
+  📁 stf.core/
+    📁 .settings/
+    📁 config/
+    📁 docs/
+      📁 diagramSourceFiles/
+      📁 images/
+    📁 scripts/
+      📁 stf/
+        📁 ProcessMgmt/
+          📁 Result/
+    📁 src/
+      📁 stf.core/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+              📁 codeGeneration/
+              📁 environment/
+                📁 properties/
+              📁 extensions/
+                📁 core/
+                📁 interfaces/
+              📁 modes/
+              📁 plugin/
+                📁 interfaces/
+              📁 processes/
+                📁 definitions/
+                  📁 generic/
+              📁 results/
+              📁 runner/
+                📁 modes/
+              📁 supportApps/
+                📁 junit/
+              📁 util/
+    📁 test/
+      📁 stf.core/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+              📁 results/
+  📁 stf.load/
+    📁 docs/
+    📁 src/
+      📁 stf.load/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 blockedexitagent/
+            📁 loadTest/
+              📁 adaptors/
+              📁 reporting/
+            📁 loadTestAnalysis/
+              📁 formatter/
+    📁 test/
+      📁 stf.load/
+        📁 com/
+          📁 ibm/
+            📁 runtimes/
+              📁 loadTest/
+                📁 reporting/
+  📁 stf.samples/
+    📁 .settings/
+    📁 config/
+      📁 inventories/
+        📁 sampleLoadTest/
+          📁 subtests/
+    📁 docs/
+    📁 scripts/
+    📁 src/
+      📁 stf.samples/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+              📁 extension/
+              📁 processManagement/
+                📁 apps/
+
+================================================================================
+FILE TYPES SUMMARY
+================================================================================
+
+  .java: 114 files
+  .xml: 11 files
+  .pm: 11 files
+  .md: 10 files
+  .project: 4 files
+  .pl: 4 files
+  .classpath: 3 files
+  .properties: 3 files
+  .odg: 3 files
+  .jpg: 3 files
+  .[no extension]: 2 files
+  .prefs: 2 files
+  .gitattributes: 1 files
+  .zos: 1 files
+  .gitignore: 1 files
+  .build/makefile: 1 files
+  .bat: 1 files
+  .sh: 1 files
+
+================================================================================
+ROOT-LEVEL FILES
+================================================================================
+
+  📄 .gitattributes (0.52 KB)
+  📄 .gitattributes.zos (1.39 KB)
+  📄 .gitignore (0.00 KB)
+  📄 CODE_OF_CONDUCT.md (3.32 KB)
+  📄 CONTRIBUTING.md (1.05 KB)
+  📄 LICENSE (11.09 KB)
+  📄 NOTICE (0.06 KB)
+  📄 README.md (2.39 KB)
+
+================================================================================
+COMPLETE FILE LISTING BY TYPE
+================================================================================
+
+
+.java files (114):
+--------------------------------------------------------------------------------
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/StfConstants.java (2.87 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/StfError.java (1.21 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/StfException.java (1.04 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/StfExitCodes.java (1.72 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/codeGeneration/PerlCodeGenerator.java (40.52 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/codeGeneration/Stage.java (2.21 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/DirectoryRef.java (11.53 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/DynamicVariableReplacer.java (4.72 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/FileRef.java (6.87 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/JavaVersion.java (9.40 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/ModuleRef.java (1.76 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/PlatformFinder.java (9.79 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/StfEnvironmentCore.java (20.55 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/StfTestArguments.java (7.37 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/properties/Argument.java (2.64 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/properties/LayeredProperties.java (11.22 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/environment/properties/OrderedProperties.java (5.84 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/extensions/Stf.java (14.40 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/extensions/StfExtensionBase.java (15.96 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/extensions/core/StfCoreExtension.java (74.12 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/extensions/core/StfEnvironment.java (11.84 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/extensions/interfaces/StfExtension.java (2.67 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/modes/JvmArgDetails.java (1.19 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/modes/ModeDecoder.java (5.31 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/modes/ModeFileReader.java (3.45 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/modes/RandomModesGenerator.java (12.21 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/modes/VariationsFileReader.java (3.67 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/modes/VariationsSearcher.java (4.08 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/plugin/interfaces/StfPluginInterface.java (1.36 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/plugin/interfaces/StfPluginRootInterface.java (1.48 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/ExpectedOutcome.java (4.80 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/StfProcess.java (2.74 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/JDKToolProcessDefinition.java (4.46 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/JavaProcessDefinition.java (31.87 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/JlinkDefinition.java (25.44 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/JmodDefinition.java (15.88 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/LoadTestProcessDefinition.java (32.04 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/ProcessDefinition.java (2.98 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/SystemProcessDefinition.java (3.81 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/generic/ProcessArg.java (9.06 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/processes/definitions/generic/ProcessArgCollection.java (3.92 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/results/ReportFilteredTestResults.java (4.34 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/results/ResultsFilter.java (3.33 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/results/ResultsParser.java (8.64 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/results/RunResultsFilter.java (3.24 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/results/TestStatus.java (4.26 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/runner/ClassPathConfigurator.java (11.95 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/runner/PluginFinder.java (6.38 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/runner/StfClassLoader.java (16.26 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/runner/StfRunner.java (31.90 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/runner/modes/HelpTextGenerator.java (5.71 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/runner/modes/PluginList.java (9.88 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/supportApps/junit/JUnitRunner.java (6.40 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/util/FileOperations.java (1.84 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/util/ProcessBuilderRunner.java (5.52 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/util/StfDuration.java (2.59 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/util/StringSplitter.java (2.41 KB)
+  📄 stf.core/src/stf.core/net/adoptopenjdk/stf/util/TimeParser.java (3.58 KB)
+  📄 stf.core/test/stf.core/net/adoptopenjdk/stf/TestArgumentProcessing.java (5.24 KB)
+  📄 stf.core/test/stf.core/net/adoptopenjdk/stf/results/TestResultsProcessor.java (11.60 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/blockedexitagent/BlockedExitAgent.java (4.44 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/BlockedExitException.java (1.35 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/FirstFailureDumper.java (5.69 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/InventoryData.java (19.01 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/LoadTest.java (23.22 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/LoadTestRunner.java (16.78 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/SuiteData.java (5.85 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/TimeBasedLoadTest.java (2.39 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/adaptors/AdaptorInterface.java (4.25 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/adaptors/ArbitraryJavaAdaptor.java (7.01 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/adaptors/JUnitAdaptor.java (6.77 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/adaptors/LoadTestBase.java (3.17 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/adaptors/MauveAdaptor.java (4.97 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/reporting/ExecutionLog.java (6.02 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/reporting/ExecutionLogManager.java (6.54 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/reporting/ExecutionRecord.java (8.61 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/reporting/ExecutionTracker.java (6.28 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/reporting/MauveTestFailureException.java (0.93 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTest/reporting/OutputFilter.java (2.92 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/ExecutionLogMetaData.java (4.91 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/FormatExecutionLog.java (8.05 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/RunActivitySummaryReport.java (12.42 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/ThreadDetails.java (2.68 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/ThreadMapper.java (4.52 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/formatter/DetailFormatter.java (9.21 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/formatter/FailureFormatter.java (3.13 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/formatter/FormatterInterface.java (2.36 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/formatter/MetaDataFormatter.java (2.75 KB)
+  📄 stf.load/src/stf.load/net/adoptopenjdk/loadTestAnalysis/formatter/SummaryFormatter.java (4.51 KB)
+  📄 stf.load/test/stf.load/com/ibm/runtimes/loadTest/reporting/TestExecutionLogManager.java (12.69 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/ArbitraryJavaTest.java (1.69 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/FailingJUnitTest.java (1.48 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/MiniJUnitTest.java (0.95 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/SampleEchoFile.java (2.39 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/SampleFailingLoadTest.java (4.43 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/SampleLoadTest.java (4.29 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/SampleSecondaryJvm.java (3.75 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/SampleValidateFileAbsence.java (1.94 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/SampleWriteFile.java (1.97 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/extension/ExampleExtension.java (5.84 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/extension/ExamplePluginInterface.java (1.52 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/extension/SampleCustomExtensionTest.java (5.74 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleClientServer.java (3.94 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleClientServer2.java (3.61 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleConcurrentProcesses.java (4.57 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleJUnitTestRun.java (2.33 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleOverrunProcess.java (2.89 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleRunJDKTool.java (3.79 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleRunJmod.java (3.73 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleRunProcess.java (2.79 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/SampleSubTests.java (3.68 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/apps/MiniClient.java (2.00 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/apps/MiniServer.java (1.15 KB)
+  📄 stf.samples/src/stf.samples/net/adoptopenjdk/stf/processManagement/apps/SpeedyApplication.java (1.36 KB)
+
+
+.xml files (11):
+--------------------------------------------------------------------------------
+  📄 stf.build/build.xml (1.91 KB)
+  📄 stf.build/include/top.xml (29.04 KB)
+  📄 stf.core/build.xml (4.29 KB)
+  📄 stf.core/src/stf.core/log4j2.xml (0.87 KB)
+  📄 stf.load/build.xml (3.70 KB)
+  📄 stf.load/src/stf.load/log4j2.xml (1.73 KB)
+  📄 stf.samples/build.xml (3.73 KB)
+  📄 stf.samples/config/inventories/sampleLoadTest/sampleFailingInventory.xml (0.14 KB)
+  📄 stf.samples/config/inventories/sampleLoadTest/sampleInventory.xml (0.23 KB)
+  📄 stf.samples/config/inventories/sampleLoadTest/subtests/arbitraryJavaInventory.xml (0.76 KB)
+  📄 stf.samples/config/inventories/sampleLoadTest/subtests/junitInventory.xml (0.08 KB)
+
+
+.pm files (11):
+--------------------------------------------------------------------------------
+  📄 stf.core/scripts/stf/Commands.pm (35.44 KB)
+  📄 stf.core/scripts/stf/Constants.pm (0.91 KB)
+  📄 stf.core/scripts/stf/ProcessMgmt.pm (21.45 KB)
+  📄 stf.core/scripts/stf/ProcessMgmt/Result.pm (2.99 KB)
+  📄 stf.core/scripts/stf/ProcessMgmt/Result/UNIX.pm (2.60 KB)
+  📄 stf.core/scripts/stf/ProcessMgmt/Result/Windows.pm (1.99 KB)
+  📄 stf.core/scripts/stf/ProcessMgmt/UNIX.pm (13.06 KB)
+  📄 stf.core/scripts/stf/ProcessMgmt/Windows.pm (14.57 KB)
+  📄 stf.core/scripts/stf/stfUtility.pm (41.16 KB)
+  📄 stf.core/scripts/stfArguments.pm (6.48 KB)
+  📄 stf.samples/scripts/ExampleModule.pm (3.98 KB)
+
+
+.md files (10):
+--------------------------------------------------------------------------------
+  📄 CODE_OF_CONDUCT.md (3.32 KB)
+  📄 CONTRIBUTING.md (1.05 KB)
+  📄 README.md (2.39 KB)
+  📄 stf.build/docs/build.md (9.31 KB)
+  📄 stf.core/docs/STF-GettingStarted.md (9.61 KB)
+  📄 stf.core/docs/STF-Internals.md (2.81 KB)
+  📄 stf.core/docs/STF-Manual.md (34.67 KB)
+  📄 stf.load/docs/README.md (42.78 KB)
+  📄 stf.load/docs/arguments.md (0.34 KB)
+  📄 stf.samples/docs/readme.md (0.28 KB)
+
+
+.project files (4):
+--------------------------------------------------------------------------------
+  📄 stf.build/.project (0.20 KB)
+  📄 stf.core/.project (0.36 KB)
+  📄 stf.load/.project (0.36 KB)
+  📄 stf.samples/.project (0.36 KB)
+
+
+.pl files (4):
+--------------------------------------------------------------------------------
+  📄 stf.core/scripts/formatExecutionLog.pl (1.12 KB)
+  📄 stf.core/scripts/stf.pl (32.17 KB)
+  📄 stf.core/scripts/stf/java_properties_check.pl (2.26 KB)
+  📄 stf.core/scripts/stf/java_version_check.pl (2.19 KB)
+
+
+.classpath files (3):
+--------------------------------------------------------------------------------
+  📄 stf.core/.classpath (0.50 KB)
+  📄 stf.load/.classpath (0.50 KB)
+  📄 stf.samples/.classpath (0.74 KB)
+
+
+.properties files (3):
+--------------------------------------------------------------------------------
+  📄 stf.core/config/stf.core.properties (1.32 KB)
+  📄 stf.core/config/stf.properties (6.19 KB)
+  📄 stf.samples/config/example.properties (0.69 KB)
+
+
+.odg files (3):
+--------------------------------------------------------------------------------
+  📄 stf.core/docs/diagramSourceFiles/STFStructure.odg (14.56 KB)
+  📄 stf.core/docs/diagramSourceFiles/StateTransition1.odg (11.33 KB)
+  📄 stf.core/docs/diagramSourceFiles/StateTransition2.odg (11.23 KB)
+
+
+.jpg files (3):
+--------------------------------------------------------------------------------
+  📄 stf.core/docs/images/STFStructure.jpg (94.56 KB)
+  📄 stf.core/docs/images/StateTransition1.jpg (32.17 KB)
+  📄 stf.core/docs/images/StateTransition2.jpg (27.67 KB)
+
+
+.[no extension] files (2):
+--------------------------------------------------------------------------------
+  📄 LICENSE (11.09 KB)
+  📄 NOTICE (0.06 KB)
+
+
+.prefs files (2):
+--------------------------------------------------------------------------------
+  📄 stf.core/.settings/org.eclipse.jdt.core.prefs (0.64 KB)
+  📄 stf.samples/.settings/org.eclipse.jdt.core.prefs (0.57 KB)
+
+
+.gitattributes files (1):
+--------------------------------------------------------------------------------
+  📄 .gitattributes (0.52 KB)
+
+
+.zos files (1):
+--------------------------------------------------------------------------------
+  📄 .gitattributes.zos (1.39 KB)
+
+
+.gitignore files (1):
+--------------------------------------------------------------------------------
+  📄 .gitignore (0.00 KB)
+
+
+.build/makefile files (1):
+--------------------------------------------------------------------------------
+  📄 stf.build/makefile (12.81 KB)
+
+
+.bat files (1):
+--------------------------------------------------------------------------------
+  📄 stf.build/scripts/stf_clone_make.bat (1.14 KB)
+
+
+.sh files (1):
+--------------------------------------------------------------------------------
+  📄 stf.build/scripts/stf_clone_make.sh (1.32 KB)
+
+================================================================================
+HIERARCHICAL TREE VIEW
+================================================================================
+
+adoptium/STF/
+📄 .gitattributes (0.52 KB)
+📄 .gitattributes.zos (1.39 KB)
+📄 .gitignore (0.00 KB)
+📄 CODE_OF_CONDUCT.md (3.32 KB)
+📄 CONTRIBUTING.md (1.05 KB)
+📄 LICENSE (11.09 KB)
+📄 NOTICE (0.06 KB)
+📄 README.md (2.39 KB)
+  📁 stf.build/
+  📄 .project (0.20 KB)
+  📄 build.xml (1.91 KB)
+    📁 docs/
+    📄 build.md (9.31 KB)
+    📁 include/
+    📄 top.xml (29.04 KB)
+  📄 makefile (12.81 KB)
+    📁 scripts/
+    📄 stf_clone_make.bat (1.14 KB)
+    📄 stf_clone_make.sh (1.32 KB)
+  📁 stf.core/
+  📄 .classpath (0.50 KB)
+  📄 .project (0.36 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.64 KB)
+  📄 build.xml (4.29 KB)
+    📁 config/
+    📄 stf.core.properties (1.32 KB)
+    📄 stf.properties (6.19 KB)
+    📁 docs/
+    📄 STF-GettingStarted.md (9.61 KB)
+    📄 STF-Internals.md (2.81 KB)
+    📄 STF-Manual.md (34.67 KB)
+      📁 diagramSourceFiles/
+      📄 STFStructure.odg (14.56 KB)
+      📄 StateTransition1.odg (11.33 KB)
+      📄 StateTransition2.odg (11.23 KB)
+      📁 images/
+      📄 STFStructure.jpg (94.56 KB)
+      📄 StateTransition1.jpg (32.17 KB)
+      📄 StateTransition2.jpg (27.67 KB)
+    📁 scripts/
+    📄 formatExecutionLog.pl (1.12 KB)
+    📄 stf.pl (32.17 KB)
+      📁 stf/
+      📄 Commands.pm (35.44 KB)
+      📄 Constants.pm (0.91 KB)
+      📄 ProcessMgmt.pm (21.45 KB)
+        📁 ProcessMgmt/
+        📄 Result.pm (2.99 KB)
+          📁 Result/
+          📄 UNIX.pm (2.60 KB)
+          📄 Windows.pm (1.99 KB)
+        📄 UNIX.pm (13.06 KB)
+        📄 Windows.pm (14.57 KB)
+      📄 java_properties_check.pl (2.26 KB)
+      📄 java_version_check.pl (2.19 KB)
+      📄 stfUtility.pm (41.16 KB)
+    📄 stfArguments.pm (6.48 KB)
+    📁 src/
+      📁 stf.core/
+      📄 log4j2.xml (0.87 KB)
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+            📄 StfConstants.java (2.87 KB)
+            📄 StfError.java (1.21 KB)
+            📄 StfException.java (1.04 KB)
+            📄 StfExitCodes.java (1.72 KB)
+              📁 codeGeneration/
+              📄 PerlCodeGenerator.java (40.52 KB)
+              📄 Stage.java (2.21 KB)
+              📁 environment/
+              📄 DirectoryRef.java (11.53 KB)
+              📄 DynamicVariableReplacer.java (4.72 KB)
+              📄 FileRef.java (6.87 KB)
+              📄 JavaVersion.java (9.40 KB)
+              📄 ModuleRef.java (1.76 KB)
+              📄 PlatformFinder.java (9.79 KB)
+              📄 StfEnvironmentCore.java (20.55 KB)
+              📄 StfTestArguments.java (7.37 KB)
+                📁 properties/
+                📄 Argument.java (2.64 KB)
+                📄 LayeredProperties.java (11.22 KB)
+                📄 OrderedProperties.java (5.84 KB)
+              📁 extensions/
+              📄 Stf.java (14.40 KB)
+              📄 StfExtensionBase.java (15.96 KB)
+                📁 core/
+                📄 StfCoreExtension.java (74.12 KB)
+                📄 StfEnvironment.java (11.84 KB)
+                📁 interfaces/
+                📄 StfExtension.java (2.67 KB)
+              📁 modes/
+              📄 JvmArgDetails.java (1.19 KB)
+              📄 ModeDecoder.java (5.31 KB)
+              📄 ModeFileReader.java (3.45 KB)
+              📄 RandomModesGenerator.java (12.21 KB)
+              📄 VariationsFileReader.java (3.67 KB)
+              📄 VariationsSearcher.java (4.08 KB)
+              📁 plugin/
+                📁 interfaces/
+                📄 StfPluginInterface.java (1.36 KB)
+                📄 StfPluginRootInterface.java (1.48 KB)
+              📁 processes/
+              📄 ExpectedOutcome.java (4.80 KB)
+              📄 StfProcess.java (2.74 KB)
+                📁 definitions/
+                📄 JDKToolProcessDefinition.java (4.46 KB)
+                📄 JavaProcessDefinition.java (31.87 KB)
+                📄 JlinkDefinition.java (25.44 KB)
+                📄 JmodDefinition.java (15.88 KB)
+                📄 LoadTestProcessDefinition.java (32.04 KB)
+                📄 ProcessDefinition.java (2.98 KB)
+                📄 SystemProcessDefinition.java (3.81 KB)
+                  📁 generic/
+                  📄 ProcessArg.java (9.06 KB)
+                  📄 ProcessArgCollection.java (3.92 KB)
+              📁 results/
+              📄 ReportFilteredTestResults.java (4.34 KB)
+              📄 ResultsFilter.java (3.33 KB)
+              📄 ResultsParser.java (8.64 KB)
+              📄 RunResultsFilter.java (3.24 KB)
+              📄 TestStatus.java (4.26 KB)
+              📁 runner/
+              📄 ClassPathConfigurator.java (11.95 KB)
+              📄 PluginFinder.java (6.38 KB)
+              📄 StfClassLoader.java (16.26 KB)
+              📄 StfRunner.java (31.90 KB)
+                📁 modes/
+                📄 HelpTextGenerator.java (5.71 KB)
+                📄 PluginList.java (9.88 KB)
+              📁 supportApps/
+                📁 junit/
+                📄 JUnitRunner.java (6.40 KB)
+              📁 util/
+              📄 FileOperations.java (1.84 KB)
+              📄 ProcessBuilderRunner.java (5.52 KB)
+              📄 StfDuration.java (2.59 KB)
+              📄 StringSplitter.java (2.41 KB)
+              📄 TimeParser.java (3.58 KB)
+    📁 test/
+      📁 stf.core/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+            📄 TestArgumentProcessing.java (5.24 KB)
+              📁 results/
+              📄 TestResultsProcessor.java (11.60 KB)
+  📁 stf.load/
+  📄 .classpath (0.50 KB)
+  📄 .project (0.36 KB)
+  📄 build.xml (3.70 KB)
+    📁 docs/
+    📄 README.md (42.78 KB)
+    📄 arguments.md (0.34 KB)
+    📁 src/
+      📁 stf.load/
+      📄 log4j2.xml (1.73 KB)
+        📁 net/
+          📁 adoptopenjdk/
+            📁 blockedexitagent/
+            📄 BlockedExitAgent.java (4.44 KB)
+            📁 loadTest/
+            📄 BlockedExitException.java (1.35 KB)
+            📄 FirstFailureDumper.java (5.69 KB)
+            📄 InventoryData.java (19.01 KB)
+            📄 LoadTest.java (23.22 KB)
+            📄 LoadTestRunner.java (16.78 KB)
+            📄 SuiteData.java (5.85 KB)
+            📄 TimeBasedLoadTest.java (2.39 KB)
+              📁 adaptors/
+              📄 AdaptorInterface.java (4.25 KB)
+              📄 ArbitraryJavaAdaptor.java (7.01 KB)
+              📄 JUnitAdaptor.java (6.77 KB)
+              📄 LoadTestBase.java (3.17 KB)
+              📄 MauveAdaptor.java (4.97 KB)
+              📁 reporting/
+              📄 ExecutionLog.java (6.02 KB)
+              📄 ExecutionLogManager.java (6.54 KB)
+              📄 ExecutionRecord.java (8.61 KB)
+              📄 ExecutionTracker.java (6.28 KB)
+              📄 MauveTestFailureException.java (0.93 KB)
+              📄 OutputFilter.java (2.92 KB)
+            📁 loadTestAnalysis/
+            📄 ExecutionLogMetaData.java (4.91 KB)
+            📄 FormatExecutionLog.java (8.05 KB)
+            📄 RunActivitySummaryReport.java (12.42 KB)
+            📄 ThreadDetails.java (2.68 KB)
+            📄 ThreadMapper.java (4.52 KB)
+              📁 formatter/
+              📄 DetailFormatter.java (9.21 KB)
+              📄 FailureFormatter.java (3.13 KB)
+              📄 FormatterInterface.java (2.36 KB)
+              📄 MetaDataFormatter.java (2.75 KB)
+              📄 SummaryFormatter.java (4.51 KB)
+    📁 test/
+      📁 stf.load/
+        📁 com/
+          📁 ibm/
+            📁 runtimes/
+              📁 loadTest/
+                📁 reporting/
+                📄 TestExecutionLogManager.java (12.69 KB)
+  📁 stf.samples/
+  📄 .classpath (0.74 KB)
+  📄 .project (0.36 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 build.xml (3.73 KB)
+    📁 config/
+    📄 example.properties (0.69 KB)
+      📁 inventories/
+        📁 sampleLoadTest/
+        📄 sampleFailingInventory.xml (0.14 KB)
+        📄 sampleInventory.xml (0.23 KB)
+          📁 subtests/
+          📄 arbitraryJavaInventory.xml (0.76 KB)
+          📄 junitInventory.xml (0.08 KB)
+    📁 docs/
+    📄 readme.md (0.28 KB)
+    📁 scripts/
+    📄 ExampleModule.pm (3.98 KB)
+    📁 src/
+      📁 stf.samples/
+        📁 net/
+          📁 adoptopenjdk/
+            📁 stf/
+            📄 ArbitraryJavaTest.java (1.69 KB)
+            📄 FailingJUnitTest.java (1.48 KB)
+            📄 MiniJUnitTest.java (0.95 KB)
+            📄 SampleEchoFile.java (2.39 KB)
+            📄 SampleFailingLoadTest.java (4.43 KB)
+            📄 SampleLoadTest.java (4.29 KB)
+            📄 SampleSecondaryJvm.java (3.75 KB)
+            📄 SampleValidateFileAbsence.java (1.94 KB)
+            📄 SampleWriteFile.java (1.97 KB)
+              📁 extension/
+              📄 ExampleExtension.java (5.84 KB)
+              📄 ExamplePluginInterface.java (1.52 KB)
+              📄 SampleCustomExtensionTest.java (5.74 KB)
+              📁 processManagement/
+              📄 SampleClientServer.java (3.94 KB)
+              📄 SampleClientServer2.java (3.61 KB)
+              📄 SampleConcurrentProcesses.java (4.57 KB)
+              📄 SampleJUnitTestRun.java (2.33 KB)
+              📄 SampleOverrunProcess.java (2.89 KB)
+              📄 SampleRunJDKTool.java (3.79 KB)
+              📄 SampleRunJmod.java (3.73 KB)
+              📄 SampleRunProcess.java (2.79 KB)
+              📄 SampleSubTests.java (3.68 KB)
+                📁 apps/
+                📄 MiniClient.java (2.00 KB)
+                📄 MiniServer.java (1.15 KB)
+                📄 SpeedyApplication.java (1.36 KB)

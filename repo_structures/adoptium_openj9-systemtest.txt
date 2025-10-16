@@ -1,0 +1,585 @@
+================================================================================
+Repository Structure: adoptium/openj9-systemtest
+================================================================================
+Generated: 2025-10-16 09:04:39
+Total items: 226
+Total directories: 70
+Total files: 156
+================================================================================
+
+================================================================================
+DIRECTORIES (70)
+================================================================================
+
+Top-level directories (7):
+  📁 openj9.build/
+  📁 openj9.stf.extensions/
+  📁 openj9.test.daa/
+  📁 openj9.test.jlm/
+  📁 openj9.test.load/
+  📁 openj9.test.sharedClasses/
+  📁 openj9.test.sharedClasses.jvmti/
+
+All directories (hierarchical):
+  📁 openj9.build/
+    📁 docs/
+    📁 scripts/
+  📁 openj9.stf.extensions/
+    📁 config/
+    📁 src/
+      📁 stf.extensions/
+        📁 net/
+          📁 openj9/
+            📁 stf/
+              📁 sharedClasses/
+  📁 openj9.test.daa/
+    📁 docs/
+    📁 src/
+      📁 test.daa/
+        📁 net/
+          📁 openj9/
+            📁 test/
+              📁 PD2Primitive/
+              📁 PDMoveShifts/
+              📁 arithmetics/
+              📁 binaryData/
+              📁 decimals/
+              📁 simple/
+  📁 openj9.test.jlm/
+    📁 .settings/
+    📁 doc/
+    📁 src/
+      📁 test.jlm.ibm/
+        📁 net/
+          📁 openj9/
+            📁 test/
+              📁 extensions/
+              📁 jlm/
+                📁 local/
+                📁 remote/
+                📁 resources/
+              📁 management/
+                📁 jvmcpumonitorbean/
+              📁 virtualization/
+  📁 openj9.test.load/
+    📁 config/
+      📁 inventories/
+        📁 daa/
+        📁 gc/
+        📁 mix/
+    📁 src/
+      📁 test.load/
+        📁 net/
+          📁 openj9/
+            📁 stf/
+  📁 openj9.test.sharedClasses/
+  📁 openj9.test.sharedClasses.jvmti/
+    📁 docs/
+    📁 src/
+      📁 test.sharedClasses.jvmti/
+        📁 net/
+          📁 openj9/
+            📁 sc/
+              📁 api/
+            📁 stf/
+    📁 docs/
+    📁 src/
+      📁 test.sharedClasses/
+        📁 net/
+          📁 openj9/
+            📁 stf/
+            📁 test/
+              📁 sc/
+                📁 classes/
+
+================================================================================
+FILE TYPES SUMMARY
+================================================================================
+
+  .java: 107 files
+  .xml: 15 files
+  .md: 9 files
+  .project: 7 files
+  .classpath: 6 files
+  .[no extension]: 2 files
+  .gitattributes: 1 files
+  .zos: 1 files
+  .gitignore: 1 files
+  .build/makefile: 1 files
+  .bat: 1 files
+  .sh: 1 files
+  .properties: 1 files
+  .prefs: 1 files
+  .password: 1 files
+  .ibm/net/openj9/test/jlm/testkeys: 1 files
+
+================================================================================
+ROOT-LEVEL FILES
+================================================================================
+
+  📄 .gitattributes (1.42 KB)
+  📄 .gitattributes.zos (2.06 KB)
+  📄 .gitignore (0.00 KB)
+  📄 CODE_OF_CONDUCT.md (9.57 KB)
+  📄 CONTRIBUTING.md (1.34 KB)
+  📄 LICENSE (24.30 KB)
+  📄 NOTICE (7.34 KB)
+  📄 README.md (4.17 KB)
+  📄 SECURITY.md (1.32 KB)
+  📄 build.xml (1.42 KB)
+
+================================================================================
+COMPLETE FILE LISTING BY TYPE
+================================================================================
+
+
+.java files (107):
+--------------------------------------------------------------------------------
+  📄 openj9.stf.extensions/src/stf.extensions/net/openj9/stf/sharedClasses/DummySleeper.java (1.64 KB)
+  📄 openj9.stf.extensions/src/stf.extensions/net/openj9/stf/sharedClasses/SharedClassesPluginInterface.java (2.12 KB)
+  📄 openj9.stf.extensions/src/stf.extensions/net/openj9/stf/sharedClasses/StfSharedClassesExtension.java (18.60 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/BasicTestRunner.java (2.14 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/LogParser.java (7.16 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/MarshallingTestRunner.java (4.46 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PD2Primitive/I2PD_PD2ITestRunner.java (2.01 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PD2Primitive/RandomTests.java (3.04 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PD2Primitive/TestI2PD.java (10.32 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PD2Primitive/TestPD2I.java (12.54 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PD2Primitive/TestPD2Primitives2PD.java (35.69 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PDComparisonsTestRunner.java (1.82 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PDMoveShifts/ShiftTestRunner.java (1.89 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PDMoveShifts/TestPDMove.java (9.18 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/PDMoveShifts/TestShiftsAndConvert.java (209.03 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/TestGeneration.java (5.93 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/TestRunner.java (8.15 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/Utils.java (43.31 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/ArithmeticsTestRunner.java (2.85 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestArithmeticComparisonBase.java (6.00 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestArithmeticInline.java (26.43 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestArithmeticOperations.java (598.09 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestArithmetics.java (4.14 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestComparisonEquals.java (1.88 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestPDComparisons.java (35.05 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestPerformance.java (17.77 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestSubExceptions.java (3.98 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/arithmetics/TestValidityChecking.java (67.75 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/LongIntegerComparison.java (2.46 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestBinaryConverters.java (145.87 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestByteArray2Double.java (35.92 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestByteArray2Float.java (36.54 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestByteArray2Integer.java (52.68 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestByteArray2IntegerNumBytes.java (32.76 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestByteArray2Long.java (96.33 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestByteArray2LongNumBytes.java (49.69 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestByteArray2Short.java (23.31 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestByteArray2ShortNumBytes.java (17.86 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestDouble2ByteArray.java (24.87 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestFloat2ByteArray.java (24.61 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestInteger2ByteArray.java (34.27 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestInteger2ByteArrayNumBytes.java (44.67 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestLong2ByteArray.java (58.31 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestLong2ByteArrayNumBytes.java (74.39 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestOptimizer.java (9.39 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestShort2ByteArray.java (18.19 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/binaryData/TestShort2ByteArrayNumBytes.java (27.21 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/DecimalTestBase.java (10.63 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/DecimalTestRunner.java (2.53 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/TestBD2PD2BD.java (21.31 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/TestDecimalData.java (672.39 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/TestDecimalData2.java (595.08 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/TestED2PD.java (29.53 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/TestPD2ED.java (240.85 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/TestPD2UD.java (14.17 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/decimals/TestUD2PD.java (14.65 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/simple/ConvertDecimal.java (2.42 KB)
+  📄 openj9.test.daa/src/test.daa/net/openj9/test/simple/MarshalUnmarshalBinary.java (3.52 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/extensions/Constants.java (2.26 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/extensions/GCExtensionCommand.java (10.19 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/extensions/IBMBeanExtension.java (1.69 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/extensions/MemoryExtensionCommand.java (10.32 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/extensions/MemoryPoolExtensionCommand.java (8.75 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/extensions/OperatingSystemExtensionCommand.java (7.51 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/TestIBMJlmLocal.java (3.00 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/TestIBMJlmRemoteClassAuth.java (9.74 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/TestIBMJlmRemoteClassNoAuth.java (7.54 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/TestIBMJlmRemoteMemoryAuth.java (9.65 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/TestIBMJlmRemoteMemoryNoAuth.java (7.61 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/local/VMLogger.java (13.80 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/remote/ClassProfiler.java (7.84 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/remote/MemoryProfiler.java (13.76 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/resources/EnvironmentData.java (4.53 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/resources/MemoryData.java (7.30 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/resources/MemoryListener.java (11.21 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/resources/VMData.java (6.50 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/BusyThread.java (1.49 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/RandomNumber.java (1.57 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/TestOperatingSystemMXBean.java (5.14 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/TestOperatingSystemMXBean_Local.java (15.61 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/TestOperatingSystemMXBean_Remote.java (14.62 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/jvmcpumonitorbean/Fork.java (1.36 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/jvmcpumonitorbean/Philosopher.java (2.80 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/jvmcpumonitorbean/TestApplicationUserCpuTime.java (7.59 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/jvmcpumonitorbean/TestJvmCpuMonitorMXBean_Local.java (7.03 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/jvmcpumonitorbean/TestJvmCpuMonitorMXBean_Remote.java (7.45 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/management/jvmcpumonitorbean/ThreadCategory.java (4.67 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/virtualization/GuestOSMXBeanTest_Local.java (9.29 KB)
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/virtualization/GuestOSMXBeanTest_Remote.java (9.71 KB)
+  📄 openj9.test.load/src/test.load/net/openj9/stf/DaaLoadTest.java (6.68 KB)
+  📄 openj9.test.load/src/test.load/net/openj9/stf/HeapHogLoadTest.java (4.41 KB)
+  📄 openj9.test.load/src/test.load/net/openj9/stf/ObjectTreeLoadTest.java (4.30 KB)
+  📄 openj9.test.sharedClasses.jvmti/src/test.sharedClasses.jvmti/net/openj9/sc/api/SharedClassesCacheChecker.java (15.98 KB)
+  📄 openj9.test.sharedClasses.jvmti/src/test.sharedClasses.jvmti/net/openj9/stf/SharedClassesAPI.java (15.78 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/stf/SharedClasses.java (16.42 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/stf/SharedClassesWorkload.java (9.24 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/stf/SharedClassesWorkloadTest_Softmx_Increase.java (10.08 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/stf/SharedClassesWorkloadTest_Softmx_IncreaseDecrease.java (12.51 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/stf/SharedClassesWorkloadTest_Softmx_Increase_JitAot.java (14.93 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/test/sc/JavaGen.java (24.82 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/test/sc/LoaderSlave.java (3.26 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/test/sc/LoaderSlaveMultiCL.java (4.31 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/test/sc/LoaderSlaveMultiJar.java (5.17 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/test/sc/LoaderSlaveMultiThread.java (6.79 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/test/sc/LoaderSlaveMultiThreadMultiCL.java (6.57 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/test/sc/SCSoftmxTestUtil.java (5.96 KB)
+  📄 openj9.test.sharedClasses/src/test.sharedClasses/net/openj9/test/sc/classes/Dummy.java (1.28 KB)
+
+
+.xml files (15):
+--------------------------------------------------------------------------------
+  📄 build.xml (1.42 KB)
+  📄 openj9.build/build.xml (5.02 KB)
+  📄 openj9.stf.extensions/build.xml (4.50 KB)
+  📄 openj9.test.daa/build.xml (4.38 KB)
+  📄 openj9.test.jlm/build.xml (4.52 KB)
+  📄 openj9.test.load/build.xml (4.02 KB)
+  📄 openj9.test.load/config/inventories/daa/daa1.xml (1.28 KB)
+  📄 openj9.test.load/config/inventories/daa/daa2.xml (1.86 KB)
+  📄 openj9.test.load/config/inventories/daa/daa3.xml (0.09 KB)
+  📄 openj9.test.load/config/inventories/daa/daaAll.xml (0.25 KB)
+  📄 openj9.test.load/config/inventories/gc/heapHog.xml (0.21 KB)
+  📄 openj9.test.load/config/inventories/gc/objectTree.xml (0.24 KB)
+  📄 openj9.test.load/config/inventories/mix/sharedclasses-mix.xml (0.75 KB)
+  📄 openj9.test.sharedClasses.jvmti/build.xml (5.19 KB)
+  📄 openj9.test.sharedClasses/build.xml (4.92 KB)
+
+
+.md files (9):
+--------------------------------------------------------------------------------
+  📄 CODE_OF_CONDUCT.md (9.57 KB)
+  📄 CONTRIBUTING.md (1.34 KB)
+  📄 README.md (4.17 KB)
+  📄 SECURITY.md (1.32 KB)
+  📄 openj9.build/docs/build.md (12.79 KB)
+  📄 openj9.test.daa/docs/README.md (0.68 KB)
+  📄 openj9.test.jlm/doc/jlm.ibm.md (0.88 KB)
+  📄 openj9.test.sharedClasses.jvmti/docs/README.md (0.45 KB)
+  📄 openj9.test.sharedClasses/docs/README.md (3.20 KB)
+
+
+.project files (7):
+--------------------------------------------------------------------------------
+  📄 openj9.build/.project (0.20 KB)
+  📄 openj9.stf.extensions/.project (0.37 KB)
+  📄 openj9.test.daa/.project (0.37 KB)
+  📄 openj9.test.jlm/.project (0.37 KB)
+  📄 openj9.test.load/.project (0.37 KB)
+  📄 openj9.test.sharedClasses.jvmti/.project (0.38 KB)
+  📄 openj9.test.sharedClasses/.project (0.38 KB)
+
+
+.classpath files (6):
+--------------------------------------------------------------------------------
+  📄 openj9.stf.extensions/.classpath (0.31 KB)
+  📄 openj9.test.daa/.classpath (1.42 KB)
+  📄 openj9.test.jlm/.classpath (1.57 KB)
+  📄 openj9.test.load/.classpath (1.49 KB)
+  📄 openj9.test.sharedClasses.jvmti/.classpath (1.60 KB)
+  📄 openj9.test.sharedClasses/.classpath (1.43 KB)
+
+
+.[no extension] files (2):
+--------------------------------------------------------------------------------
+  📄 LICENSE (24.30 KB)
+  📄 NOTICE (7.34 KB)
+
+
+.gitattributes files (1):
+--------------------------------------------------------------------------------
+  📄 .gitattributes (1.42 KB)
+
+
+.zos files (1):
+--------------------------------------------------------------------------------
+  📄 .gitattributes.zos (2.06 KB)
+
+
+.gitignore files (1):
+--------------------------------------------------------------------------------
+  📄 .gitignore (0.00 KB)
+
+
+.build/makefile files (1):
+--------------------------------------------------------------------------------
+  📄 openj9.build/makefile (23.99 KB)
+
+
+.bat files (1):
+--------------------------------------------------------------------------------
+  📄 openj9.build/scripts/openj9-systemtest-clone-make.bat (2.38 KB)
+
+
+.sh files (1):
+--------------------------------------------------------------------------------
+  📄 openj9.build/scripts/openj9-systemtest-clone-make.sh (2.46 KB)
+
+
+.properties files (1):
+--------------------------------------------------------------------------------
+  📄 openj9.stf.extensions/config/stf.shared.classes.properties (0.12 KB)
+
+
+.prefs files (1):
+--------------------------------------------------------------------------------
+  📄 openj9.test.jlm/.settings/org.eclipse.jdt.core.prefs (0.57 KB)
+
+
+.password files (1):
+--------------------------------------------------------------------------------
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/jmxremote.password (2.79 KB)
+
+
+.ibm/net/openj9/test/jlm/testkeys files (1):
+--------------------------------------------------------------------------------
+  📄 openj9.test.jlm/src/test.jlm.ibm/net/openj9/test/jlm/testkeys (1.18 KB)
+
+================================================================================
+HIERARCHICAL TREE VIEW
+================================================================================
+
+adoptium/openj9-systemtest/
+📄 .gitattributes (1.42 KB)
+📄 .gitattributes.zos (2.06 KB)
+📄 .gitignore (0.00 KB)
+📄 CODE_OF_CONDUCT.md (9.57 KB)
+📄 CONTRIBUTING.md (1.34 KB)
+📄 LICENSE (24.30 KB)
+📄 NOTICE (7.34 KB)
+📄 README.md (4.17 KB)
+📄 SECURITY.md (1.32 KB)
+📄 build.xml (1.42 KB)
+  📁 openj9.build/
+  📄 .project (0.20 KB)
+  📄 build.xml (5.02 KB)
+    📁 docs/
+    📄 build.md (12.79 KB)
+  📄 makefile (23.99 KB)
+    📁 scripts/
+    📄 openj9-systemtest-clone-make.bat (2.38 KB)
+    📄 openj9-systemtest-clone-make.sh (2.46 KB)
+  📁 openj9.stf.extensions/
+  📄 .classpath (0.31 KB)
+  📄 .project (0.37 KB)
+  📄 build.xml (4.50 KB)
+    📁 config/
+    📄 stf.shared.classes.properties (0.12 KB)
+    📁 src/
+      📁 stf.extensions/
+        📁 net/
+          📁 openj9/
+            📁 stf/
+              📁 sharedClasses/
+              📄 DummySleeper.java (1.64 KB)
+              📄 SharedClassesPluginInterface.java (2.12 KB)
+              📄 StfSharedClassesExtension.java (18.60 KB)
+  📁 openj9.test.daa/
+  📄 .classpath (1.42 KB)
+  📄 .project (0.37 KB)
+  📄 build.xml (4.38 KB)
+    📁 docs/
+    📄 README.md (0.68 KB)
+    📁 src/
+      📁 test.daa/
+        📁 net/
+          📁 openj9/
+            📁 test/
+            📄 BasicTestRunner.java (2.14 KB)
+            📄 LogParser.java (7.16 KB)
+            📄 MarshallingTestRunner.java (4.46 KB)
+              📁 PD2Primitive/
+              📄 I2PD_PD2ITestRunner.java (2.01 KB)
+              📄 RandomTests.java (3.04 KB)
+              📄 TestI2PD.java (10.32 KB)
+              📄 TestPD2I.java (12.54 KB)
+              📄 TestPD2Primitives2PD.java (35.69 KB)
+            📄 PDComparisonsTestRunner.java (1.82 KB)
+              📁 PDMoveShifts/
+              📄 ShiftTestRunner.java (1.89 KB)
+              📄 TestPDMove.java (9.18 KB)
+              📄 TestShiftsAndConvert.java (209.03 KB)
+            📄 TestGeneration.java (5.93 KB)
+            📄 TestRunner.java (8.15 KB)
+            📄 Utils.java (43.31 KB)
+              📁 arithmetics/
+              📄 ArithmeticsTestRunner.java (2.85 KB)
+              📄 TestArithmeticComparisonBase.java (6.00 KB)
+              📄 TestArithmeticInline.java (26.43 KB)
+              📄 TestArithmeticOperations.java (598.09 KB)
+              📄 TestArithmetics.java (4.14 KB)
+              📄 TestComparisonEquals.java (1.88 KB)
+              📄 TestPDComparisons.java (35.05 KB)
+              📄 TestPerformance.java (17.77 KB)
+              📄 TestSubExceptions.java (3.98 KB)
+              📄 TestValidityChecking.java (67.75 KB)
+              📁 binaryData/
+              📄 LongIntegerComparison.java (2.46 KB)
+              📄 TestBinaryConverters.java (145.87 KB)
+              📄 TestByteArray2Double.java (35.92 KB)
+              📄 TestByteArray2Float.java (36.54 KB)
+              📄 TestByteArray2Integer.java (52.68 KB)
+              📄 TestByteArray2IntegerNumBytes.java (32.76 KB)
+              📄 TestByteArray2Long.java (96.33 KB)
+              📄 TestByteArray2LongNumBytes.java (49.69 KB)
+              📄 TestByteArray2Short.java (23.31 KB)
+              📄 TestByteArray2ShortNumBytes.java (17.86 KB)
+              📄 TestDouble2ByteArray.java (24.87 KB)
+              📄 TestFloat2ByteArray.java (24.61 KB)
+              📄 TestInteger2ByteArray.java (34.27 KB)
+              📄 TestInteger2ByteArrayNumBytes.java (44.67 KB)
+              📄 TestLong2ByteArray.java (58.31 KB)
+              📄 TestLong2ByteArrayNumBytes.java (74.39 KB)
+              📄 TestOptimizer.java (9.39 KB)
+              📄 TestShort2ByteArray.java (18.19 KB)
+              📄 TestShort2ByteArrayNumBytes.java (27.21 KB)
+              📁 decimals/
+              📄 DecimalTestBase.java (10.63 KB)
+              📄 DecimalTestRunner.java (2.53 KB)
+              📄 TestBD2PD2BD.java (21.31 KB)
+              📄 TestDecimalData.java (672.39 KB)
+              📄 TestDecimalData2.java (595.08 KB)
+              📄 TestED2PD.java (29.53 KB)
+              📄 TestPD2ED.java (240.85 KB)
+              📄 TestPD2UD.java (14.17 KB)
+              📄 TestUD2PD.java (14.65 KB)
+              📁 simple/
+              📄 ConvertDecimal.java (2.42 KB)
+              📄 MarshalUnmarshalBinary.java (3.52 KB)
+  📁 openj9.test.jlm/
+  📄 .classpath (1.57 KB)
+  📄 .project (0.37 KB)
+    📁 .settings/
+    📄 org.eclipse.jdt.core.prefs (0.57 KB)
+  📄 build.xml (4.52 KB)
+    📁 doc/
+    📄 jlm.ibm.md (0.88 KB)
+    📁 src/
+      📁 test.jlm.ibm/
+        📁 net/
+          📁 openj9/
+            📁 test/
+              📁 extensions/
+              📄 Constants.java (2.26 KB)
+              📄 GCExtensionCommand.java (10.19 KB)
+              📄 IBMBeanExtension.java (1.69 KB)
+              📄 MemoryExtensionCommand.java (10.32 KB)
+              📄 MemoryPoolExtensionCommand.java (8.75 KB)
+              📄 OperatingSystemExtensionCommand.java (7.51 KB)
+              📁 jlm/
+              📄 TestIBMJlmLocal.java (3.00 KB)
+              📄 TestIBMJlmRemoteClassAuth.java (9.74 KB)
+              📄 TestIBMJlmRemoteClassNoAuth.java (7.54 KB)
+              📄 TestIBMJlmRemoteMemoryAuth.java (9.65 KB)
+              📄 TestIBMJlmRemoteMemoryNoAuth.java (7.61 KB)
+              📄 jmxremote.password (2.79 KB)
+                📁 local/
+                📄 VMLogger.java (13.80 KB)
+                📁 remote/
+                📄 ClassProfiler.java (7.84 KB)
+                📄 MemoryProfiler.java (13.76 KB)
+                📁 resources/
+                📄 EnvironmentData.java (4.53 KB)
+                📄 MemoryData.java (7.30 KB)
+                📄 MemoryListener.java (11.21 KB)
+                📄 VMData.java (6.50 KB)
+              📄 testkeys (1.18 KB)
+              📁 management/
+              📄 BusyThread.java (1.49 KB)
+              📄 RandomNumber.java (1.57 KB)
+              📄 TestOperatingSystemMXBean.java (5.14 KB)
+              📄 TestOperatingSystemMXBean_Local.java (15.61 KB)
+              📄 TestOperatingSystemMXBean_Remote.java (14.62 KB)
+                📁 jvmcpumonitorbean/
+                📄 Fork.java (1.36 KB)
+                📄 Philosopher.java (2.80 KB)
+                📄 TestApplicationUserCpuTime.java (7.59 KB)
+                📄 TestJvmCpuMonitorMXBean_Local.java (7.03 KB)
+                📄 TestJvmCpuMonitorMXBean_Remote.java (7.45 KB)
+                📄 ThreadCategory.java (4.67 KB)
+              📁 virtualization/
+              📄 GuestOSMXBeanTest_Local.java (9.29 KB)
+              📄 GuestOSMXBeanTest_Remote.java (9.71 KB)
+  📁 openj9.test.load/
+  📄 .classpath (1.49 KB)
+  📄 .project (0.37 KB)
+  📄 build.xml (4.02 KB)
+    📁 config/
+      📁 inventories/
+        📁 daa/
+        📄 daa1.xml (1.28 KB)
+        📄 daa2.xml (1.86 KB)
+        📄 daa3.xml (0.09 KB)
+        📄 daaAll.xml (0.25 KB)
+        📁 gc/
+        📄 heapHog.xml (0.21 KB)
+        📄 objectTree.xml (0.24 KB)
+        📁 mix/
+        📄 sharedclasses-mix.xml (0.75 KB)
+    📁 src/
+      📁 test.load/
+        📁 net/
+          📁 openj9/
+            📁 stf/
+            📄 DaaLoadTest.java (6.68 KB)
+            📄 HeapHogLoadTest.java (4.41 KB)
+            📄 ObjectTreeLoadTest.java (4.30 KB)
+  📁 openj9.test.sharedClasses.jvmti/
+  📄 .classpath (1.60 KB)
+  📄 .project (0.38 KB)
+  📄 build.xml (5.19 KB)
+    📁 docs/
+    📄 README.md (0.45 KB)
+    📁 src/
+      📁 test.sharedClasses.jvmti/
+        📁 net/
+          📁 openj9/
+            📁 sc/
+              📁 api/
+              📄 SharedClassesCacheChecker.java (15.98 KB)
+            📁 stf/
+            📄 SharedClassesAPI.java (15.78 KB)
+  📁 openj9.test.sharedClasses/
+  📄 .classpath (1.43 KB)
+  📄 .project (0.38 KB)
+  📄 build.xml (4.92 KB)
+    📁 docs/
+    📄 README.md (3.20 KB)
+    📁 src/
+      📁 test.sharedClasses/
+        📁 net/
+          📁 openj9/
+            📁 stf/
+            📄 SharedClasses.java (16.42 KB)
+            📄 SharedClassesWorkload.java (9.24 KB)
+            📄 SharedClassesWorkloadTest_Softmx_Increase.java (10.08 KB)
+            📄 SharedClassesWorkloadTest_Softmx_IncreaseDecrease.java (12.51 KB)
+            📄 SharedClassesWorkloadTest_Softmx_Increase_JitAot.java (14.93 KB)
+            📁 test/
+              📁 sc/
+              📄 JavaGen.java (24.82 KB)
+              📄 LoaderSlave.java (3.26 KB)
+              📄 LoaderSlaveMultiCL.java (4.31 KB)
+              📄 LoaderSlaveMultiJar.java (5.17 KB)
+              📄 LoaderSlaveMultiThread.java (6.79 KB)
+              📄 LoaderSlaveMultiThreadMultiCL.java (6.57 KB)
+              📄 SCSoftmxTestUtil.java (5.96 KB)
+                📁 classes/
+                📄 Dummy.java (1.28 KB)

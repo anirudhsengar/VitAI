@@ -1,0 +1,1181 @@
+================================================================================
+Repository Structure: adoptium/aqa-test-tools
+================================================================================
+Generated: 2025-10-16 09:04:34
+Total items: 480
+Total directories: 93
+Total files: 387
+================================================================================
+
+================================================================================
+DIRECTORIES (93)
+================================================================================
+
+Top-level directories (15):
+  📁 .github/
+  📁 .vscode/
+  📁 BugPredict/
+  📁 Chatbot/
+  📁 CommitHunter/
+  📁 MachineLearningPrototype/
+  📁 PerfNext/
+  📁 SmartMedia/
+  📁 TestResultSummaryService/
+  📁 TriagerXChatbot/
+  📁 TriagerXServer/
+  📁 Tweetest/
+  📁 VitAI/
+  📁 doc/
+  📁 test-result-summary-client/
+
+All directories (hierarchical):
+  📁 .github/
+    📁 workflows/
+  📁 .vscode/
+  📁 BugPredict/
+    📁 BugTool/
+      📁 views/
+        📁 partials/
+    📁 GlitchWitcher/
+  📁 Chatbot/
+    📁 data_1/
+    📁 data_2/
+  📁 CommitHunter/
+  📁 MachineLearningPrototype/
+    📁 Deployment/
+    📁 data/
+      📁 GitHubData/
+        📁 IssueContent/
+        📁 IssueContentQuote/
+      📁 JenkinsData/
+      📁 JenkinsDataWithFeedback/
+    📁 dataCollection/
+    📁 models/
+      📁 non-contextual/
+        📁 doc2vec/
+        📁 lda/
+    📁 utils/
+  📁 PerfNext/
+    📁 app/
+      📁 apis/
+        📁 BenchEngine/
+    📁 config/
+      📁 benchmarks/
+        📁 data_simple/
+      📁 cache/
+    📁 machines/
+    📁 public/
+      📁 lib/
+        📁 css/
+        📁 js/
+      📁 pages/
+      📁 temp-chart-data/
+  📁 SmartMedia/
+    📁 SmartMediaClient/
+      📁 src/
+    📁 SmartMediaServer/
+  📁 TestResultSummaryService/
+    📁 data/
+    📁 jenkins/
+    📁 nginx/
+    📁 parsers/
+    📁 perf/
+    📁 plugins/
+    📁 routes/
+      📁 jwt/
+      📁 test/
+      📁 utils/
+    📁 scripts/
+  📁 TriagerXChatbot/
+  📁 TriagerXServer/
+  📁 Tweetest/
+  📁 VitAI/
+    📁 VectorStore/
+    📁 data/
+    📁 src/
+    📁 test/
+  📁 doc/
+    📁 diagrams/
+    📁 images/
+    📁 presentations/
+  📁 test-result-summary-client/
+    📁 cypress/
+      📁 integration/
+    📁 public/
+    📁 src/
+      📁 AdvancedSearch/
+      📁 Build/
+        📁 Output/
+        📁 Summary/
+      📁 Components/
+      📁 Dashboard/
+        📁 Widgets/
+          📁 BuildStatus/
+          📁 Graph/
+            📁 ChartComponent/
+      📁 PerfCompare/
+        📁 lib/
+      📁 Search/
+      📁 Settings/
+      📁 TabularView/
+      📁 TestCompare/
+      📁 ThirdPartyAppView/
+      📁 TrafficLight/
+      📁 utils/
+
+================================================================================
+FILE TYPES SUMMARY
+================================================================================
+
+  .js: 144 files
+  .jsx: 63 files
+  .json: 27 files
+  .py: 24 files
+  .md: 18 files
+  .css: 14 files
+  .txt: 13 files
+  .gitignore: 12 files
+  .xml: 10 files
+  .sh: 9 files
+  .[no extension]: 9 files
+  .yml: 7 files
+  .html: 7 files
+  .ejs: 5 files
+  .ipynb: 5 files
+  .dockerignore: 3 files
+  .conf: 2 files
+  .xsd: 1 files
+  .gradle: 1 files
+  .gz: 1 files
+  .groovy: 1 files
+  .example: 1 files
+  .faiss: 1 files
+  .jpg: 1 files
+  .png: 1 files
+  .pdf: 1 files
+  .pptx: 1 files
+  .toml: 1 files
+  .npmrc: 1 files
+  .bat: 1 files
+  .ico: 1 files
+  .svg: 1 files
+
+================================================================================
+ROOT-LEVEL FILES
+================================================================================
+
+  📄 .gitignore (0.17 KB)
+  📄 CODE_OF_CONDUCT.md (3.32 KB)
+  📄 CONTRIBUTING.md (1.16 KB)
+  📄 LICENSE (11.09 KB)
+  📄 README.md (1.72 KB)
+  📄 docker-compose.yml (0.74 KB)
+  📄 exportMongo.sh (0.33 KB)
+  📄 netlify.toml (0.14 KB)
+  📄 package-lock.json (0.21 KB)
+  📄 package.json (0.49 KB)
+
+================================================================================
+COMPLETE FILE LISTING BY TYPE
+================================================================================
+
+
+.js files (144):
+--------------------------------------------------------------------------------
+  📄 BugPredict/BugTool/app.js (2.24 KB)
+  📄 PerfNext/app.js (1.86 KB)
+  📄 PerfNext/app/apis/BenchEngine/parser.js (19.56 KB)
+  📄 PerfNext/app/apis/benchmark_data.js (2.21 KB)
+  📄 PerfNext/app/apis/builds.js (1.71 KB)
+  📄 PerfNext/app/apis/common.js (0.31 KB)
+  📄 PerfNext/app/apis/deprecated.js (1.08 KB)
+  📄 PerfNext/app/apis/jenkins.js (1.33 KB)
+  📄 PerfNext/app/apis/machines.js (0.62 KB)
+  📄 PerfNext/public/lib/js/benchmarks-simple.js (2.56 KB)
+  📄 PerfNext/public/lib/js/benchmarks.js (12.67 KB)
+  📄 PerfNext/public/lib/js/jobOutput.js (0.95 KB)
+  📄 PerfNext/public/lib/js/util.js (38.95 KB)
+  📄 PerfNext/public/temp-chart-data/morris-data.js (2.77 KB)
+  📄 SmartMedia/SmartMediaClient/server.js (0.36 KB)
+  📄 SmartMedia/SmartMediaClient/src/App.js (0.13 KB)
+  📄 SmartMedia/SmartMediaClient/src/index.js (0.14 KB)
+  📄 SmartMedia/SmartMediaServer/ArgParser.js (1.20 KB)
+  📄 SmartMedia/SmartMediaServer/getGitCloneInfo.js (0.83 KB)
+  📄 SmartMedia/SmartMediaServer/getSearchTweets.js (0.39 KB)
+  📄 SmartMedia/SmartMediaServer/index.js (0.33 KB)
+  📄 TestResultSummaryService/ArgParser.js (0.80 KB)
+  📄 TestResultSummaryService/BuildMonitor.js (6.10 KB)
+  📄 TestResultSummaryService/BuildProcessor.js (8.24 KB)
+  📄 TestResultSummaryService/DataManager.js (8.83 KB)
+  📄 TestResultSummaryService/Database.js (10.56 KB)
+  📄 TestResultSummaryService/EventHandler.js (3.83 KB)
+  📄 TestResultSummaryService/JenkinsApiQuery.js (0.96 KB)
+  📄 TestResultSummaryService/JenkinsInfo.js (4.70 KB)
+  📄 TestResultSummaryService/LogStream.js (1.54 KB)
+  📄 TestResultSummaryService/Utils.js (1.21 KB)
+  📄 TestResultSummaryService/backend.js (0.36 KB)
+  📄 TestResultSummaryService/frontend.js (1.70 KB)
+  📄 TestResultSummaryService/parsers/BenchmarkMetric.js (19.00 KB)
+  📄 TestResultSummaryService/parsers/BenchmarkParser.js (3.74 KB)
+  📄 TestResultSummaryService/parsers/Build.js (0.68 KB)
+  📄 TestResultSummaryService/parsers/Default.js (0.30 KB)
+  📄 TestResultSummaryService/parsers/ExternalTestParser.js (1.51 KB)
+  📄 TestResultSummaryService/parsers/JCK.js (1.00 KB)
+  📄 TestResultSummaryService/parsers/ParentBuild.js (2.31 KB)
+  📄 TestResultSummaryService/parsers/Parser.js (5.76 KB)
+  📄 TestResultSummaryService/parsers/Tap.js (13.36 KB)
+  📄 TestResultSummaryService/parsers/Test.js (7.14 KB)
+  📄 TestResultSummaryService/parsers/TestBenchmarkParser.js (1.92 KB)
+  📄 TestResultSummaryService/parsers/Utils.js (4.39 KB)
+  📄 TestResultSummaryService/parsers/index.js (0.22 KB)
+  📄 TestResultSummaryService/perf/BenchmarkMathCalculation.js (2.24 KB)
+  📄 TestResultSummaryService/perf/DataManagerAggregate.js (8.10 KB)
+  📄 TestResultSummaryService/plugins/DataManagerPerf.js (5.02 KB)
+  📄 TestResultSummaryService/plugins/examplePlugin.js (0.39 KB)
+  📄 TestResultSummaryService/plugins/index.js (0.62 KB)
+  📄 TestResultSummaryService/routes/compareTestDuration.js (3.02 KB)
+  📄 TestResultSummaryService/routes/compareTestsOutput.js (1.79 KB)
+  📄 TestResultSummaryService/routes/deleteBuildData.js (0.68 KB)
+  📄 TestResultSummaryService/routes/deleteBuildListById.js (0.35 KB)
+  📄 TestResultSummaryService/routes/deleteBuildsAndChildrenByFields.js (1.77 KB)
+  📄 TestResultSummaryService/routes/deleteCollection.js (0.21 KB)
+  📄 TestResultSummaryService/routes/deleteUnusedOutput.js (1.15 KB)
+  📄 TestResultSummaryService/routes/getAllChildBuilds.js (2.33 KB)
+  📄 TestResultSummaryService/routes/getAllTestsWithHistory.js (1.13 KB)
+  📄 TestResultSummaryService/routes/getApplicationTests.js (0.21 KB)
+  📄 TestResultSummaryService/routes/getAuditLogs.js (0.43 KB)
+  📄 TestResultSummaryService/routes/getAzDoRun.js (11.18 KB)
+  📄 TestResultSummaryService/routes/getBenchmarkMetricProps.js (0.44 KB)
+  📄 TestResultSummaryService/routes/getBuildHistory.js (0.69 KB)
+  📄 TestResultSummaryService/routes/getBuildList.js (0.32 KB)
+  📄 TestResultSummaryService/routes/getBuildStages.js (0.72 KB)
+  📄 TestResultSummaryService/routes/getChildBuilds.js (0.31 KB)
+  📄 TestResultSummaryService/routes/getDashboardBuildInfo.js (0.21 KB)
+  📄 TestResultSummaryService/routes/getData.js (0.46 KB)
+  📄 TestResultSummaryService/routes/getErrorInOutput.js (1.16 KB)
+  📄 TestResultSummaryService/routes/getFeedbackUrl.js (0.34 KB)
+  📄 TestResultSummaryService/routes/getHistoryPerTest.js (1.31 KB)
+  📄 TestResultSummaryService/routes/getInternalGitIssues.js (1.67 KB)
+  📄 TestResultSummaryService/routes/getJenkins.js (0.59 KB)
+  📄 TestResultSummaryService/routes/getLastBuildInfo.js (0.30 KB)
+  📄 TestResultSummaryService/routes/getLogStream.js (0.44 KB)
+  📄 TestResultSummaryService/routes/getOutputById.js (0.87 KB)
+  📄 TestResultSummaryService/routes/getOutputByTestInfo.js (1.56 KB)
+  📄 TestResultSummaryService/routes/getParentSpecificData.js (0.42 KB)
+  📄 TestResultSummaryService/routes/getParents.js (0.49 KB)
+  📄 TestResultSummaryService/routes/getPerffarmRunCSV.js (2.80 KB)
+  📄 TestResultSummaryService/routes/getPossibleIssuesByAI.js (2.54 KB)
+  📄 TestResultSummaryService/routes/getSpecificData.js (0.30 KB)
+  📄 TestResultSummaryService/routes/getTabularData.js (3.53 KB)
+  📄 TestResultSummaryService/routes/getTabularDropdown.js (1.46 KB)
+  📄 TestResultSummaryService/routes/getTestAvgDuration.js (2.27 KB)
+  📄 TestResultSummaryService/routes/getTestBuildsByMachine.js (1.52 KB)
+  📄 TestResultSummaryService/routes/getTestById.js (0.35 KB)
+  📄 TestResultSummaryService/routes/getTestBySearch.js (4.27 KB)
+  📄 TestResultSummaryService/routes/getTestByTestName.js (1.35 KB)
+  📄 TestResultSummaryService/routes/getTestByVersionInfo.js (2.77 KB)
+  📄 TestResultSummaryService/routes/getTestInfoByBuildInfo.js (0.56 KB)
+  📄 TestResultSummaryService/routes/getTestNames.js (0.41 KB)
+  📄 TestResultSummaryService/routes/getTestPerPlatform.js (1.11 KB)
+  📄 TestResultSummaryService/routes/getTopLevelBuildNames.js (0.70 KB)
+  📄 TestResultSummaryService/routes/getTotals.js (0.71 KB)
+  📄 TestResultSummaryService/routes/getTrafficLightData.js (1.07 KB)
+  📄 TestResultSummaryService/routes/index.js (3.71 KB)
+  📄 TestResultSummaryService/routes/jwt/register.js (1.08 KB)
+  📄 TestResultSummaryService/routes/jwt/verify.js (1.14 KB)
+  📄 TestResultSummaryService/routes/parseJenkinsUrl.js (1.66 KB)
+  📄 TestResultSummaryService/routes/populateDB.js (0.47 KB)
+  📄 TestResultSummaryService/routes/postIssueFeedback.js (3.62 KB)
+  📄 TestResultSummaryService/routes/postTapFiles.js (0.84 KB)
+  📄 TestResultSummaryService/routes/rescanBuild.js (1.03 KB)
+  📄 TestResultSummaryService/routes/test/getJenkinsBuildInfo.js (0.42 KB)
+  📄 TestResultSummaryService/routes/test/testParserViaFile.js (0.57 KB)
+  📄 TestResultSummaryService/routes/test/testParserViaLogStream.js (0.57 KB)
+  📄 TestResultSummaryService/routes/updateComments.js (0.51 KB)
+  📄 TestResultSummaryService/routes/updateKeepForever.js (0.61 KB)
+  📄 TestResultSummaryService/routes/upsertBuildList.js (0.59 KB)
+  📄 TestResultSummaryService/routes/utils/applyDeepSmithMatch.js (2.85 KB)
+  📄 TestResultSummaryService/routes/utils/removeTimestamp.js (0.23 KB)
+  📄 Tweetest/index.js (0.93 KB)
+  📄 test-result-summary-client/config-overrides.js (0.56 KB)
+  📄 test-result-summary-client/cypress/integration/byPipeline.js (0.61 KB)
+  📄 test-result-summary-client/cypress/integration/testInfo.js (1.41 KB)
+  📄 test-result-summary-client/src/AdvancedSearch/index.js (0.06 KB)
+  📄 test-result-summary-client/src/Build/Output/index.js (0.04 KB)
+  📄 test-result-summary-client/src/Build/Summary/PieChart.js (8.13 KB)
+  📄 test-result-summary-client/src/Build/index.js (0.63 KB)
+  📄 test-result-summary-client/src/Dashboard/Defaults.js (0.65 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/BuildStatus/index.js (0.05 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/index.js (0.30 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/utils.js (3.29 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/index.js (0.06 KB)
+  📄 test-result-summary-client/src/Dashboard/index.js (0.05 KB)
+  📄 test-result-summary-client/src/PerfCompare/index.js (0.05 KB)
+  📄 test-result-summary-client/src/PerfCompare/lib/AzDoRunJSON.js (1.32 KB)
+  📄 test-result-summary-client/src/PerfCompare/lib/BenchmarkMath.js (4.16 KB)
+  📄 test-result-summary-client/src/PerfCompare/lib/ExtractRelevantJenkinsTestResults.js (1.34 KB)
+  📄 test-result-summary-client/src/PerfCompare/lib/PerffarmRunJSON.js (5.98 KB)
+  📄 test-result-summary-client/src/Search/index.js (0.18 KB)
+  📄 test-result-summary-client/src/Settings/index.js (0.05 KB)
+  📄 test-result-summary-client/src/TabularView/index.js (0.05 KB)
+  📄 test-result-summary-client/src/TestCompare/index.js (0.05 KB)
+  📄 test-result-summary-client/src/ThirdPartyAppView/index.js (0.07 KB)
+  📄 test-result-summary-client/src/TrafficLight/index.js (0.17 KB)
+  📄 test-result-summary-client/src/index.js (0.55 KB)
+  📄 test-result-summary-client/src/utils/BenchmarkMathCalculation.js (2.24 KB)
+  📄 test-result-summary-client/src/utils/LocalStorage.js (0.33 KB)
+  📄 test-result-summary-client/src/utils/Utils.js (2.76 KB)
+  📄 test-result-summary-client/src/utils/query.js (0.66 KB)
+
+
+.jsx files (63):
+--------------------------------------------------------------------------------
+  📄 test-result-summary-client/src/AdvancedSearch/AdvancedSearch.jsx (3.18 KB)
+  📄 test-result-summary-client/src/AdvancedSearch/InputAutoComplete.jsx (0.75 KB)
+  📄 test-result-summary-client/src/AdvancedSearch/InputSelect.jsx (0.54 KB)
+  📄 test-result-summary-client/src/App.jsx (14.25 KB)
+  📄 test-result-summary-client/src/Build/AlertMsg.jsx (0.22 KB)
+  📄 test-result-summary-client/src/Build/AllTestsInfo.jsx (5.72 KB)
+  📄 test-result-summary-client/src/Build/BuildDetail.jsx (4.14 KB)
+  📄 test-result-summary-client/src/Build/BuildLink.jsx (0.80 KB)
+  📄 test-result-summary-client/src/Build/BuildTable.jsx (10.11 KB)
+  📄 test-result-summary-client/src/Build/BuildTreeView.jsx (3.27 KB)
+  📄 test-result-summary-client/src/Build/Builds.jsx (0.51 KB)
+  📄 test-result-summary-client/src/Build/DeepHistory.jsx (6.73 KB)
+  📄 test-result-summary-client/src/Build/Duration.jsx (0.65 KB)
+  📄 test-result-summary-client/src/Build/GitNewIssue.jsx (5.04 KB)
+  📄 test-result-summary-client/src/Build/Output/Artifacts.jsx (0.79 KB)
+  📄 test-result-summary-client/src/Build/Output/Output.jsx (8.61 KB)
+  📄 test-result-summary-client/src/Build/PossibleIssues.jsx (9.92 KB)
+  📄 test-result-summary-client/src/Build/PossibleIssuesByAI.jsx (2.30 KB)
+  📄 test-result-summary-client/src/Build/ReleaseSummary.jsx (10.56 KB)
+  📄 test-result-summary-client/src/Build/Summary/BuildStatus.jsx (1.45 KB)
+  📄 test-result-summary-client/src/Build/Summary/BuildStatusIcon.jsx (1.31 KB)
+  📄 test-result-summary-client/src/Build/Summary/Checkboxes.jsx (1.04 KB)
+  📄 test-result-summary-client/src/Build/Summary/Overview.jsx (9.48 KB)
+  📄 test-result-summary-client/src/Build/Summary/ResultGrid.jsx (14.15 KB)
+  📄 test-result-summary-client/src/Build/Summary/ResultSummary.jsx (16.99 KB)
+  📄 test-result-summary-client/src/Build/TestBreadcrumb.jsx (2.07 KB)
+  📄 test-result-summary-client/src/Build/TestPerPlatform.jsx (5.76 KB)
+  📄 test-result-summary-client/src/Build/TestTable.jsx (12.72 KB)
+  📄 test-result-summary-client/src/Build/TopLevelBuildTable.jsx (14.17 KB)
+  📄 test-result-summary-client/src/Build/TopLevelBuilds.jsx (2.48 KB)
+  📄 test-result-summary-client/src/Components/Button.jsx (0.69 KB)
+  📄 test-result-summary-client/src/Components/ShowWhenVisible.jsx (0.54 KB)
+  📄 test-result-summary-client/src/Dashboard/Dashboard.jsx (0.65 KB)
+  📄 test-result-summary-client/src/Dashboard/TabInfo.jsx (5.76 KB)
+  📄 test-result-summary-client/src/Dashboard/ToolBar.jsx (1.46 KB)
+  📄 test-result-summary-client/src/Dashboard/WidgetWrapper.jsx (0.50 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/BuildStatus/BuildStatus.jsx (12.69 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/BuildStatus/ServerSelector.jsx (0.57 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/DateRangePickers.jsx (2.67 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/AcmeairNodejs.jsx (9.42 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/ChartComponent/StockChart.jsx (4.45 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/Dacapo.jsx (5.05 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/DayTrader7.jsx (10.87 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/ODM.jsx (9.97 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/Renaissance.jsx (16.57 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Graph/SPECjbb2015.jsx (10.52 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/Settings.jsx (1.89 KB)
+  📄 test-result-summary-client/src/ErrorBoundary.jsx (0.54 KB)
+  📄 test-result-summary-client/src/PerfCompare/PerfCompare.jsx (31.83 KB)
+  📄 test-result-summary-client/src/Search/SearchBuildResult.jsx (2.23 KB)
+  📄 test-result-summary-client/src/Search/SearchOutput.jsx (1.46 KB)
+  📄 test-result-summary-client/src/Search/SearchResult.jsx (1.33 KB)
+  📄 test-result-summary-client/src/Search/SearchTestResult.jsx (1.06 KB)
+  📄 test-result-summary-client/src/Settings/Settings.jsx (13.42 KB)
+  📄 test-result-summary-client/src/TabularView/TabularView.jsx (35.93 KB)
+  📄 test-result-summary-client/src/TestCompare/TestCompare.jsx (7.14 KB)
+  📄 test-result-summary-client/src/TestCompare/TestInfo.jsx (1.28 KB)
+  📄 test-result-summary-client/src/ThirdPartyAppView/ThirdPartyAppView.jsx (9.46 KB)
+  📄 test-result-summary-client/src/TrafficLight/MetricsDetails.jsx (0.61 KB)
+  📄 test-result-summary-client/src/TrafficLight/MetricsTable.jsx (5.89 KB)
+  📄 test-result-summary-client/src/TrafficLight/TrafficLight.jsx (16.64 KB)
+  📄 test-result-summary-client/src/utils/TableUtils.jsx (2.79 KB)
+  📄 test-result-summary-client/src/utils/TextFilter.jsx (1.20 KB)
+
+
+.json files (27):
+--------------------------------------------------------------------------------
+  📄 .vscode/launch.json (0.30 KB)
+  📄 .vscode/settings.json (0.17 KB)
+  📄 BugPredict/BugTool/package-lock.json (99.97 KB)
+  📄 BugPredict/BugTool/package.json (0.48 KB)
+  📄 MachineLearningPrototype/dataCollection/config.json (0.05 KB)
+  📄 PerfNext/package-lock.json (43.67 KB)
+  📄 PerfNext/package.json (0.30 KB)
+  📄 SmartMedia/SmartMediaClient/package-lock.json (342.53 KB)
+  📄 SmartMedia/SmartMediaClient/package.json (0.38 KB)
+  📄 SmartMedia/SmartMediaServer/package-lock.json (35.01 KB)
+  📄 SmartMedia/SmartMediaServer/package.json (0.27 KB)
+  📄 TestResultSummaryService/.prettierrc.json (0.09 KB)
+  📄 TestResultSummaryService/DashboardBuildInfo.json (1.28 KB)
+  📄 TestResultSummaryService/package-lock.json (377.61 KB)
+  📄 TestResultSummaryService/package.json (1.46 KB)
+  📄 Tweetest/package-lock.json (3.81 KB)
+  📄 Tweetest/package.json (0.27 KB)
+  📄 VitAI/VectorStore/metadata.json (4358.67 KB)
+  📄 VitAI/data/ideal_answers.json (25.93 KB)
+  📄 package-lock.json (0.21 KB)
+  📄 package.json (0.49 KB)
+  📄 test-result-summary-client/.prettierrc.json (0.09 KB)
+  📄 test-result-summary-client/cypress.json (0.12 KB)
+  📄 test-result-summary-client/package-lock.json (1550.98 KB)
+  📄 test-result-summary-client/package.json (1.69 KB)
+  📄 test-result-summary-client/public/manifest.json (0.33 KB)
+  📄 test-result-summary-client/src/TabularView/TabularViewConfig.json (0.19 KB)
+
+
+.py files (24):
+--------------------------------------------------------------------------------
+  📄 BugPredict/GlitchWitcher/REPD_Impl.py (4.55 KB)
+  📄 BugPredict/GlitchWitcher/analyze_java_file.py (7.36 KB)
+  📄 BugPredict/GlitchWitcher/autoencoder.py (6.20 KB)
+  📄 BugPredict/GlitchWitcher/autoencoder_tf2.py (5.13 KB)
+  📄 BugPredict/GlitchWitcher/compare_semantic_predictions.py (9.19 KB)
+  📄 BugPredict/GlitchWitcher/load_semantic_model.py (3.11 KB)
+  📄 BugPredict/GlitchWitcher/predict.py (8.59 KB)
+  📄 BugPredict/GlitchWitcher/save_trained_model.py (6.72 KB)
+  📄 BugPredict/GlitchWitcher/stat_util.py (3.88 KB)
+  📄 BugPredict/GlitchWitcher/train_semantic_model.py (3.11 KB)
+  📄 Chatbot/file.py (0.86 KB)
+  📄 MachineLearningPrototype/Deployment/deployment.py (2.89 KB)
+  📄 MachineLearningPrototype/dataCollection/collect_data.py (7.08 KB)
+  📄 MachineLearningPrototype/utils/preprocess_data.py (6.14 KB)
+  📄 TriagerXChatbot/main.py (5.60 KB)
+  📄 TriagerXServer/gunicorn.conf.py (0.23 KB)
+  📄 TriagerXServer/main.py (10.95 KB)
+  📄 TriagerXServer/models.py (0.29 KB)
+  📄 VitAI/src/__init__.py (0.06 KB)
+  📄 VitAI/src/embedding.py (2.52 KB)
+  📄 VitAI/src/indexer.py (11.98 KB)
+  📄 VitAI/src/main.py (3.04 KB)
+  📄 VitAI/src/store.py (7.80 KB)
+  📄 VitAI/test/test_similarity.py (3.59 KB)
+
+
+.md files (18):
+--------------------------------------------------------------------------------
+  📄 BugPredict/BugTool/README.md (0.30 KB)
+  📄 BugPredict/GlitchWitcher/README.md (6.31 KB)
+  📄 CODE_OF_CONDUCT.md (3.32 KB)
+  📄 CONTRIBUTING.md (1.16 KB)
+  📄 MachineLearningPrototype/CHANGELOG.md (0.50 KB)
+  📄 MachineLearningPrototype/README.md (1.55 KB)
+  📄 MachineLearningPrototype/data/JenkinsDataWithFeedback/README.md (0.12 KB)
+  📄 PerfNext/README.md (2.99 KB)
+  📄 PerfNext/public/README.md (0.01 KB)
+  📄 README.md (1.72 KB)
+  📄 SmartMedia/README.md (1.36 KB)
+  📄 TestResultSummaryService/README.md (4.71 KB)
+  📄 TestResultSummaryService/plugins/README.md (0.48 KB)
+  📄 TriagerXChatbot/README.md (4.17 KB)
+  📄 TriagerXServer/README.md (3.27 KB)
+  📄 VitAI/README.md (4.09 KB)
+  📄 doc/README.md (0.18 KB)
+  📄 test-result-summary-client/README.md (0.42 KB)
+
+
+.css files (14):
+--------------------------------------------------------------------------------
+  📄 PerfNext/public/lib/css/perf-launcher.css (1.58 KB)
+  📄 PerfNext/public/lib/css/terminal.css (1.85 KB)
+  📄 test-result-summary-client/src/App.css (0.08 KB)
+  📄 test-result-summary-client/src/Build/Output/output.css (0.57 KB)
+  📄 test-result-summary-client/src/Build/Summary/Graph.css (0.08 KB)
+  📄 test-result-summary-client/src/Build/Summary/Overview.css (0.16 KB)
+  📄 test-result-summary-client/src/Build/Summary/ResultGrid.css (1.19 KB)
+  📄 test-result-summary-client/src/Build/table.css (0.20 KB)
+  📄 test-result-summary-client/src/Dashboard/Widgets/DateRangePickers.css (0.43 KB)
+  📄 test-result-summary-client/src/Dashboard/dashboard.css (0.96 KB)
+  📄 test-result-summary-client/src/PerfCompare/PerfCompare.css (0.19 KB)
+  📄 test-result-summary-client/src/Settings/settings.css (0.71 KB)
+  📄 test-result-summary-client/src/TabularView/TabularView.css (2.68 KB)
+  📄 test-result-summary-client/src/index.css (0.07 KB)
+
+
+.txt files (13):
+--------------------------------------------------------------------------------
+  📄 Chatbot/data_1/AQAvit.txt (9.27 KB)
+  📄 Chatbot/data_2/17203.txt (42.44 KB)
+  📄 MachineLearningPrototype/data/GitHubData/IssueContent/aqa-tests-1768.txt (1.04 KB)
+  📄 MachineLearningPrototype/data/GitHubData/IssueContent/openj9_11733.txt (17.74 KB)
+  📄 MachineLearningPrototype/data/GitHubData/IssueContentQuote/aqa-tests-1768.txt (0.31 KB)
+  📄 MachineLearningPrototype/data/GitHubData/IssueContentQuote/openj9_11733_quotes.txt (17.52 KB)
+  📄 MachineLearningPrototype/data/JenkinsData/aqa-tests_1768_jenkinsData.txt (55.40 KB)
+  📄 MachineLearningPrototype/data/JenkinsData/openj9_11733_httpsci.adoptopenjdk.netjobTest_openjdk15_j9_extended.functional_x86-64_linux64_testDDRExt_Class_0.txt (108.46 KB)
+  📄 PerfNext/logo.txt (0.52 KB)
+  📄 TestResultSummaryService/routes/test/jobOutput.txt (1631.72 KB)
+  📄 TriagerXChatbot/requirements.txt (0.81 KB)
+  📄 TriagerXServer/requirements.txt (1.15 KB)
+  📄 VitAI/requirements.txt (0.11 KB)
+
+
+.gitignore files (12):
+--------------------------------------------------------------------------------
+  📄 .gitignore (0.17 KB)
+  📄 BugPredict/BugTool/.gitignore (0.05 KB)
+  📄 Chatbot/.gitignore (0.02 KB)
+  📄 PerfNext/.gitignore (0.09 KB)
+  📄 PerfNext/config/cache/.gitignore (0.07 KB)
+  📄 SmartMedia/SmartMediaClient/.gitignore (0.02 KB)
+  📄 SmartMedia/SmartMediaServer/.gitignore (0.01 KB)
+  📄 TestResultSummaryService/.gitignore (0.04 KB)
+  📄 TriagerXChatbot/.gitignore (0.01 KB)
+  📄 TriagerXServer/.gitignore (0.03 KB)
+  📄 Tweetest/.gitignore (0.02 KB)
+  📄 test-result-summary-client/.gitignore (0.28 KB)
+
+
+.xml files (10):
+--------------------------------------------------------------------------------
+  📄 PerfNext/config/benchmarks/buckets_all.xml (40.34 KB)
+  📄 PerfNext/config/benchmarks/buckets_metric.xml (4.54 KB)
+  📄 PerfNext/config/benchmarks/buckets_simple.xml (1.52 KB)
+  📄 PerfNext/config/benchmarks/data_simple/Crypto.xml (0.39 KB)
+  📄 PerfNext/config/benchmarks/data_simple/Liberty.xml (16.58 KB)
+  📄 PerfNext/config/benchmarks/data_simple/ODM.xml (3.25 KB)
+  📄 PerfNext/config/benchmarks/data_simple/SPEC.xml (1.03 KB)
+  📄 PerfNext/config/benchmarks/data_simple/SPECjvm2008.xml (6.72 KB)
+  📄 PerfNext/config/benchmarks/data_simple/Spark.xml (0.93 KB)
+  📄 PerfNext/machines/template_master_machine_list.xml (19.45 KB)
+
+
+.sh files (9):
+--------------------------------------------------------------------------------
+  📄 BugPredict/GlitchWitcher/extract_traditional_features.sh (23.41 KB)
+  📄 BugPredict/gw.sh (5.77 KB)
+  📄 Chatbot/myKeys.sh (0.09 KB)
+  📄 CommitHunter/commit_hunter.sh (2.23 KB)
+  📄 PerfNext/script_header.sh (1.58 KB)
+  📄 PerfNext/setup.sh (2.38 KB)
+  📄 TestResultSummaryService/scripts/deployment.sh (0.56 KB)
+  📄 TriagerXChatbot/startup.sh (0.24 KB)
+  📄 exportMongo.sh (0.33 KB)
+
+
+.[no extension] files (9):
+--------------------------------------------------------------------------------
+  📄 LICENSE (11.09 KB)
+  📄 MachineLearningPrototype/models/non-contextual/doc2vec/executions_df (1.54 KB)
+  📄 MachineLearningPrototype/models/non-contextual/executions_df (1.55 KB)
+  📄 TestResultSummaryService/Dockerfile (0.09 KB)
+  📄 TestResultSummaryService/data/Dockerfile (0.14 KB)
+  📄 TestResultSummaryService/nginx/Dockerfile (0.08 KB)
+  📄 TriagerXServer/dockerfile (0.23 KB)
+  📄 test-result-summary-client/Dockerfile (0.52 KB)
+  📄 test-result-summary-client/public/_redirects (0.02 KB)
+
+
+.yml files (7):
+--------------------------------------------------------------------------------
+  📄 .github/workflows/codeql-analysis.yml (2.45 KB)
+  📄 .github/workflows/dependabot.yml (0.13 KB)
+  📄 .github/workflows/gitcompare.yml (5.66 KB)
+  📄 .github/workflows/glitchwitcher.yml (20.10 KB)
+  📄 .github/workflows/gw_comment_trigger.yml (12.87 KB)
+  📄 PerfNext/manifest.yml (0.10 KB)
+  📄 docker-compose.yml (0.74 KB)
+
+
+.html files (7):
+--------------------------------------------------------------------------------
+  📄 PerfNext/public/index.html (0.29 KB)
+  📄 PerfNext/public/pages/index.html (17.40 KB)
+  📄 PerfNext/public/pages/result.html (7.20 KB)
+  📄 PerfNext/public/pages/schedule-simple.html (13.35 KB)
+  📄 PerfNext/public/pages/schedule.html (50.89 KB)
+  📄 SmartMedia/SmartMediaClient/index.html (0.29 KB)
+  📄 test-result-summary-client/public/index.html (0.58 KB)
+
+
+.ejs files (5):
+--------------------------------------------------------------------------------
+  📄 BugPredict/BugTool/views/commits.ejs (0.73 KB)
+  📄 BugPredict/BugTool/views/index.ejs (3.49 KB)
+  📄 BugPredict/BugTool/views/partials/footer.ejs (0.02 KB)
+  📄 BugPredict/BugTool/views/partials/header.ejs (0.06 KB)
+  📄 BugPredict/BugTool/views/score.ejs (3.15 KB)
+
+
+.ipynb files (5):
+--------------------------------------------------------------------------------
+  📄 CommitHunter/Version1.ipynb (9.53 KB)
+  📄 MachineLearningPrototype/DLGitIssuesAnalysis.ipynb (14.52 KB)
+  📄 MachineLearningPrototype/models/non-contextual/doc2vec.ipynb (76.31 KB)
+  📄 MachineLearningPrototype/models/non-contextual/doc2vec/doc2vec.ipynb (107.68 KB)
+  📄 MachineLearningPrototype/models/non-contextual/lda/lda.ipynb (7038.82 KB)
+
+
+.dockerignore files (3):
+--------------------------------------------------------------------------------
+  📄 TestResultSummaryService/.dockerignore (0.03 KB)
+  📄 TriagerXServer/.dockerignore (0.02 KB)
+  📄 test-result-summary-client/.dockerignore (0.04 KB)
+
+
+.conf files (2):
+--------------------------------------------------------------------------------
+  📄 TestResultSummaryService/nginx/nginx.conf (0.41 KB)
+  📄 TestResultSummaryService/nginx/nginx_prod.conf (0.18 KB)
+
+
+.xsd files (1):
+--------------------------------------------------------------------------------
+  📄 PerfNext/machines/master_machine_list.xsd (13.48 KB)
+
+
+.gradle files (1):
+--------------------------------------------------------------------------------
+  📄 TestResultSummaryService/build.gradle (2.37 KB)
+
+
+.gz files (1):
+--------------------------------------------------------------------------------
+  📄 TestResultSummaryService/data/sampleData.gz (6727.96 KB)
+
+
+.groovy files (1):
+--------------------------------------------------------------------------------
+  📄 TestResultSummaryService/jenkins/trssCodeSync.groovy (0.52 KB)
+
+
+.example files (1):
+--------------------------------------------------------------------------------
+  📄 VitAI/.env.example (0.04 KB)
+
+
+.faiss files (1):
+--------------------------------------------------------------------------------
+  📄 VitAI/VectorStore/index.faiss (14085.25 KB)
+
+
+.jpg files (1):
+--------------------------------------------------------------------------------
+  📄 doc/diagrams/aqaTestToolsRoadmap.jpg (166.80 KB)
+
+
+.png files (1):
+--------------------------------------------------------------------------------
+  📄 doc/images/deep_aqatik_design.png (553.72 KB)
+
+
+.pdf files (1):
+--------------------------------------------------------------------------------
+  📄 doc/presentations/Deep_AQATik.pdf (854.72 KB)
+
+
+.pptx files (1):
+--------------------------------------------------------------------------------
+  📄 doc/presentations/Deep_AQATik.pptx (1716.76 KB)
+
+
+.toml files (1):
+--------------------------------------------------------------------------------
+  📄 netlify.toml (0.14 KB)
+
+
+.npmrc files (1):
+--------------------------------------------------------------------------------
+  📄 test-result-summary-client/.npmrc (0.02 KB)
+
+
+.bat files (1):
+--------------------------------------------------------------------------------
+  📄 test-result-summary-client/build.bat (0.02 KB)
+
+
+.ico files (1):
+--------------------------------------------------------------------------------
+  📄 test-result-summary-client/public/favicon.ico (4.19 KB)
+
+
+.svg files (1):
+--------------------------------------------------------------------------------
+  📄 test-result-summary-client/src/AdoptiumLogo.svg (3.95 KB)
+
+================================================================================
+HIERARCHICAL TREE VIEW
+================================================================================
+
+adoptium/aqa-test-tools/
+  📁 .github/
+    📁 workflows/
+    📄 codeql-analysis.yml (2.45 KB)
+    📄 dependabot.yml (0.13 KB)
+    📄 gitcompare.yml (5.66 KB)
+    📄 glitchwitcher.yml (20.10 KB)
+    📄 gw_comment_trigger.yml (12.87 KB)
+📄 .gitignore (0.17 KB)
+  📁 .vscode/
+  📄 launch.json (0.30 KB)
+  📄 settings.json (0.17 KB)
+  📁 BugPredict/
+    📁 BugTool/
+    📄 .gitignore (0.05 KB)
+    📄 README.md (0.30 KB)
+    📄 app.js (2.24 KB)
+    📄 package-lock.json (99.97 KB)
+    📄 package.json (0.48 KB)
+      📁 views/
+      📄 commits.ejs (0.73 KB)
+      📄 index.ejs (3.49 KB)
+        📁 partials/
+        📄 footer.ejs (0.02 KB)
+        📄 header.ejs (0.06 KB)
+      📄 score.ejs (3.15 KB)
+    📁 GlitchWitcher/
+    📄 README.md (6.31 KB)
+    📄 REPD_Impl.py (4.55 KB)
+    📄 analyze_java_file.py (7.36 KB)
+    📄 autoencoder.py (6.20 KB)
+    📄 autoencoder_tf2.py (5.13 KB)
+    📄 compare_semantic_predictions.py (9.19 KB)
+    📄 extract_traditional_features.sh (23.41 KB)
+    📄 load_semantic_model.py (3.11 KB)
+    📄 predict.py (8.59 KB)
+    📄 save_trained_model.py (6.72 KB)
+    📄 stat_util.py (3.88 KB)
+    📄 train_semantic_model.py (3.11 KB)
+  📄 gw.sh (5.77 KB)
+📄 CODE_OF_CONDUCT.md (3.32 KB)
+📄 CONTRIBUTING.md (1.16 KB)
+  📁 Chatbot/
+  📄 .gitignore (0.02 KB)
+    📁 data_1/
+    📄 AQAvit.txt (9.27 KB)
+    📁 data_2/
+    📄 17203.txt (42.44 KB)
+  📄 file.py (0.86 KB)
+  📄 myKeys.sh (0.09 KB)
+  📁 CommitHunter/
+  📄 Version1.ipynb (9.53 KB)
+  📄 commit_hunter.sh (2.23 KB)
+📄 LICENSE (11.09 KB)
+  📁 MachineLearningPrototype/
+  📄 CHANGELOG.md (0.50 KB)
+  📄 DLGitIssuesAnalysis.ipynb (14.52 KB)
+    📁 Deployment/
+    📄 deployment.py (2.89 KB)
+  📄 README.md (1.55 KB)
+    📁 data/
+      📁 GitHubData/
+        📁 IssueContent/
+        📄 aqa-tests-1768.txt (1.04 KB)
+        📄 openj9_11733.txt (17.74 KB)
+        📁 IssueContentQuote/
+        📄 aqa-tests-1768.txt (0.31 KB)
+        📄 openj9_11733_quotes.txt (17.52 KB)
+      📁 JenkinsData/
+      📄 aqa-tests_1768_jenkinsData.txt (55.40 KB)
+      📄 openj9_11733_httpsci.adoptopenjdk.netjobTest_openjdk15_j9_extended.functional_x86-64_linux64_testDDRExt_Class_0.txt (108.46 KB)
+      📁 JenkinsDataWithFeedback/
+      📄 README.md (0.12 KB)
+    📁 dataCollection/
+    📄 collect_data.py (7.08 KB)
+    📄 config.json (0.05 KB)
+    📁 models/
+      📁 non-contextual/
+      📄 doc2vec.ipynb (76.31 KB)
+        📁 doc2vec/
+        📄 doc2vec.ipynb (107.68 KB)
+        📄 executions_df (1.54 KB)
+      📄 executions_df (1.55 KB)
+        📁 lda/
+        📄 lda.ipynb (7038.82 KB)
+    📁 utils/
+    📄 preprocess_data.py (6.14 KB)
+  📁 PerfNext/
+  📄 .gitignore (0.09 KB)
+  📄 README.md (2.99 KB)
+  📄 app.js (1.86 KB)
+    📁 app/
+      📁 apis/
+        📁 BenchEngine/
+        📄 parser.js (19.56 KB)
+      📄 benchmark_data.js (2.21 KB)
+      📄 builds.js (1.71 KB)
+      📄 common.js (0.31 KB)
+      📄 deprecated.js (1.08 KB)
+      📄 jenkins.js (1.33 KB)
+      📄 machines.js (0.62 KB)
+    📁 config/
+      📁 benchmarks/
+      📄 buckets_all.xml (40.34 KB)
+      📄 buckets_metric.xml (4.54 KB)
+      📄 buckets_simple.xml (1.52 KB)
+        📁 data_simple/
+        📄 Crypto.xml (0.39 KB)
+        📄 Liberty.xml (16.58 KB)
+        📄 ODM.xml (3.25 KB)
+        📄 SPEC.xml (1.03 KB)
+        📄 SPECjvm2008.xml (6.72 KB)
+        📄 Spark.xml (0.93 KB)
+      📁 cache/
+      📄 .gitignore (0.07 KB)
+  📄 logo.txt (0.52 KB)
+    📁 machines/
+    📄 master_machine_list.xsd (13.48 KB)
+    📄 template_master_machine_list.xml (19.45 KB)
+  📄 manifest.yml (0.10 KB)
+  📄 package-lock.json (43.67 KB)
+  📄 package.json (0.30 KB)
+    📁 public/
+    📄 README.md (0.01 KB)
+    📄 index.html (0.29 KB)
+      📁 lib/
+        📁 css/
+        📄 perf-launcher.css (1.58 KB)
+        📄 terminal.css (1.85 KB)
+        📁 js/
+        📄 benchmarks-simple.js (2.56 KB)
+        📄 benchmarks.js (12.67 KB)
+        📄 jobOutput.js (0.95 KB)
+        📄 util.js (38.95 KB)
+      📁 pages/
+      📄 index.html (17.40 KB)
+      📄 result.html (7.20 KB)
+      📄 schedule-simple.html (13.35 KB)
+      📄 schedule.html (50.89 KB)
+      📁 temp-chart-data/
+      📄 morris-data.js (2.77 KB)
+  📄 script_header.sh (1.58 KB)
+  📄 setup.sh (2.38 KB)
+📄 README.md (1.72 KB)
+  📁 SmartMedia/
+  📄 README.md (1.36 KB)
+    📁 SmartMediaClient/
+    📄 .gitignore (0.02 KB)
+    📄 index.html (0.29 KB)
+    📄 package-lock.json (342.53 KB)
+    📄 package.json (0.38 KB)
+    📄 server.js (0.36 KB)
+      📁 src/
+      📄 App.js (0.13 KB)
+      📄 index.js (0.14 KB)
+    📁 SmartMediaServer/
+    📄 .gitignore (0.01 KB)
+    📄 ArgParser.js (1.20 KB)
+    📄 getGitCloneInfo.js (0.83 KB)
+    📄 getSearchTweets.js (0.39 KB)
+    📄 index.js (0.33 KB)
+    📄 package-lock.json (35.01 KB)
+    📄 package.json (0.27 KB)
+  📁 TestResultSummaryService/
+  📄 .dockerignore (0.03 KB)
+  📄 .gitignore (0.04 KB)
+  📄 .prettierrc.json (0.09 KB)
+  📄 ArgParser.js (0.80 KB)
+  📄 BuildMonitor.js (6.10 KB)
+  📄 BuildProcessor.js (8.24 KB)
+  📄 DashboardBuildInfo.json (1.28 KB)
+  📄 DataManager.js (8.83 KB)
+  📄 Database.js (10.56 KB)
+  📄 Dockerfile (0.09 KB)
+  📄 EventHandler.js (3.83 KB)
+  📄 JenkinsApiQuery.js (0.96 KB)
+  📄 JenkinsInfo.js (4.70 KB)
+  📄 LogStream.js (1.54 KB)
+  📄 README.md (4.71 KB)
+  📄 Utils.js (1.21 KB)
+  📄 backend.js (0.36 KB)
+  📄 build.gradle (2.37 KB)
+    📁 data/
+    📄 Dockerfile (0.14 KB)
+    📄 sampleData.gz (6727.96 KB)
+  📄 frontend.js (1.70 KB)
+    📁 jenkins/
+    📄 trssCodeSync.groovy (0.52 KB)
+    📁 nginx/
+    📄 Dockerfile (0.08 KB)
+    📄 nginx.conf (0.41 KB)
+    📄 nginx_prod.conf (0.18 KB)
+  📄 package-lock.json (377.61 KB)
+  📄 package.json (1.46 KB)
+    📁 parsers/
+    📄 BenchmarkMetric.js (19.00 KB)
+    📄 BenchmarkParser.js (3.74 KB)
+    📄 Build.js (0.68 KB)
+    📄 Default.js (0.30 KB)
+    📄 ExternalTestParser.js (1.51 KB)
+    📄 JCK.js (1.00 KB)
+    📄 ParentBuild.js (2.31 KB)
+    📄 Parser.js (5.76 KB)
+    📄 Tap.js (13.36 KB)
+    📄 Test.js (7.14 KB)
+    📄 TestBenchmarkParser.js (1.92 KB)
+    📄 Utils.js (4.39 KB)
+    📄 index.js (0.22 KB)
+    📁 perf/
+    📄 BenchmarkMathCalculation.js (2.24 KB)
+    📄 DataManagerAggregate.js (8.10 KB)
+    📁 plugins/
+    📄 DataManagerPerf.js (5.02 KB)
+    📄 README.md (0.48 KB)
+    📄 examplePlugin.js (0.39 KB)
+    📄 index.js (0.62 KB)
+    📁 routes/
+    📄 compareTestDuration.js (3.02 KB)
+    📄 compareTestsOutput.js (1.79 KB)
+    📄 deleteBuildData.js (0.68 KB)
+    📄 deleteBuildListById.js (0.35 KB)
+    📄 deleteBuildsAndChildrenByFields.js (1.77 KB)
+    📄 deleteCollection.js (0.21 KB)
+    📄 deleteUnusedOutput.js (1.15 KB)
+    📄 getAllChildBuilds.js (2.33 KB)
+    📄 getAllTestsWithHistory.js (1.13 KB)
+    📄 getApplicationTests.js (0.21 KB)
+    📄 getAuditLogs.js (0.43 KB)
+    📄 getAzDoRun.js (11.18 KB)
+    📄 getBenchmarkMetricProps.js (0.44 KB)
+    📄 getBuildHistory.js (0.69 KB)
+    📄 getBuildList.js (0.32 KB)
+    📄 getBuildStages.js (0.72 KB)
+    📄 getChildBuilds.js (0.31 KB)
+    📄 getDashboardBuildInfo.js (0.21 KB)
+    📄 getData.js (0.46 KB)
+    📄 getErrorInOutput.js (1.16 KB)
+    📄 getFeedbackUrl.js (0.34 KB)
+    📄 getHistoryPerTest.js (1.31 KB)
+    📄 getInternalGitIssues.js (1.67 KB)
+    📄 getJenkins.js (0.59 KB)
+    📄 getLastBuildInfo.js (0.30 KB)
+    📄 getLogStream.js (0.44 KB)
+    📄 getOutputById.js (0.87 KB)
+    📄 getOutputByTestInfo.js (1.56 KB)
+    📄 getParentSpecificData.js (0.42 KB)
+    📄 getParents.js (0.49 KB)
+    📄 getPerffarmRunCSV.js (2.80 KB)
+    📄 getPossibleIssuesByAI.js (2.54 KB)
+    📄 getSpecificData.js (0.30 KB)
+    📄 getTabularData.js (3.53 KB)
+    📄 getTabularDropdown.js (1.46 KB)
+    📄 getTestAvgDuration.js (2.27 KB)
+    📄 getTestBuildsByMachine.js (1.52 KB)
+    📄 getTestById.js (0.35 KB)
+    📄 getTestBySearch.js (4.27 KB)
+    📄 getTestByTestName.js (1.35 KB)
+    📄 getTestByVersionInfo.js (2.77 KB)
+    📄 getTestInfoByBuildInfo.js (0.56 KB)
+    📄 getTestNames.js (0.41 KB)
+    📄 getTestPerPlatform.js (1.11 KB)
+    📄 getTopLevelBuildNames.js (0.70 KB)
+    📄 getTotals.js (0.71 KB)
+    📄 getTrafficLightData.js (1.07 KB)
+    📄 index.js (3.71 KB)
+      📁 jwt/
+      📄 register.js (1.08 KB)
+      📄 verify.js (1.14 KB)
+    📄 parseJenkinsUrl.js (1.66 KB)
+    📄 populateDB.js (0.47 KB)
+    📄 postIssueFeedback.js (3.62 KB)
+    📄 postTapFiles.js (0.84 KB)
+    📄 rescanBuild.js (1.03 KB)
+      📁 test/
+      📄 getJenkinsBuildInfo.js (0.42 KB)
+      📄 jobOutput.txt (1631.72 KB)
+      📄 testParserViaFile.js (0.57 KB)
+      📄 testParserViaLogStream.js (0.57 KB)
+    📄 updateComments.js (0.51 KB)
+    📄 updateKeepForever.js (0.61 KB)
+    📄 upsertBuildList.js (0.59 KB)
+      📁 utils/
+      📄 applyDeepSmithMatch.js (2.85 KB)
+      📄 removeTimestamp.js (0.23 KB)
+    📁 scripts/
+    📄 deployment.sh (0.56 KB)
+  📁 TriagerXChatbot/
+  📄 .gitignore (0.01 KB)
+  📄 README.md (4.17 KB)
+  📄 main.py (5.60 KB)
+  📄 requirements.txt (0.81 KB)
+  📄 startup.sh (0.24 KB)
+  📁 TriagerXServer/
+  📄 .dockerignore (0.02 KB)
+  📄 .gitignore (0.03 KB)
+  📄 README.md (3.27 KB)
+  📄 dockerfile (0.23 KB)
+  📄 gunicorn.conf.py (0.23 KB)
+  📄 main.py (10.95 KB)
+  📄 models.py (0.29 KB)
+  📄 requirements.txt (1.15 KB)
+  📁 Tweetest/
+  📄 .gitignore (0.02 KB)
+  📄 index.js (0.93 KB)
+  📄 package-lock.json (3.81 KB)
+  📄 package.json (0.27 KB)
+  📁 VitAI/
+  📄 .env.example (0.04 KB)
+  📄 README.md (4.09 KB)
+    📁 VectorStore/
+    📄 index.faiss (14085.25 KB)
+    📄 metadata.json (4358.67 KB)
+    📁 data/
+    📄 ideal_answers.json (25.93 KB)
+  📄 requirements.txt (0.11 KB)
+    📁 src/
+    📄 __init__.py (0.06 KB)
+    📄 embedding.py (2.52 KB)
+    📄 indexer.py (11.98 KB)
+    📄 main.py (3.04 KB)
+    📄 store.py (7.80 KB)
+    📁 test/
+    📄 test_similarity.py (3.59 KB)
+  📁 doc/
+  📄 README.md (0.18 KB)
+    📁 diagrams/
+    📄 aqaTestToolsRoadmap.jpg (166.80 KB)
+    📁 images/
+    📄 deep_aqatik_design.png (553.72 KB)
+    📁 presentations/
+    📄 Deep_AQATik.pdf (854.72 KB)
+    📄 Deep_AQATik.pptx (1716.76 KB)
+📄 docker-compose.yml (0.74 KB)
+📄 exportMongo.sh (0.33 KB)
+📄 netlify.toml (0.14 KB)
+📄 package-lock.json (0.21 KB)
+📄 package.json (0.49 KB)
+  📁 test-result-summary-client/
+  📄 .dockerignore (0.04 KB)
+  📄 .gitignore (0.28 KB)
+  📄 .npmrc (0.02 KB)
+  📄 .prettierrc.json (0.09 KB)
+  📄 Dockerfile (0.52 KB)
+  📄 README.md (0.42 KB)
+  📄 build.bat (0.02 KB)
+  📄 config-overrides.js (0.56 KB)
+  📄 cypress.json (0.12 KB)
+    📁 cypress/
+      📁 integration/
+      📄 byPipeline.js (0.61 KB)
+      📄 testInfo.js (1.41 KB)
+  📄 package-lock.json (1550.98 KB)
+  📄 package.json (1.69 KB)
+    📁 public/
+    📄 _redirects (0.02 KB)
+    📄 favicon.ico (4.19 KB)
+    📄 index.html (0.58 KB)
+    📄 manifest.json (0.33 KB)
+    📁 src/
+    📄 AdoptiumLogo.svg (3.95 KB)
+      📁 AdvancedSearch/
+      📄 AdvancedSearch.jsx (3.18 KB)
+      📄 InputAutoComplete.jsx (0.75 KB)
+      📄 InputSelect.jsx (0.54 KB)
+      📄 index.js (0.06 KB)
+    📄 App.css (0.08 KB)
+    📄 App.jsx (14.25 KB)
+      📁 Build/
+      📄 AlertMsg.jsx (0.22 KB)
+      📄 AllTestsInfo.jsx (5.72 KB)
+      📄 BuildDetail.jsx (4.14 KB)
+      📄 BuildLink.jsx (0.80 KB)
+      📄 BuildTable.jsx (10.11 KB)
+      📄 BuildTreeView.jsx (3.27 KB)
+      📄 Builds.jsx (0.51 KB)
+      📄 DeepHistory.jsx (6.73 KB)
+      📄 Duration.jsx (0.65 KB)
+      📄 GitNewIssue.jsx (5.04 KB)
+        📁 Output/
+        📄 Artifacts.jsx (0.79 KB)
+        📄 Output.jsx (8.61 KB)
+        📄 index.js (0.04 KB)
+        📄 output.css (0.57 KB)
+      📄 PossibleIssues.jsx (9.92 KB)
+      📄 PossibleIssuesByAI.jsx (2.30 KB)
+      📄 ReleaseSummary.jsx (10.56 KB)
+        📁 Summary/
+        📄 BuildStatus.jsx (1.45 KB)
+        📄 BuildStatusIcon.jsx (1.31 KB)
+        📄 Checkboxes.jsx (1.04 KB)
+        📄 Graph.css (0.08 KB)
+        📄 Overview.css (0.16 KB)
+        📄 Overview.jsx (9.48 KB)
+        📄 PieChart.js (8.13 KB)
+        📄 ResultGrid.css (1.19 KB)
+        📄 ResultGrid.jsx (14.15 KB)
+        📄 ResultSummary.jsx (16.99 KB)
+      📄 TestBreadcrumb.jsx (2.07 KB)
+      📄 TestPerPlatform.jsx (5.76 KB)
+      📄 TestTable.jsx (12.72 KB)
+      📄 TopLevelBuildTable.jsx (14.17 KB)
+      📄 TopLevelBuilds.jsx (2.48 KB)
+      📄 index.js (0.63 KB)
+      📄 table.css (0.20 KB)
+      📁 Components/
+      📄 Button.jsx (0.69 KB)
+      📄 ShowWhenVisible.jsx (0.54 KB)
+      📁 Dashboard/
+      📄 Dashboard.jsx (0.65 KB)
+      📄 Defaults.js (0.65 KB)
+      📄 TabInfo.jsx (5.76 KB)
+      📄 ToolBar.jsx (1.46 KB)
+      📄 WidgetWrapper.jsx (0.50 KB)
+        📁 Widgets/
+          📁 BuildStatus/
+          📄 BuildStatus.jsx (12.69 KB)
+          📄 ServerSelector.jsx (0.57 KB)
+          📄 index.js (0.05 KB)
+        📄 DateRangePickers.css (0.43 KB)
+        📄 DateRangePickers.jsx (2.67 KB)
+          📁 Graph/
+          📄 AcmeairNodejs.jsx (9.42 KB)
+            📁 ChartComponent/
+            📄 StockChart.jsx (4.45 KB)
+          📄 Dacapo.jsx (5.05 KB)
+          📄 DayTrader7.jsx (10.87 KB)
+          📄 ODM.jsx (9.97 KB)
+          📄 Renaissance.jsx (16.57 KB)
+          📄 SPECjbb2015.jsx (10.52 KB)
+          📄 index.js (0.30 KB)
+          📄 utils.js (3.29 KB)
+        📄 Settings.jsx (1.89 KB)
+        📄 index.js (0.06 KB)
+      📄 dashboard.css (0.96 KB)
+      📄 index.js (0.05 KB)
+    📄 ErrorBoundary.jsx (0.54 KB)
+      📁 PerfCompare/
+      📄 PerfCompare.css (0.19 KB)
+      📄 PerfCompare.jsx (31.83 KB)
+      📄 index.js (0.05 KB)
+        📁 lib/
+        📄 AzDoRunJSON.js (1.32 KB)
+        📄 BenchmarkMath.js (4.16 KB)
+        📄 ExtractRelevantJenkinsTestResults.js (1.34 KB)
+        📄 PerffarmRunJSON.js (5.98 KB)
+      📁 Search/
+      📄 SearchBuildResult.jsx (2.23 KB)
+      📄 SearchOutput.jsx (1.46 KB)
+      📄 SearchResult.jsx (1.33 KB)
+      📄 SearchTestResult.jsx (1.06 KB)
+      📄 index.js (0.18 KB)
+      📁 Settings/
+      📄 Settings.jsx (13.42 KB)
+      📄 index.js (0.05 KB)
+      📄 settings.css (0.71 KB)
+      📁 TabularView/
+      📄 TabularView.css (2.68 KB)
+      📄 TabularView.jsx (35.93 KB)
+      📄 TabularViewConfig.json (0.19 KB)
+      📄 index.js (0.05 KB)
+      📁 TestCompare/
+      📄 TestCompare.jsx (7.14 KB)
+      📄 TestInfo.jsx (1.28 KB)
+      📄 index.js (0.05 KB)
+      📁 ThirdPartyAppView/
+      📄 ThirdPartyAppView.jsx (9.46 KB)
+      📄 index.js (0.07 KB)
+      📁 TrafficLight/
+      📄 MetricsDetails.jsx (0.61 KB)
+      📄 MetricsTable.jsx (5.89 KB)
+      📄 TrafficLight.jsx (16.64 KB)
+      📄 index.js (0.17 KB)
+    📄 index.css (0.07 KB)
+    📄 index.js (0.55 KB)
+      📁 utils/
+      📄 BenchmarkMathCalculation.js (2.24 KB)
+      📄 LocalStorage.js (0.33 KB)
+      📄 TableUtils.jsx (2.79 KB)
+      📄 TextFilter.jsx (1.20 KB)
+      📄 Utils.js (2.76 KB)
+      📄 query.js (0.66 KB)

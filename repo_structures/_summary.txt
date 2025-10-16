@@ -1,0 +1,44 @@
+Repository Structure Export Summary
+Generated: 2025-10-16 09:04:27
+Total repositories: 9
+================================================================================
+
+✓ adoptium/aqa-tests
+  Files: 1792 | Directories: 325
+  Output: adoptium_aqa-tests.txt
+
+✓ adoptium/TKG
+  Files: 96 | Directories: 33
+  Output: adoptium_TKG.txt
+
+✓ adoptium/aqa-systemtest
+  Files: 588 | Directories: 348
+  Output: adoptium_aqa-systemtest.txt
+
+✓ adoptium/aqa-test-tools
+  Files: 387 | Directories: 93
+  Output: adoptium_aqa-test-tools.txt
+
+✓ adoptium/STF
+  Files: 176 | Directories: 78
+  Output: adoptium_STF.txt
+
+✓ adoptium/bumblebench
+  Files: 124 | Directories: 27
+  Output: adoptium_bumblebench.txt
+
+✓ adoptium/run-aqa
+  Files: 24 | Directories: 5
+  Output: adoptium_run-aqa.txt
+
+✓ adoptium/openj9-systemtest
+  Files: 156 | Directories: 70
+  Output: adoptium_openj9-systemtest.txt
+
+✓ eclipse-openj9/openj9
+  Files: 10336 | Directories: 2249
+  Output: eclipse-openj9_openj9.txt
+
+================================================================================
+Summary: 9 successful, 0 failed
+================================================================================
