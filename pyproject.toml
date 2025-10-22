@@ -8,4 +8,7 @@ dependencies = [
     "fastmcp>=2.12.4",
     "azure-ai-inference",
     "gradio>=4.0.0",
+    "google-genai>=1.0.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
 ]

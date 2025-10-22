@@ -1,5 +1,7 @@
 # VitAI - GitHub Repository Analysis Agent
 
+> NOTE: The Python backend now mirrors the TypeScript agent logic, orchestrating the ReAct loop through Gemini 2.5 Flash function-calling. Configure both `GEMINI_API_KEY` and `GITHUB_TOKEN` in your environment before running the agent.
+
 An intelligent ReAct agent that explores GitHub repositories and provides grounded answers based on actual code and repository content.
 
 ## Features
@@ -103,7 +105,8 @@ GITHUB_TOKEN=your_github_token_here
 ### Environment Variables
 
 ```bash
-GITHUB_TOKEN=ghp_...  # Required for GitHub API access
+GEMINI_API_KEY=sk-...   # Required for Google GenAI function-calling
+GITHUB_TOKEN=ghp_...    # Required for GitHub API access
 ```
 
 ## Usage
