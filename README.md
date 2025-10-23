@@ -30,9 +30,8 @@ The agent autonomously:
 ### Available Tools
 
 1. **search_code**: Find code files using GitHub's code search
-2. **search_issues**: Find issues, PRs, and discussions
-3. **get_repo_structure**: Get detailed directory/file tree
-4. **get_file_contents**: Fetch actual file contents
+2. **get_repo_structure**: Get detailed directory/file tree
+3. **get_file_contents**: Fetch actual file contents
 
 ## Installation
 
